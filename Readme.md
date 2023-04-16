@@ -1,1 +1,1 @@
-This is ws of FPGA.
+This is WS of FPGA.
