@@ -1,0 +1,70 @@
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:459:5: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+    for (int32_t och = 0; och < out_channels; ++och)
+    ^~~
+    VITIS_LOOP_31_1: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:459:5: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:461:9: warning: Added loop label VITIS_LOOP_33_2:   [xilinx-label-all-loops]
+        for (int32_t h = 0; h < height; ++h)
+        ^~~
+        VITIS_LOOP_33_2: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:461:9: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:463:13: warning: Added loop label VITIS_LOOP_35_3:   [xilinx-label-all-loops]
+            for (int32_t w = 0; w < width; ++w)
+            ^~~
+            VITIS_LOOP_35_3: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:463:13: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:467:17: warning: Added loop label VITIS_LOOP_39_4:   [xilinx-label-all-loops]
+                for (int32_t ich = 0; ich < in_channels; ++ich)
+                ^~~
+                VITIS_LOOP_39_4: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:467:17: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:469:21: warning: Added loop label VITIS_LOOP_41_5:   [xilinx-label-all-loops]
+                    for (int32_t kh = 0; kh < ksize; ++kh)
+                    ^~~
+                    VITIS_LOOP_41_5: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:469:21: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:471:25: warning: Added loop label VITIS_LOOP_43_6:   [xilinx-label-all-loops]
+                        for (int32_t kw = 0; kw < ksize; ++kw)
+                        ^~~
+                        VITIS_LOOP_43_6: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:471:25: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:501:5: warning: Added loop label VITIS_LOOP_73_1:   [xilinx-label-all-loops]
+    for (int64_t i = 0; i < out_features; ++i)
+    ^~~
+    VITIS_LOOP_73_1: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:501:5: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:504:9: warning: Added loop label VITIS_LOOP_76_2:   [xilinx-label-all-loops]
+        for (int64_t j = 0; j < in_features; ++j)
+        ^~~
+        VITIS_LOOP_76_2: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:504:9: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:514:5: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+    for (int ch = 0; ch < channels; ++ch)
+    ^~~
+    VITIS_LOOP_86_1: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:514:5: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:516:9: warning: Added loop label VITIS_LOOP_88_2:   [xilinx-label-all-loops]
+        for (int32_t h = 0; h < height; h += stride)
+        ^~~
+        VITIS_LOOP_88_2: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:516:9: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:518:13: warning: Added loop label VITIS_LOOP_90_3:   [xilinx-label-all-loops]
+            for (int32_t w = 0; w < width; w += stride)
+            ^~~
+            VITIS_LOOP_90_3: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:518:13: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:522:17: warning: Added loop label VITIS_LOOP_94_4:   [xilinx-label-all-loops]
+                for (int bh = 0; bh < stride; ++bh)
+                ^~~
+                VITIS_LOOP_94_4: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:522:17: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:524:21: warning: Added loop label VITIS_LOOP_96_5:   [xilinx-label-all-loops]
+                    for (int bw = 0; bw < stride; ++bw)
+                    ^~~
+                    VITIS_LOOP_96_5: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:524:21: note: FIX-IT applied suggested code changes
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:538:5: warning: Added loop label VITIS_LOOP_110_1:   [xilinx-label-all-loops]
+    for (int64_t i = 0; i < size; ++i)
+    ^~~
+    VITIS_LOOP_110_1: 
+/home/reon/work/xilinx/cnn_ip/solution2/.autopilot/db/cnn.pp.0.c:538:5: note: FIX-IT applied suggested code changes

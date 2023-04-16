@@ -1,0 +1,245 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "conv2d"
+              }]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "return"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "ksize"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "y"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "width"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "height"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "x"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "weight"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "out_channels"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "10",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "bias"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "11",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/directives.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "in_channels"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "12",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/conv2d_ip\/solution2\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "conv2d"
+              }]
+          }
+        }
+      ]
+    }]}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cnn.c" path="/home/reon/work/xilinx/cnn_ip/src/cnn.c"/>
+  </source>
+  <testbench>
+    <originFiles name="cnn_tb.c" path="/home/reon/work/xilinx/cnn_ip/src/cnn_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

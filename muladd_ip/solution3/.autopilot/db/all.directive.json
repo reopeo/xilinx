@@ -1,0 +1,92 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "muladd",
+          "label": "muladd_loop",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution3\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "muladd",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution3\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "return"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "muladd",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution3\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "a"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "muladd",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution3\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "b"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "muladd",
+          "label": "",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution3\/csynth.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "muladd"
+              }]
+          }
+        }
+      ]
+    }]}

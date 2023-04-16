@@ -1,0 +1,130 @@
+---
+MainSourceFile:  /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_1:  '
+    FileOffset:      31
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          14429
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_2:  '
+    FileOffset:      33
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          14492
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_35_3:  '
+    FileOffset:      35
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          14551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_35_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_4:  '
+    FileOffset:      39
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          14651
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_5:  '
+    FileOffset:      41
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          14737
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_6:  '
+    FileOffset:      43
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          14822
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_1:  '
+    FileOffset:      73
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          15768
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_2:  '
+    FileOffset:      76
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          15850
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_1:  '
+    FileOffset:      86
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          16118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_2:  '
+    FileOffset:      88
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          16170
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_90_3:  '
+    FileOffset:      90
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          16237
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_90_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_94_4:  '
+    FileOffset:      94
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          16361
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_94_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_96_5:  '
+    FileOffset:      96
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          16435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_96_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_110_1:  '
+    FileOffset:      110
+    FilePath:        /home/reon/work/xilinx/cnn_ip/src/cnn.c
+    Replacements:    
+      - FilePath:        /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c
+        Offset:          16874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_110_1: '
+...

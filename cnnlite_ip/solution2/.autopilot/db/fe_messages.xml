@@ -1,0 +1,52 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-4053" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2787:6" msg_body="incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *'">
+        <args ClangWarningOption="incompatible-pointer-types"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4414" msg_severity="INFO" msg_loc="cnnlite_ip/src/cnn.c:2783:23" msg_body="passing argument to parameter 'x' here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4053" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2896:15" msg_body="incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *'">
+        <args ClangWarningOption="incompatible-pointer-types"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4414" msg_severity="INFO" msg_loc="cnnlite_ip/src/cnn.c:2790:42" msg_body="passing argument to parameter 'weight' here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4053" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2901:16" msg_body="incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *'">
+        <args ClangWarningOption="incompatible-pointer-types"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4053" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2906:16" msg_body="incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *'">
+        <args ClangWarningOption="incompatible-pointer-types"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4414" msg_severity="INFO" msg_loc="cnnlite_ip/src/cnn.c:2833:42" msg_body="passing argument to parameter 'weight' here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4053" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2910:16" msg_body="incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *'">
+        <args ClangWarningOption="incompatible-pointer-types"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/reon/work/xilinx/cnnlite_ip/solution2/csynth.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/reon/work/xilinx/cnnlite_ip/solution2/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/reon/work/xilinx/cnnlite_ip/solution2/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/reon/work/xilinx/cnnlite_ip/solution2/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2880:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="cnnlite_ip/src/cnn.c:2787:2" msg_body="Inlining function 'cnn' into 'cnn_top'">
+        <args Callee="cnn" Caller="cnn_top"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnnlite_ip/src/cnn.c:2786:0" msg_body="Inlining function 'relu' into 'cnn_top'">
+        <args Callee="relu" Caller="cnn_top"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnnlite_ip/src/cnn.c:2786:0" msg_body="Inlining function 'linear' into 'cnn_top'">
+        <args Callee="linear" Caller="cnn_top"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="cnnlite_ip/src/cnn.c:2840:27" msg_body="The program may have out of bound array access"/>
+</xilinx:hls_fe_msgs>
+

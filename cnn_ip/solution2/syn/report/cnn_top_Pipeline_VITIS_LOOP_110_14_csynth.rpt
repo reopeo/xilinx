@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vitis HLS Report for 'cnn_top_Pipeline_VITIS_LOOP_110_14'
+================================================================
+* Date:           Thu Dec 22 16:31:38 2022
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        cnn_ip
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.409 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1573|     1573|  15.730 us|  15.730 us|  1573|  1573|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_110_1  |     1571|     1571|         5|          1|          1|  1568|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     87|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     36|    -|
+|Register         |        -|    -|     191|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     191|    155|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |i_6_fu_91_p2            |         +|   0|  0|  12|          11|           1|
+    |and_ln112_fu_142_p2     |       and|   0|  0|   2|           1|           1|
+    |icmp_ln110_fu_85_p2     |      icmp|   0|  0|  11|          11|          10|
+    |icmp_ln112_2_fu_130_p2  |      icmp|   0|  0|  15|          23|           1|
+    |icmp_ln112_fu_124_p2    |      icmp|   0|  0|  11|           8|           2|
+    |or_ln112_fu_136_p2      |        or|   0|  0|   2|           1|           1|
+    |select_ln112_fu_148_p3  |    select|   0|  0|  32|           1|          32|
+    |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0|  87|          57|          50|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i       |   9|          2|   11|         22|
+    |i_2_fu_42                |   9|          2|   11|         22|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   24|         48|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+----+----+-----+-----------+
+    |                 Name                | FF | LUT| Bits| Const Bits|
+    +-------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                            |   1|   0|    1|          0|
+    |ap_done_reg                          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4              |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg     |   1|   0|    1|          0|
+    |i_2_cast_reg_166                     |  11|   0|   64|         53|
+    |i_2_fu_42                            |  11|   0|   11|          0|
+    |select_ln112_reg_183                 |  32|   0|   32|          0|
+    |vla104_i_load_reg_176                |  32|   0|   32|          0|
+    |vla104_i_load_reg_176_pp0_iter2_reg  |  32|   0|   32|          0|
+    |i_2_cast_reg_166                     |  64|  32|   64|         53|
+    +-------------------------------------+----+----+-----+-----------+
+    |Total                                | 191|  32|  244|        106|
+    +-------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+------------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |            Source Object           |    C Type    |
++---------------------+-----+-----+------------+------------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|grp_fu_885_p_din0    |  out|   32|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|grp_fu_885_p_din1    |  out|   32|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|grp_fu_885_p_opcode  |  out|    5|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|grp_fu_885_p_dout0   |   in|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|grp_fu_885_p_ce      |  out|    1|  ap_ctrl_hs|  cnn_top_Pipeline_VITIS_LOOP_110_14|  return value|
+|vla104_i_address0    |  out|   11|   ap_memory|                            vla104_i|         array|
+|vla104_i_ce0         |  out|    1|   ap_memory|                            vla104_i|         array|
+|vla104_i_q0          |   in|   32|   ap_memory|                            vla104_i|         array|
+|vla135_i_address0    |  out|   11|   ap_memory|                            vla135_i|         array|
+|vla135_i_ce0         |  out|    1|   ap_memory|                            vla135_i|         array|
+|vla135_i_we0         |  out|    1|   ap_memory|                            vla135_i|         array|
+|vla135_i_d0          |  out|   32|   ap_memory|                            vla135_i|         array|
++---------------------+-----+-----+------------+------------------------------------+--------------+
+

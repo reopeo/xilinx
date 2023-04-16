@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vitis HLS Report for 'muladd'
+================================================================
+* Date:           Sun Dec 18 20:43:17 2022
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        muladd_ip
+* Solution:       solution3 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       21|       21|  0.210 us|  0.210 us|   22|   22|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- muladd_loop  |       19|       19|         5|          1|          1|    16|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 5, States = { 1 2 3 4 5 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.36>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%temp = alloca i32 1"   --->   Operation 8 'alloca' 'temp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 9 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [muladd_ip/src/muladd.c:3]   --->   Operation 11 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %a, i64 666, i64 207, i64 1"   --->   Operation 14 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %a"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_4, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %b, i64 666, i64 207, i64 1"   --->   Operation 18 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %b"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_5, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (1.58ns)   --->   "%store_ln8 = store i5 0, i5 %i" [muladd_ip/src/muladd.c:8]   --->   Operation 21 'store' 'store_ln8' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 22 [1/1] (1.58ns)   --->   "%store_ln8 = store i32 0, i32 %temp" [muladd_ip/src/muladd.c:8]   --->   Operation 22 'store' 'store_ln8' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln8 = br void %for.inc" [muladd_ip/src/muladd.c:8]   --->   Operation 23 'br' 'br_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%i_1 = load i5 %i" [muladd_ip/src/muladd.c:8]   --->   Operation 24 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (1.36ns)   --->   "%icmp_ln8 = icmp_eq  i5 %i_1, i5 16" [muladd_ip/src/muladd.c:8]   --->   Operation 25 'icmp' 'icmp_ln8' <Predicate = true> <Delay = 1.36> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 26 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (1.78ns)   --->   "%add_ln8 = add i5 %i_1, i5 1" [muladd_ip/src/muladd.c:8]   --->   Operation 27 'add' 'add_ln8' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln8 = br i1 %icmp_ln8, void %for.inc.split, void %for.end" [muladd_ip/src/muladd.c:8]   --->   Operation 28 'br' 'br_ln8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln8 = zext i5 %i_1" [muladd_ip/src/muladd.c:8]   --->   Operation 29 'zext' 'zext_ln8' <Predicate = (!icmp_ln8)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i32 %a, i64 0, i64 %zext_ln8" [muladd_ip/src/muladd.c:10]   --->   Operation 30 'getelementptr' 'a_addr' <Predicate = (!icmp_ln8)> <Delay = 0.00>
+ST_1 : Operation 31 [2/2] (2.32ns)   --->   "%a_load = load i4 %a_addr" [muladd_ip/src/muladd.c:10]   --->   Operation 31 'load' 'a_load' <Predicate = (!icmp_ln8)> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%b_addr = getelementptr i32 %b, i64 0, i64 %zext_ln8" [muladd_ip/src/muladd.c:10]   --->   Operation 32 'getelementptr' 'b_addr' <Predicate = (!icmp_ln8)> <Delay = 0.00>
+ST_1 : Operation 33 [2/2] (2.32ns)   --->   "%b_load = load i4 %b_addr" [muladd_ip/src/muladd.c:10]   --->   Operation 33 'load' 'b_load' <Predicate = (!icmp_ln8)> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 34 [1/1] (1.58ns)   --->   "%store_ln8 = store i5 %add_ln8, i5 %i" [muladd_ip/src/muladd.c:8]   --->   Operation 34 'store' 'store_ln8' <Predicate = (!icmp_ln8)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 35 [1/2] (2.32ns)   --->   "%a_load = load i4 %a_addr" [muladd_ip/src/muladd.c:10]   --->   Operation 35 'load' 'a_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 36 [1/2] (2.32ns)   --->   "%b_load = load i4 %b_addr" [muladd_ip/src/muladd.c:10]   --->   Operation 36 'load' 'b_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 86 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 16> <RAM>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 37 [2/2] (6.91ns)   --->   "%mul_ln10 = mul i32 %b_load, i32 %a_load" [muladd_ip/src/muladd.c:10]   --->   Operation 37 'mul' 'mul_ln10' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.91>
+ST_4 : Operation 38 [1/2] (6.91ns)   --->   "%mul_ln10 = mul i32 %b_load, i32 %a_load" [muladd_ip/src/muladd.c:10]   --->   Operation 38 'mul' 'mul_ln10' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%temp_load_1 = load i32 %temp" [muladd_ip/src/muladd.c:13]   --->   Operation 45 'load' 'temp_load_1' <Predicate = (icmp_ln8)> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln13 = ret i32 %temp_load_1" [muladd_ip/src/muladd.c:13]   --->   Operation 46 'ret' 'ret_ln13' <Predicate = (icmp_ln8)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 4.14>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%temp_load = load i32 %temp" [muladd_ip/src/muladd.c:10]   --->   Operation 39 'load' 'temp_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%specpipeline_ln6 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [/home/reon/work/xilinx/muladd_ip/solution3/directives.tcl:6]   --->   Operation 40 'specpipeline' 'specpipeline_ln6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln5 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [muladd_ip/src/muladd.c:5]   --->   Operation 41 'specloopname' 'specloopname_ln5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (2.55ns)   --->   "%temp_1 = add i32 %mul_ln10, i32 %temp_load" [muladd_ip/src/muladd.c:10]   --->   Operation 42 'add' 'temp_1' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (1.58ns)   --->   "%store_ln8 = store i32 %temp_1, i32 %temp" [muladd_ip/src/muladd.c:8]   --->   Operation 43 'store' 'store_ln8' <Predicate = true> <Delay = 1.58>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln8 = br void %for.inc" [muladd_ip/src/muladd.c:8]   --->   Operation 44 'br' 'br_ln8' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.37ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'load' operation ('i', muladd_ip/src/muladd.c:8) on local variable 'i' [20]  (0 ns)
+	'add' operation ('add_ln8', muladd_ip/src/muladd.c:8) [23]  (1.78 ns)
+	'store' operation ('store_ln8', muladd_ip/src/muladd.c:8) of variable 'add_ln8', muladd_ip/src/muladd.c:8 on local variable 'i' [36]  (1.59 ns)
+
+ <State 2>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('a_load', muladd_ip/src/muladd.c:10) on array 'a' [31]  (2.32 ns)
+
+ <State 3>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln10', muladd_ip/src/muladd.c:10) [34]  (6.91 ns)
+
+ <State 4>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln10', muladd_ip/src/muladd.c:10) [34]  (6.91 ns)
+
+ <State 5>: 4.14ns
+The critical path consists of the following:
+	'load' operation ('temp_load', muladd_ip/src/muladd.c:10) on local variable 'temp' [26]  (0 ns)
+	'add' operation ('temp', muladd_ip/src/muladd.c:10) [35]  (2.55 ns)
+	'store' operation ('store_ln8', muladd_ip/src/muladd.c:8) of variable 'temp', muladd_ip/src/muladd.c:10 on local variable 'temp' [37]  (1.59 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

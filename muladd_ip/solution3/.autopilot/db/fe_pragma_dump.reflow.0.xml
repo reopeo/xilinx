@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="muladd_ip/src/muladd.c" line="6" pragmaType="pipeline" parentfunction="muladd" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="muladd_ip/src/muladd.c" line="7" pragmaType="interface" parentfunction="muladd" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="muladd_ip/src/muladd.c" line="8" pragmaType="interface" parentfunction="muladd" mode="s_axilite" port="a" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="muladd_ip/src/muladd.c" line="9" pragmaType="interface" parentfunction="muladd" mode="s_axilite" port="b" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

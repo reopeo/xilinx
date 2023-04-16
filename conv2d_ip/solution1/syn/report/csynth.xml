@@ -1,0 +1,651 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>conv2d</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.256</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <out_channels_height_width>
+                <Slack>7.30</Slack>
+                <TripCount>undef</TripCount>
+                <Latency>undef</Latency>
+                <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                <IterationLatency>undef</IterationLatency>
+                <InstanceList/>
+            </out_channels_height_width>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>23</DSP>
+            <FF>3231</FF>
+            <LUT>3288</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>conv2d</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>conv2d</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>conv2d</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>conv2d</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>conv2d</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>conv2d</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x</name>
+            <Object>x</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>weight</name>
+            <Object>weight</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>bias</name>
+            <Object>bias</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>width</name>
+            <Object>width</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>height</name>
+            <Object>height</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels</name>
+            <Object>in_channels</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels</name>
+            <Object>out_channels</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ksize</name>
+            <Object>ksize</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y</name>
+            <Object>y</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y_ap_vld</name>
+            <Object>y</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>conv2d</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_conv2d_Pipeline_in_channels_kh_kw_fu_147</InstName>
+                    <ModuleName>conv2d_Pipeline_in_channels_kh_kw</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>147</ID>
+                    <BindInstances>empty_fu_236_p2 add_ln41_fu_252_p2 add_ln31_fu_262_p2 add_ln33_fu_330_p2 p_mid13_fu_340_p2 add_ln41_2_fu_375_p2 add_ln38_fu_314_p2 add_ln41_1_fu_392_p2 add_ln35_fu_433_p2 add_ln33_1_fu_438_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>p_neg_fu_270_p2 p_neg_t_fu_289_p2 fmul_32ns_32ns_32_4_max_dsp_1_U16 mul_32ns_32ns_64_2_1_U17 mul_32ns_64ns_96_5_1_U19 mul_32ns_32ns_64_2_1_U18 mul_32ns_64ns_96_5_1_U20 add_ln23_fu_346_p2 fadd_32ns_32ns_32_5_full_dsp_1_U15 sub_ln25_fu_435_p2 sub_ln38_fu_449_p2 fadd_32ns_32ns_32_5_full_dsp_1_U15 add_ln27_fu_472_p2 add_ln25_1_fu_408_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>conv2d_Pipeline_in_channels_kh_kw</Name>
+            <Loops>
+                <in_channels_kh_kw/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.256</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <in_channels_kh_kw>
+                        <Name>in_channels_kh_kw</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>6</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </in_channels_kh_kw>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>756</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1055</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="empty_fu_236_p2" SOURCE="conv2d_ip/src/conv2d.c:33" URAM="0" VARIABLE="empty"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_fu_252_p2" SOURCE="conv2d_ip/src/conv2d.c:41" URAM="0" VARIABLE="add_ln41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln31_fu_262_p2" SOURCE="conv2d_ip/src/conv2d.c:31" URAM="0" VARIABLE="add_ln31"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_330_p2" SOURCE="conv2d_ip/src/conv2d.c:33" URAM="0" VARIABLE="add_ln33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="p_mid13_fu_340_p2" SOURCE="conv2d_ip/src/conv2d.c:33" URAM="0" VARIABLE="p_mid13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_2_fu_375_p2" SOURCE="conv2d_ip/src/conv2d.c:41" URAM="0" VARIABLE="add_ln41_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln38_fu_314_p2" SOURCE="conv2d_ip/src/conv2d.c:38" URAM="0" VARIABLE="add_ln38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_1_fu_392_p2" SOURCE="conv2d_ip/src/conv2d.c:41" URAM="0" VARIABLE="add_ln41_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_fu_433_p2" SOURCE="conv2d_ip/src/conv2d.c:35" URAM="0" VARIABLE="add_ln35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="in_channels_kh_kw" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_1_fu_438_p2" SOURCE="conv2d_ip/src/conv2d.c:33" URAM="0" VARIABLE="add_ln33_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>conv2d</Name>
+            <Loops>
+                <out_channels_height_width/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.256</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <out_channels_height_width>
+                        <Name>out_channels_height_width</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>undef</IterationLatency>
+                        <PipelineDepth>undef</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_conv2d_Pipeline_in_channels_kh_kw_fu_147</Instance>
+                        </InstanceList>
+                    </out_channels_height_width>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>23</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>10</UTIL_DSP>
+                    <FF>3231</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>3288</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>6</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="p_neg_fu_270_p2" SOURCE="" URAM="0" VARIABLE="p_neg"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="p_neg_t_fu_289_p2" SOURCE="" URAM="0" VARIABLE="p_neg_t"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U16" SOURCE="conv2d_ip/src/conv2d.c:49" URAM="0" VARIABLE="mul"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U17" SOURCE="conv2d_ip/src/conv2d.c:20" URAM="0" VARIABLE="mul_ln20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="6" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_64ns_96_5_1_U19" SOURCE="conv2d_ip/src/conv2d.c:20" URAM="0" VARIABLE="mul_ln20_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U18" SOURCE="conv2d_ip/src/conv2d.c:20" URAM="0" VARIABLE="mul_ln20_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="6" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_64ns_96_5_1_U20" SOURCE="conv2d_ip/src/conv2d.c:20" URAM="0" VARIABLE="mul_ln20_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="out_channels_height_width" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_346_p2" SOURCE="conv2d_ip/src/conv2d.c:23" URAM="0" VARIABLE="add_ln23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="out_channels_height_width" OPTYPE="add" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U15" SOURCE="conv2d_ip/src/conv2d.c:25" URAM="0" VARIABLE="add_ln25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="out_channels_height_width" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln25_fu_435_p2" SOURCE="conv2d_ip/src/conv2d.c:25" URAM="0" VARIABLE="sub_ln25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="out_channels_height_width" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln38_fu_449_p2" SOURCE="conv2d_ip/src/conv2d.c:38" URAM="0" VARIABLE="sub_ln38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="out_channels_height_width" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U15" SOURCE="conv2d_ip/src/conv2d.c:55" URAM="0" VARIABLE="sum_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="out_channels_height_width" OPTYPE="add" PRAGMA="" RTLNAME="add_ln27_fu_472_p2" SOURCE="conv2d_ip/src/conv2d.c:27" URAM="0" VARIABLE="add_ln27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="out_channels_height_width" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_1_fu_408_p2" SOURCE="conv2d_ip/src/conv2d.c:25" URAM="0" VARIABLE="add_ln25_1"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="x" index="0" direction="in" srcType="float const *" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="x" name="x" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="weight" index="1" direction="in" srcType="float const *" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="weight" name="weight" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="bias" index="2" direction="in" srcType="float const *" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="bias" name="bias" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="width" index="3" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="width" name="width" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="height" index="4" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="height" name="height" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="in_channels" index="5" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="in_channels" name="in_channels" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_channels" index="6" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="out_channels" name="out_channels" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="ksize" index="7" direction="in" srcType="int" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="ksize" name="ksize" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="y" index="8" direction="out" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="y" name="y" usage="data" direction="out"/>
+                <hwRef type="port" interface="y_ap_vld" name="y_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="x" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="x">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="weight" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="weight">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>weight</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="weight"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="bias" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="bias">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>bias</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="bias"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="width" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="width">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>width</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="width"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="height" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="height">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>height</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="height"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="in_channels">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="in_channels"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="out_channels">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="out_channels"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ksize" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="ksize">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>ksize</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="ksize"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="y" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="y">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>y</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="y"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="bias">ap_none, 32, , </column>
+                    <column name="height">ap_none, 32, , </column>
+                    <column name="in_channels">ap_none, 32, , </column>
+                    <column name="ksize">ap_none, 32, , </column>
+                    <column name="out_channels">ap_none, 32, , </column>
+                    <column name="weight">ap_none, 32, , </column>
+                    <column name="width">ap_none, 32, , </column>
+                    <column name="x">ap_none, 32, , </column>
+                    <column name="y">ap_vld, 32, , </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst">reset, ap_rst, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x">in, float const *</column>
+                    <column name="weight">in, float const *</column>
+                    <column name="bias">in, float const *</column>
+                    <column name="width">in, int</column>
+                    <column name="height">in, int</column>
+                    <column name="in_channels">in, int</column>
+                    <column name="out_channels">in, int</column>
+                    <column name="ksize">in, int</column>
+                    <column name="y">out, float*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="x">x, port, , </column>
+                    <column name="weight">weight, port, , </column>
+                    <column name="bias">bias, port, , </column>
+                    <column name="width">width, port, , </column>
+                    <column name="height">height, port, , </column>
+                    <column name="in_channels">in_channels, port, , </column>
+                    <column name="out_channels">out_channels, port, , </column>
+                    <column name="ksize">ksize, port, , </column>
+                    <column name="y">y, port, , </column>
+                    <column name="y">y_ap_vld, port, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport/>
+</profile>
+

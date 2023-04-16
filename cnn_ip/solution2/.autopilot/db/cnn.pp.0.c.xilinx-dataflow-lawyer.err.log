@@ -1,0 +1,11 @@
+incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *'
+passing argument to parameter 'x' here
+incompatible pointer types passing 'const float (*)[1][3][3]' to parameter of type 'const float *'
+passing argument to parameter 'weight0' here
+incompatible pointer types passing 'const float (*)[4][3][3]' to parameter of type 'const float *'
+passing argument to parameter 'weight1' here
+incompatible pointer types passing 'const float (*)[392]' to parameter of type 'const float *'
+passing argument to parameter 'weight2' here
+incompatible pointer types passing 'const float (*)[32]' to parameter of type 'const float *'
+passing argument to parameter 'weight3' here
+5 warnings generated.

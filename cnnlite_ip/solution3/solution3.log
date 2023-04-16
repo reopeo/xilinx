@@ -1,0 +1,223 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cnnlite_ip/solution3/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top x 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top y 
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn_top cnn_top 
+INFO: [HLS 200-1510] Running: set_directive_pipeline conv2d/conv2d_label0 
+INFO: [HLS 200-1510] Running: set_directive_pipeline linear/linear_label1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline maxpool2d/maxpool2d_label2 
+INFO: [HLS 200-1510] Running: set_directive_pipeline relu/relu_label3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.03 seconds; current allocated memory: 756.469 MB.
+INFO: [HLS 200-10] Analyzing design file 'cnnlite_ip/src/cnn.c' ... 
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2787:6)
+INFO: [HLS 207-4414] passing argument to parameter 'x' here (cnnlite_ip/src/cnn.c:2783:23)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2896:15)
+INFO: [HLS 207-4414] passing argument to parameter 'weight' here (cnnlite_ip/src/cnn.c:2790:42)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2901:16)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2906:16)
+INFO: [HLS 207-4414] passing argument to parameter 'weight' here (cnnlite_ip/src/cnn.c:2833:42)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2910:16)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.6 seconds. CPU system time: 0.32 seconds. Elapsed time: 0.91 seconds; current allocated memory: 756.832 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'cnn' into 'cnn_top' (cnnlite_ip/src/cnn.c:2787:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2838_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2838:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2850_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2850:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2852_2' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2852:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2856_3' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2856:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2858_4' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2858:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2795_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2795:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2797_2' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2797:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2801_3' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2801:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2803_4' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2803:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2805_5' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2805:44)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2856_3' (cnnlite_ip/src/cnn.c:2856:36) in function 'maxpool2d' completely with a factor of 2 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2858_4' (cnnlite_ip/src/cnn.c:2858:40) in function 'maxpool2d' completely with a factor of 2 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2803_4' (cnnlite_ip/src/cnn.c:2803:40) in function 'conv2d' completely with a factor of 3 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2805_5' (cnnlite_ip/src/cnn.c:2805:44) in function 'conv2d' completely with a factor of 3 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-178] Inlining function 'relu' into 'cnn_top' (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-178] Inlining function 'linear' into 'cnn_top' (cnnlite_ip/src/cnn.c:2786:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (cnnlite_ip/src/cnn.c:2840:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2838_1' (cnnlite_ip/src/cnn.c:2838:28) in function 'cnn_top' completely with a factor of 32 (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2838_1' (cnnlite_ip/src/cnn.c:2838:28) in function 'cnn_top' completely with a factor of 392 (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'vla42.i' due to pipeline pragma (/home/reon/work/xilinx/cnnlite_ip/solution3/directives.tcl:12:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'vla135.i' due to pipeline pragma (/home/reon/work/xilinx/cnnlite_ip/solution3/directives.tcl:12:9)
+INFO: [HLS 214-248] Applying array_partition to 'vla42.i': Cyclic partitioning with factor 2 on dimension 1. (cnnlite_ip/src/cnn.c:2887:5)
+INFO: [HLS 214-248] Applying array_partition to 'vla135.i': Cyclic partitioning with factor 2 on dimension 1. (cnnlite_ip/src/cnn.c:2890:5)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2850_1' (cnnlite_ip/src/cnn.c:2850:28) in function 'maxpool2d.clone' completely with a factor of 7 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2852_2' (cnnlite_ip/src/cnn.c:2852:32) in function 'maxpool2d.clone' completely with a factor of 7 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2795_1' (cnnlite_ip/src/cnn.c:2795:28) in function 'conv2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2797_2' (cnnlite_ip/src/cnn.c:2797:32) in function 'conv2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2801_3' (cnnlite_ip/src/cnn.c:2801:36) in function 'conv2d' completely with a factor of 4 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2850_1' (cnnlite_ip/src/cnn.c:2850:28) in function 'maxpool2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2852_2' (cnnlite_ip/src/cnn.c:2852:32) in function 'maxpool2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2795_1' (cnnlite_ip/src/cnn.c:2795:28) in function 'conv2d.1' completely with a factor of 28 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2797_2' (cnnlite_ip/src/cnn.c:2797:32) in function 'conv2d.1' completely with a factor of 28 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2801_3' (cnnlite_ip/src/cnn.c:2801:36) in function 'conv2d.1' completely with a factor of 1 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 126.07 seconds. CPU system time: 0.76 seconds. Elapsed time: 126.94 seconds; current allocated memory: 771.191 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 771.191 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cnnlite_ip/solution3/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top x 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top y 
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn_top cnn_top 
+INFO: [HLS 200-1510] Running: set_directive_pipeline conv2d/conv2d_label0 
+INFO: [HLS 200-1510] Running: set_directive_pipeline linear/linear_label1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline maxpool2d/maxpool2d_label2 
+INFO: [HLS 200-1510] Running: set_directive_pipeline relu/relu_label3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.03 seconds; current allocated memory: 756.457 MB.
+INFO: [HLS 200-10] Analyzing design file 'cnnlite_ip/src/cnn.c' ... 
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2787:6)
+INFO: [HLS 207-4414] passing argument to parameter 'x' here (cnnlite_ip/src/cnn.c:2783:23)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2896:15)
+INFO: [HLS 207-4414] passing argument to parameter 'weight' here (cnnlite_ip/src/cnn.c:2790:42)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2901:16)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2906:16)
+INFO: [HLS 207-4414] passing argument to parameter 'weight' here (cnnlite_ip/src/cnn.c:2833:42)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2910:16)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.69 seconds. CPU system time: 0.4 seconds. Elapsed time: 1.1 seconds; current allocated memory: 756.797 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'cnn' into 'cnn_top' (cnnlite_ip/src/cnn.c:2787:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2838_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2838:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2850_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2850:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2852_2' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2852:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2856_3' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2856:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2858_4' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2858:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2795_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2795:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2797_2' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2797:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2801_3' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2801:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2803_4' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2803:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2805_5' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2805:44)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2856_3' (cnnlite_ip/src/cnn.c:2856:36) in function 'maxpool2d' completely with a factor of 2 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2858_4' (cnnlite_ip/src/cnn.c:2858:40) in function 'maxpool2d' completely with a factor of 2 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2803_4' (cnnlite_ip/src/cnn.c:2803:40) in function 'conv2d' completely with a factor of 3 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2805_5' (cnnlite_ip/src/cnn.c:2805:44) in function 'conv2d' completely with a factor of 3 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-178] Inlining function 'relu' into 'cnn_top' (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-178] Inlining function 'linear' into 'cnn_top' (cnnlite_ip/src/cnn.c:2786:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (cnnlite_ip/src/cnn.c:2840:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2838_1' (cnnlite_ip/src/cnn.c:2838:28) in function 'cnn_top' completely with a factor of 32 (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2838_1' (cnnlite_ip/src/cnn.c:2838:28) in function 'cnn_top' completely with a factor of 392 (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'vla42.i' due to pipeline pragma (/home/reon/work/xilinx/cnnlite_ip/solution3/directives.tcl:12:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'vla135.i' due to pipeline pragma (/home/reon/work/xilinx/cnnlite_ip/solution3/directives.tcl:12:9)
+INFO: [HLS 214-248] Applying array_partition to 'vla42.i': Cyclic partitioning with factor 2 on dimension 1. (cnnlite_ip/src/cnn.c:2887:5)
+INFO: [HLS 214-248] Applying array_partition to 'vla135.i': Cyclic partitioning with factor 2 on dimension 1. (cnnlite_ip/src/cnn.c:2890:5)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2850_1' (cnnlite_ip/src/cnn.c:2850:28) in function 'maxpool2d.clone' completely with a factor of 7 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2852_2' (cnnlite_ip/src/cnn.c:2852:32) in function 'maxpool2d.clone' completely with a factor of 7 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2795_1' (cnnlite_ip/src/cnn.c:2795:28) in function 'conv2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2797_2' (cnnlite_ip/src/cnn.c:2797:32) in function 'conv2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2801_3' (cnnlite_ip/src/cnn.c:2801:36) in function 'conv2d' completely with a factor of 4 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2850_1' (cnnlite_ip/src/cnn.c:2850:28) in function 'maxpool2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2852_2' (cnnlite_ip/src/cnn.c:2852:32) in function 'maxpool2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2795_1' (cnnlite_ip/src/cnn.c:2795:28) in function 'conv2d.1' completely with a factor of 28 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2797_2' (cnnlite_ip/src/cnn.c:2797:32) in function 'conv2d.1' completely with a factor of 28 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2801_3' (cnnlite_ip/src/cnn.c:2801:36) in function 'conv2d.1' completely with a factor of 1 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 124.08 seconds. CPU system time: 0.71 seconds. Elapsed time: 124.78 seconds; current allocated memory: 771.156 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 771.156 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./cnnlite_ip/solution3/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top x 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode s_axilite cnn_top y 
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn_top cnn_top 
+INFO: [HLS 200-1510] Running: set_directive_pipeline conv2d/conv2d_label0 
+INFO: [HLS 200-1510] Running: set_directive_pipeline linear/linear_label1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline maxpool2d/maxpool2d_label2 
+INFO: [HLS 200-1510] Running: set_directive_pipeline relu/relu_label3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.04 seconds; current allocated memory: 750.523 MB.
+INFO: [HLS 200-10] Analyzing design file 'cnnlite_ip/src/cnn.c' ... 
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2787:6)
+INFO: [HLS 207-4414] passing argument to parameter 'x' here (cnnlite_ip/src/cnn.c:2783:23)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2896:15)
+INFO: [HLS 207-4414] passing argument to parameter 'weight' here (cnnlite_ip/src/cnn.c:2790:42)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2901:16)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2906:16)
+INFO: [HLS 207-4414] passing argument to parameter 'weight' here (cnnlite_ip/src/cnn.c:2833:42)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2910:16)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.58 seconds. CPU system time: 0.42 seconds. Elapsed time: 1 seconds; current allocated memory: 750.863 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'cnn' into 'cnn_top' (cnnlite_ip/src/cnn.c:2787:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2838_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2838:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2850_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2850:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2852_2' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2852:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2856_3' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2856:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2858_4' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2858:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2795_1' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2795:28)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2797_2' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2797:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2801_3' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2801:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2803_4' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2803:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_2805_5' is marked as complete unroll implied by the pipeline pragma (cnnlite_ip/src/cnn.c:2805:44)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2856_3' (cnnlite_ip/src/cnn.c:2856:36) in function 'maxpool2d' completely with a factor of 2 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2858_4' (cnnlite_ip/src/cnn.c:2858:40) in function 'maxpool2d' completely with a factor of 2 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2803_4' (cnnlite_ip/src/cnn.c:2803:40) in function 'conv2d' completely with a factor of 3 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2805_5' (cnnlite_ip/src/cnn.c:2805:44) in function 'conv2d' completely with a factor of 3 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-178] Inlining function 'relu' into 'cnn_top' (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-178] Inlining function 'linear' into 'cnn_top' (cnnlite_ip/src/cnn.c:2786:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (cnnlite_ip/src/cnn.c:2840:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2838_1' (cnnlite_ip/src/cnn.c:2838:28) in function 'cnn_top' completely with a factor of 32 (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2838_1' (cnnlite_ip/src/cnn.c:2838:28) in function 'cnn_top' completely with a factor of 392 (cnnlite_ip/src/cnn.c:2786:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'vla42.i' due to pipeline pragma (/home/reon/work/xilinx/cnnlite_ip/solution3/directives.tcl:12:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'vla135.i' due to pipeline pragma (/home/reon/work/xilinx/cnnlite_ip/solution3/directives.tcl:12:9)
+INFO: [HLS 214-248] Applying array_partition to 'vla42.i': Cyclic partitioning with factor 2 on dimension 1. (cnnlite_ip/src/cnn.c:2887:5)
+INFO: [HLS 214-248] Applying array_partition to 'vla135.i': Cyclic partitioning with factor 2 on dimension 1. (cnnlite_ip/src/cnn.c:2890:5)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2850_1' (cnnlite_ip/src/cnn.c:2850:28) in function 'maxpool2d.clone' completely with a factor of 7 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2852_2' (cnnlite_ip/src/cnn.c:2852:32) in function 'maxpool2d.clone' completely with a factor of 7 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2795_1' (cnnlite_ip/src/cnn.c:2795:28) in function 'conv2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2797_2' (cnnlite_ip/src/cnn.c:2797:32) in function 'conv2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2801_3' (cnnlite_ip/src/cnn.c:2801:36) in function 'conv2d' completely with a factor of 4 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2850_1' (cnnlite_ip/src/cnn.c:2850:28) in function 'maxpool2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2852_2' (cnnlite_ip/src/cnn.c:2852:32) in function 'maxpool2d' completely with a factor of 14 (cnnlite_ip/src/cnn.c:2847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2795_1' (cnnlite_ip/src/cnn.c:2795:28) in function 'conv2d.1' completely with a factor of 28 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2797_2' (cnnlite_ip/src/cnn.c:2797:32) in function 'conv2d.1' completely with a factor of 28 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_2801_3' (cnnlite_ip/src/cnn.c:2801:36) in function 'conv2d.1' completely with a factor of 1 (cnnlite_ip/src/cnn.c:2792:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 123.64 seconds. CPU system time: 0.71 seconds. Elapsed time: 124.36 seconds; current allocated memory: 765.227 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 765.227 MB.

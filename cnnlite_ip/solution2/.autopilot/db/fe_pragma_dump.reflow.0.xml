@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="cnnlite_ip/src/cnn.c" line="2880" pragmaType="inline" parentfunction="cnn" off="0" region="0" recursive="0"/>
+<pragma file="cnnlite_ip/src/cnn.c" line="6" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnnlite_ip/src/cnn.c" line="7" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="x" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnnlite_ip/src/cnn.c" line="8" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="y" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

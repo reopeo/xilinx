@@ -1,0 +1,180 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_muladd.cpp
+   Compiling (apcc) muladd.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 20:13:44 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/muladd_ip/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/126511671362024840885
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.49 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.49 seconds; peak allocated memory: 98.973 MB.
+   Compiling (apcc) muladd_tb.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 20:13:47 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/muladd_ip/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/127091671362027407275
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.53 seconds. Total CPU system time: 0.11 seconds. Total elapsed time: 1.52 seconds; peak allocated memory: 98.969 MB.
+   Compiling apatb_muladd_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+a[ 0]=4567 b[ 0]=23c6 temp=09b2c2aa
+a[ 1]=9869 b[ 1]=4873 temp=34d4c1d5
+a[ 2]=dc51 b[ 2]=5cff temp=84dd5284
+a[ 3]=944a b[ 3]=58ec temp=b85f76bc
+a[ 4]=1f29 b[ 4]=7ccd temp=c7904691
+a[ 5]=58ba b[ 5]=d7ab temp=124fc0cf
+a[ 6]=41f2 b[ 6]=1efb temp=1a4ac515
+a[ 7]=a9e3 b[ 7]=e146 temp=afc9bc27
+a[ 8]=007c b[ 8]=62c2 temp=aff9921f
+a[ 9]=0854 b[ 9]=27f8 temp=b1466f7f
+a[10]=231b b[10]=e9e8 temp=d159d2f7
+a[11]=cde7 b[11]=438d temp=07aeb032
+a[12]=0f76 b[12]=255a temp=09f02dae
+a[13]=f92e b[13]=7263 temp=79470678
+a[14]=c233 b[14]=d79f temp=1cd87925
+a[15]=c4c9 b[15]=079a temp=22b0590f
+OK
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_muladd_top glbl -Oenable_linking_all_libraries -prj muladd.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s muladd -debug wave 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/AESL_automem_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/AESL_automem_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/muladd_mul_32s_32s_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module muladd_mul_32s_32s_32_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/muladd_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module muladd_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/muladd.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_muladd_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/muladd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module muladd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.muladd_mul_32s_32s_32_2_1(NUM_ST...
+Compiling module xil_defaultlib.muladd_flow_control_loop_pipe
+Compiling module xil_defaultlib.muladd
+Compiling module xil_defaultlib.AESL_automem_a
+Compiling module xil_defaultlib.AESL_automem_b
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_muladd_top
+Compiling module work.glbl
+Built simulation snapshot muladd
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/muladd/xsim_script.tcl
+# xsim {muladd} -view {{muladd_dataflow_ana.wcfg}} -tclbatch {muladd.tcl} -protoinst {muladd.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file muladd.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_muladd_top/AESL_inst_muladd//AESL_inst_muladd_activity
+Time resolution is 1 ps
+open_wave_config muladd_dataflow_ana.wcfg
+source muladd.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $coutputgroup]
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_return -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_muladd_top/AESL_inst_muladd/b_q0 -into $return_group -radix hex
+## add_wave /apatb_muladd_top/AESL_inst_muladd/b_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_muladd_top/AESL_inst_muladd/b_address0 -into $return_group -radix hex
+## add_wave /apatb_muladd_top/AESL_inst_muladd/a_q0 -into $return_group -radix hex
+## add_wave /apatb_muladd_top/AESL_inst_muladd/a_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_muladd_top/AESL_inst_muladd/a_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_start -into $blocksiggroup
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_done -into $blocksiggroup
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_idle -into $blocksiggroup
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_muladd_top/AESL_inst_muladd/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_muladd_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_muladd_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_muladd_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_muladd_top/LENGTH_a -into $tb_portdepth_group -radix hex
+## add_wave /apatb_muladd_top/LENGTH_ap_return -into $tb_portdepth_group -radix hex
+## add_wave /apatb_muladd_top/LENGTH_b -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(wire) -into $tbcoutputgroup]
+## add_wave /apatb_muladd_top/ap_return -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_muladd_top/b_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_muladd_top/b_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_muladd_top/b_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_muladd_top/a_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_muladd_top/a_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_muladd_top/a_address0 -into $tb_return_group -radix hex
+## save_wave_config muladd.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "335000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 395 ns : File "/home/reon/work/xilinx/muladd_ip/solution2/sim/verilog/muladd.autotb.v" Line 302
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec 18 20:13:58 2022...
+a[ 0]=4567 b[ 0]=23c6 temp=09b2c2aa
+a[ 1]=9869 b[ 1]=4873 temp=34d4c1d5
+a[ 2]=dc51 b[ 2]=5cff temp=84dd5284
+a[ 3]=944a b[ 3]=58ec temp=b85f76bc
+a[ 4]=1f29 b[ 4]=7ccd temp=c7904691
+a[ 5]=58ba b[ 5]=d7ab temp=124fc0cf
+a[ 6]=41f2 b[ 6]=1efb temp=1a4ac515
+a[ 7]=a9e3 b[ 7]=e146 temp=afc9bc27
+a[ 8]=007c b[ 8]=62c2 temp=aff9921f
+a[ 9]=0854 b[ 9]=27f8 temp=b1466f7f
+a[10]=231b b[10]=e9e8 temp=d159d2f7
+a[11]=cde7 b[11]=438d temp=07aeb032
+a[12]=0f76 b[12]=255a temp=09f02dae
+a[13]=f92e b[13]=7263 temp=79470678
+a[14]=c233 b[14]=d79f temp=1cd87925
+a[15]=c4c9 b[15]=079a temp=22b0590f
+OK
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

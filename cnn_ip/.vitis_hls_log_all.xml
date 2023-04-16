@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:39.735+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_30', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 31). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.438+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_26', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 27). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.401+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_18', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 19). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.373+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_3', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.351+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_2', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.326+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_1', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.316+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'weight3'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html" projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:31:31.308+0900" type="Warning"/>
+      </synLog>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:32:21.969+0900" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:32:19.794+0900" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_ip" solutionName="solution2" date="2022-12-22T16:32:17.872+0900" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

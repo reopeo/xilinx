@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv2d.c" path="/home/reon/work/xilinx/conv2d_ip/src/conv2d.c"/>
+  </source>
+  <testbench>
+    <originFiles name="conv2d_tb.c" path="/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

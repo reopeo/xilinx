@@ -1,0 +1,38 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../src/muladd_tb.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 20:08:51 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/muladd_ip/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/114831671361731507523
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.55 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.55 seconds; peak allocated memory: 98.957 MB.
+   Compiling(apcc) ../../../src/muladd.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 20:08:54 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/muladd_ip/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/115711671361734078820
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.52 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.52 seconds; peak allocated memory: 98.957 MB.
+   Generating csim.exe
+a[ 0]=4567 b[ 0]=23c6 temp=09b2c2aa
+a[ 1]=9869 b[ 1]=4873 temp=34d4c1d5
+a[ 2]=dc51 b[ 2]=5cff temp=84dd5284
+a[ 3]=944a b[ 3]=58ec temp=b85f76bc
+a[ 4]=1f29 b[ 4]=7ccd temp=c7904691
+a[ 5]=58ba b[ 5]=d7ab temp=124fc0cf
+a[ 6]=41f2 b[ 6]=1efb temp=1a4ac515
+a[ 7]=a9e3 b[ 7]=e146 temp=afc9bc27
+a[ 8]=007c b[ 8]=62c2 temp=aff9921f
+a[ 9]=0854 b[ 9]=27f8 temp=b1466f7f
+a[10]=231b b[10]=e9e8 temp=d159d2f7
+a[11]=cde7 b[11]=438d temp=07aeb032
+a[12]=0f76 b[12]=255a temp=09f02dae
+a[13]=f92e b[13]=7263 temp=79470678
+a[14]=c233 b[14]=d79f temp=1cd87925
+a[15]=c4c9 b[15]=079a temp=22b0590f
+OK
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

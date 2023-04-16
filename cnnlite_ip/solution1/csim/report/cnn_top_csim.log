@@ -1,0 +1,83 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../src/cnn_tb.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.19.0-32-generic) on Mon Feb 27 10:36:14 JST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/cnnlite_ip/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/120951677461774702147
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.51 seconds. Total CPU system time: 0.12 seconds. Total elapsed time: 1.51 seconds; peak allocated memory: 98.957 MB.
+   Compiling(apcc) ../../../src/cnn.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.19.0-32-generic) on Mon Feb 27 10:36:17 JST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/cnnlite_ip/solution1/csim/build'
+../../../src/cnn.c:2787:6: warning: incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+        cnn(x, y);
+            ^
+../../../src/cnn.c:2783:23: note: passing argument to parameter 'x' here
+void cnn(const float* x, float* y);
+                      ^
+../../../src/cnn.c:2896:15: warning: incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    conv2d(x, weight0, bias0, kWidths[0], kHeights[0], kChannels[0], kChannels[1], 3, x1);
+              ^~~~~~~
+../../../src/cnn.c:2790:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, int32_t width, int32_t height,
+                                         ^
+../../../src/cnn.c:2901:16: warning: incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    conv2d(x3, weight1, bias1, kWidths[1], kHeights[1], kChannels[1], kChannels[2], 3, x4);
+               ^~~~~~~
+../../../src/cnn.c:2790:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, int32_t width, int32_t height,
+                                         ^
+../../../src/cnn.c:2906:16: warning: incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    linear(x6, weight2, bias2, kWidths[2] * kHeights[2] * kChannels[2], kChannels[3], x7);
+               ^~~~~~~
+../../../src/cnn.c:2833:42: note: passing argument to parameter 'weight' here
+void linear(const float *x, const float *weight, const float *bias, int64_t in_features, int64_t out_features, float *y)
+                                         ^
+../../../src/cnn.c:2910:16: warning: incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    linear(x8, weight3, bias3, kChannels[3], kChannels[4], y);
+               ^~~~~~~
+../../../src/cnn.c:2833:42: note: passing argument to parameter 'weight' here
+void linear(const float *x, const float *weight, const float *bias, int64_t in_features, int64_t out_features, float *y)
+                                         ^
+5 warnings generated.
+../../../src/cnn.c:2787:6: warning: incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+        cnn(x, y);
+            ^
+../../../src/cnn.c:2783:23: note: passing argument to parameter 'x' here
+void cnn(const float* x, float* y);
+                      ^
+../../../src/cnn.c:2896:15: warning: incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    conv2d(x, weight0, bias0, kWidths[0], kHeights[0], kChannels[0], kChannels[1], 3, x1);
+              ^~~~~~~
+../../../src/cnn.c:2790:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, int32_t width, int32_t height,
+                                         ^
+../../../src/cnn.c:2901:16: warning: incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    conv2d(x3, weight1, bias1, kWidths[1], kHeights[1], kChannels[1], kChannels[2], 3, x4);
+               ^~~~~~~
+../../../src/cnn.c:2790:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, int32_t width, int32_t height,
+                                         ^
+../../../src/cnn.c:2906:16: warning: incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    linear(x6, weight2, bias2, kWidths[2] * kHeights[2] * kChannels[2], kChannels[3], x7);
+               ^~~~~~~
+../../../src/cnn.c:2833:42: note: passing argument to parameter 'weight' here
+void linear(const float *x, const float *weight, const float *bias, int64_t in_features, int64_t out_features, float *y)
+                                         ^
+../../../src/cnn.c:2910:16: warning: incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    linear(x8, weight3, bias3, kChannels[3], kChannels[4], y);
+               ^~~~~~~
+../../../src/cnn.c:2833:42: note: passing argument to parameter 'weight' here
+void linear(const float *x, const float *weight, const float *bias, int64_t in_features, int64_t out_features, float *y)
+                                         ^
+5 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/121611677461777272715
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.71 seconds. Total CPU system time: 0.14 seconds. Total elapsed time: 1.71 seconds; peak allocated memory: 98.957 MB.
+   Generating csim.exe
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

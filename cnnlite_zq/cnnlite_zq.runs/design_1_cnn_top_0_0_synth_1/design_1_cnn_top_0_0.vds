@@ -1,0 +1,1183 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Feb 27 10:49:29 2023
+# Process ID: 14876
+# Current directory: /home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1
+# Command line: vivado -log design_1_cnn_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cnn_top_0_0.tcl
+# Log file: /home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/design_1_cnn_top_0_0.vds
+# Journal file: /home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/vivado.jou
+# Running On: FRONTIER, OS: Linux, CPU Frequency: 4302.203 MHz, CPU Physical cores: 6, Host memory: 33578 MB
+#-----------------------------------------------------------
+source design_1_cnn_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/reon/work/xilinx/cnnlite_ip/solution2/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cnn_top_0_0
+Command: synth_design -top design_1_cnn_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14944
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2453.309 ; gain = 371.738 ; free physical = 14379 ; free virtual = 19134
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1712.414; parent = 1568.587; children = 143.827
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3457.816; parent = 2466.188; children = 991.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_cnn_top_0_0' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/synth/design_1_cnn_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla1_i_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla1_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla1_i_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla1_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla104_i_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla104_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla104_i_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla104_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla166_i_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla166_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla166_i_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_vla166_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_x_assign_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_x_assign_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_x_assign_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_x_assign_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_x_assign_2_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_x_assign_2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_x_assign_2_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_x_assign_2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:76]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:77]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:78]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:79]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_weight0_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_1_Pipeline_VITIS_LOOP_2795_2_VITIS_LOOP_2797_3' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_Pipeline_VITIS_LOOP_2795_2_VITIS_LOOP_2797_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_flow_control_loop_pipe_sequential_init' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_flow_control_loop_pipe_sequential_init' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_1_Pipeline_VITIS_LOOP_2795_2_VITIS_LOOP_2797_3' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1_Pipeline_VITIS_LOOP_2795_2_VITIS_LOOP_2797_3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_maxpool2d_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_maxpool2d_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_maxpool2d_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_maxpool2d_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_bias1_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_bias1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_bias1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_bias1_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_bias1_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_bias1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_weight1_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_weight1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:93]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_weight1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:94]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_weight1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:95]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_weight1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:96]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_weight1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:97]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_conv2d_weight1_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_weight1_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d_weight1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_14' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_14.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_14' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_14.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_maxpool2d' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_maxpool2d.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_maxpool2d' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_maxpool2d.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_weight2_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_weight2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_weight2_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_weight2_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_weight2_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_weight2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_bias2_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_bias2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_bias2_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_bias2_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_bias2_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_bias2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:213]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:214]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:215]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:216]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:217]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:218]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:219]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:220]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:221]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:222]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:223]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:224]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:225]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:226]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:227]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_weight3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_bias3_ROM_AUTO_1R' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_bias3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_bias3_ROM_AUTO_1R.dat' is read successfully [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_bias3_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_bias3_ROM_AUTO_1R' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_bias3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/ip/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/ip/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/ip/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/ip/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:509]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:509]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized0' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:509]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized0' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:509]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:271]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/ip/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/ip/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cnn_top_0_0' (0#1) [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/synth/design_1_cnn_top_0_0.v:53]
+WARNING: [Synth 8-3848] Net q0 in module/entity cnn_top_control_s_axi_ram does not have driver. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:522]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:334]
+WARNING: [Synth 8-3848] Net int_y_write in module/entity cnn_top_control_s_axi does not have driver. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_control_s_axi.v:128]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_dsp_opt_full is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2749.121 ; gain = 667.551 ; free physical = 14305 ; free virtual = 19100
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1899.108; parent = 1755.286; children = 143.827
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3740.754; parent = 2749.125; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2763.965 ; gain = 682.395 ; free physical = 14345 ; free virtual = 19140
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1899.108; parent = 1755.286; children = 143.827
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3755.598; parent = 2763.969; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2763.965 ; gain = 682.395 ; free physical = 14342 ; free virtual = 19137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1899.108; parent = 1755.286; children = 143.827
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3755.598; parent = 2763.969; children = 991.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2766.934 ; gain = 0.000 ; free physical = 14110 ; free virtual = 18912
+INFO: [Netlist 29-17] Analyzing 3771 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/constraints/cnn_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/constraints/cnn_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3043.371 ; gain = 0.000 ; free physical = 17014 ; free virtual = 21806
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 99 instances were transformed.
+  FDE => FDRE: 99 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.79 . Memory (MB): peak = 3072.184 ; gain = 28.812 ; free physical = 16978 ; free virtual = 21770
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 17673 ; free virtual = 22461
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1899.108; parent = 1755.286; children = 181.622
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4031.801; parent = 3040.172; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 17673 ; free virtual = 22461
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1899.108; parent = 1755.286; children = 181.622
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4031.801; parent = 3040.172; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 17673 ; free virtual = 22461
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1899.108; parent = 1755.286; children = 181.622
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4031.801; parent = 3040.172; children = 991.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter72_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7306]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter71_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7305]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter70_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7304]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter69_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7302]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter68_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7301]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter67_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7300]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter66_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7299]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter65_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7298]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter64_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7297]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter63_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7296]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter62_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7295]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter61_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7294]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter60_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7293]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter59_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7291]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter58_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7290]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter57_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7289]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter56_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7288]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter55_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter54_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7286]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter53_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7285]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter52_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7284]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter51_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7283]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter50_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7282]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter49_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7280]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter48_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7279]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter47_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7278]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter46_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7277]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter45_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7276]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter44_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7275]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter43_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7274]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter42_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7273]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter41_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7272]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter40_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7271]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter39_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7269]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter38_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7268]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter37_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7267]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter36_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7266]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter35_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7265]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter34_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7264]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter33_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7263]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter32_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7262]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter31_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7261]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter30_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7260]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter29_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7258]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter28_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7257]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter27_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7256]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter26_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7255]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter25_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7254]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter24_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7253]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter23_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7252]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter22_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7251]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter21_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7250]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter20_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7249]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter19_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7247]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter18_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7246]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter17_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7245]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter16_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7244]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter15_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7243]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter14_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7242]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter13_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7241]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter12_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7240]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter11_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7239]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter10_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7238]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter9_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7238]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter8_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7308]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter7_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7307]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter6_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7303]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter5_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7292]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter4_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7281]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter3_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7270]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter2_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7259]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_pp0_iter1_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:7248]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2793_2_reg_4651_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:6472]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln2835_reg_367_pp0_iter3_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2.v:380]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln2835_reg_367_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2.v:379]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln2835_2_reg_317_pp0_iter1_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2.v:378]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_pp0_iter3_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15.v:219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_pp0_iter2_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15.v:218]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_pp0_iter1_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15.v:210]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_2872_15.v:227]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cnn_top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cnn_top_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cnn_top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cnn_top_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 19007 ; free virtual = 23805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2028.379; parent = 1824.588; children = 203.791
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4031.801; parent = 3040.172; children = 991.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1:/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1:/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1:/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1:/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__20.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__20.
+INFO: [Synth 8-3886] merging instance 'bias1_U/q0_reg[2]' (FDE) to 'bias1_U/q0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'bias1_U/q0_reg[12]' (FDE) to 'bias1_U/q0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'bias1_U/q0_reg[27]' (FDE) to 'bias1_U/q0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'bias1_U/q0_reg[28]' (FDE) to 'bias1_U/q0_reg[29]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias1_U/q0_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bias1_U/q0_reg[30] )
+INFO: [Synth 8-3886] merging instance 'bias1_load_reg_5802_reg[2]' (FDE) to 'bias1_load_reg_5802_reg[12]'
+INFO: [Synth 8-3886] merging instance 'bias1_load_reg_5802_reg[12]' (FDE) to 'bias1_load_reg_5802_reg[15]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias1_load_reg_5802_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias1_load_reg_5802_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias1_load_reg_5802_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bias1_load_reg_5802_reg[30] )
+INFO: [Synth 8-4471] merging register 'tmp_s_reg_4257_reg[4:2]' into 'p_shl_cast_reg_4263_reg[6:4]' [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_conv2d.v:6463]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_shl_cast_reg_4263_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_shl_cast_reg_4263_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_shl_cast_reg_4263_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_shl_cast_reg_4263_reg[2] )
+INFO: [Synth 8-3886] merging instance 'add_ln2827_reg_4640_reg[0]' (FDE) to 'trunc_ln2808_cast48_reg_4558_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln2793_reg_4283_reg[2]' (FDE) to 'p_mid_reg_4322_reg[4]'
+INFO: [Synth 8-3886] merging instance 'och_2_reg_4246_reg[2]' (FDE) to 'p_shl_cast_reg_4263_reg[6]'
+INFO: [Synth 8-3886] merging instance 'add_ln2793_reg_4283_reg[0]' (FDE) to 'p_mid1168_reg_4340_reg[2]'
+INFO: [Synth 8-3886] merging instance 'och_2_reg_4246_reg[0]' (FDE) to 'empty_99_reg_4268_reg[2]'
+INFO: [Synth 8-3886] merging instance 'add_ln2793_reg_4283_reg[1]' (FDE) to 'p_mid_reg_4322_reg[3]'
+INFO: [Synth 8-3886] merging instance 'och_2_reg_4246_reg[1]' (FDE) to 'p_shl_cast_reg_4263_reg[5]'
+INFO: [Synth 8-3886] merging instance 'p_mid_reg_4322_reg[2]' (FDE) to 'p_mid1168_reg_4340_reg[2]'
+INFO: [Synth 8-3886] merging instance 'p_shl_cast_reg_4263_reg[4]' (FDE) to 'empty_99_reg_4268_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln2793_12_reg_4346_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\select_ln2793_12_reg_4346_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\select_ln2793_13_reg_4353_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln2793_13_reg_4353_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\empty_99_reg_4268_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\empty_99_reg_4268_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tmp_s_reg_4257_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tmp_s_reg_4257_reg[1] )
+INFO: [Synth 8-3886] merging instance 'tmp_7_reg_4601_reg[0]' (FDE) to 'add_ln2808_reg_4566_reg[4]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_4_reg_5231_reg[27]' (FDE) to 'weight1_load_4_reg_5231_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_9_reg_5256_reg[27]' (FDE) to 'weight1_load_9_reg_5256_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_20_reg_5041_reg[27]' (FDE) to 'weight1_load_20_reg_5041_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_4_reg_5231_reg[28]' (FDE) to 'weight1_load_4_reg_5231_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_9_reg_5256_reg[28]' (FDE) to 'weight1_load_9_reg_5256_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_20_reg_5041_reg[28]' (FDE) to 'weight1_load_20_reg_5041_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_5_reg_5236_reg[27]' (FDE) to 'weight1_load_5_reg_5236_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_10_reg_5261_reg[27]' (FDE) to 'weight1_load_10_reg_5261_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_21_reg_5046_reg[27]' (FDE) to 'weight1_load_21_reg_5046_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_5_reg_5236_reg[28]' (FDE) to 'weight1_load_5_reg_5236_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_10_reg_5261_reg[28]' (FDE) to 'weight1_load_10_reg_5261_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_21_reg_5046_reg[28]' (FDE) to 'weight1_load_21_reg_5046_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_6_reg_5241_reg[27]' (FDE) to 'weight1_load_6_reg_5241_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_11_reg_5266_reg[27]' (FDE) to 'weight1_load_11_reg_5266_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_22_reg_5051_reg[27]' (FDE) to 'weight1_load_22_reg_5051_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_6_reg_5241_reg[28]' (FDE) to 'weight1_load_6_reg_5241_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_11_reg_5266_reg[28]' (FDE) to 'weight1_load_11_reg_5266_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_22_reg_5051_reg[28]' (FDE) to 'weight1_load_22_reg_5051_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_7_reg_5246_reg[27]' (FDE) to 'weight1_load_7_reg_5246_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_12_reg_5271_reg[27]' (FDE) to 'weight1_load_12_reg_5271_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_23_reg_5056_reg[27]' (FDE) to 'weight1_load_23_reg_5056_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_7_reg_5246_reg[28]' (FDE) to 'weight1_load_7_reg_5246_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_12_reg_5271_reg[28]' (FDE) to 'weight1_load_12_reg_5271_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_23_reg_5056_reg[28]' (FDE) to 'weight1_load_23_reg_5056_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_3_reg_5226_reg[27]' (FDE) to 'weight1_load_3_reg_5226_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_13_reg_5276_reg[27]' (FDE) to 'weight1_load_13_reg_5276_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_1_reg_4946_reg[27]' (FDE) to 'weight1_load_1_reg_4946_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_3_reg_5226_reg[28]' (FDE) to 'weight1_load_3_reg_5226_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_13_reg_5276_reg[28]' (FDE) to 'weight1_load_13_reg_5276_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_1_reg_4946_reg[28]' (FDE) to 'weight1_load_1_reg_4946_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_8_reg_5251_reg[27]' (FDE) to 'weight1_load_8_reg_5251_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_14_reg_5281_reg[27]' (FDE) to 'weight1_load_14_reg_5281_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_24_reg_5061_reg[27]' (FDE) to 'weight1_load_24_reg_5061_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_8_reg_5251_reg[28]' (FDE) to 'weight1_load_8_reg_5251_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_14_reg_5281_reg[28]' (FDE) to 'weight1_load_14_reg_5281_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_24_reg_5061_reg[28]' (FDE) to 'weight1_load_24_reg_5061_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_15_reg_5016_reg[27]' (FDE) to 'weight1_load_15_reg_5016_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_25_reg_4742_reg[27]' (FDE) to 'weight1_load_25_reg_4742_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_28_reg_4757_reg[27]' (FDE) to 'weight1_load_28_reg_4757_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_15_reg_5016_reg[28]' (FDE) to 'weight1_load_15_reg_5016_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_25_reg_4742_reg[28]' (FDE) to 'weight1_load_25_reg_4742_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_28_reg_4757_reg[28]' (FDE) to 'weight1_load_28_reg_4757_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_2_reg_4951_reg[27]' (FDE) to 'weight1_load_2_reg_4951_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_26_reg_4747_reg[27]' (FDE) to 'weight1_load_26_reg_4747_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_29_reg_4762_reg[27]' (FDE) to 'weight1_load_29_reg_4762_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_2_reg_4951_reg[28]' (FDE) to 'weight1_load_2_reg_4951_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_26_reg_4747_reg[28]' (FDE) to 'weight1_load_26_reg_4747_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_29_reg_4762_reg[28]' (FDE) to 'weight1_load_29_reg_4762_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_16_reg_5021_reg[27]' (FDE) to 'weight1_load_16_reg_5021_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_27_reg_4752_reg[27]' (FDE) to 'weight1_load_27_reg_4752_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_30_reg_4767_reg[27]' (FDE) to 'weight1_load_30_reg_4767_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_16_reg_5021_reg[28]' (FDE) to 'weight1_load_16_reg_5021_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_27_reg_4752_reg[28]' (FDE) to 'weight1_load_27_reg_4752_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_30_reg_4767_reg[28]' (FDE) to 'weight1_load_30_reg_4767_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_17_reg_5026_reg[27]' (FDE) to 'weight1_load_17_reg_5026_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_33_reg_4782_reg[27]' (FDE) to 'weight1_load_33_reg_4782_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_31_reg_4772_reg[27]' (FDE) to 'weight1_load_31_reg_4772_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_17_reg_5026_reg[28]' (FDE) to 'weight1_load_17_reg_5026_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_33_reg_4782_reg[28]' (FDE) to 'weight1_load_33_reg_4782_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_31_reg_4772_reg[28]' (FDE) to 'weight1_load_31_reg_4772_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_18_reg_5031_reg[27]' (FDE) to 'weight1_load_18_reg_5031_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_34_reg_4787_reg[27]' (FDE) to 'weight1_load_34_reg_4787_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_reg_4656_reg[27]' (FDE) to 'weight1_load_reg_4656_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_18_reg_5031_reg[28]' (FDE) to 'weight1_load_18_reg_5031_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_34_reg_4787_reg[28]' (FDE) to 'weight1_load_34_reg_4787_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_reg_4656_reg[28]' (FDE) to 'weight1_load_reg_4656_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_19_reg_5036_reg[27]' (FDE) to 'weight1_load_19_reg_5036_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_35_reg_4792_reg[27]' (FDE) to 'weight1_load_35_reg_4792_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_32_reg_4777_reg[27]' (FDE) to 'weight1_load_32_reg_4777_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_19_reg_5036_reg[28]' (FDE) to 'weight1_load_19_reg_5036_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_35_reg_4792_reg[28]' (FDE) to 'weight1_load_35_reg_4792_reg[29]'
+INFO: [Synth 8-3886] merging instance 'weight1_load_32_reg_4777_reg[28]' (FDE) to 'weight1_load_32_reg_4777_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast51_reg_5080_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast51_reg_5080_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast51_reg_5080_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast51_reg_5080_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast51_reg_5080_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast51_reg_5080_reg[8] )
+INFO: [Synth 8-3886] merging instance 'add_ln2808_2_reg_4587_reg[0]' (FDE) to 'zext_ln2811_1_reg_4593_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln2808_2_reg_4587_reg[1]' (FDE) to 'zext_ln2811_1_reg_4593_reg[1]'
+INFO: [Synth 8-3886] merging instance 'add_ln2808_2_reg_4587_reg[2]' (FDE) to 'zext_ln2811_1_reg_4593_reg[2]'
+INFO: [Synth 8-3886] merging instance 'add_ln2808_2_reg_4587_reg[3]' (FDE) to 'zext_ln2811_1_reg_4593_reg[3]'
+INFO: [Synth 8-3886] merging instance 'zext_ln2811_1_reg_4593_reg[0]' (FDE) to 'add_ln2808_reg_4566_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast48_reg_4558_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast48_reg_4558_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast48_reg_4558_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast48_reg_4558_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\trunc_ln2808_cast48_reg_4558_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_shl_cast_reg_4263_reg[7] )
+INFO: [Synth 8-3886] merging instance 'zext_ln2811_reg_5102_reg[0]' (FDE) to 'sext_ln2811_reg_5086_reg[0]'
+INFO: [Synth 8-3886] merging instance 'select_ln2793_4_reg_4431_reg[2]' (FDE) to 'select_ln2793_11_reg_4459_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln2795_17_reg_4542_reg[1]' (FDSE) to 'select_ln2795_15_reg_4528_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_mid1168_reg_4340_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\empty_99_reg_4268_reg[7] )
+INFO: [Synth 8-3886] merging instance 'select_ln2793_10_reg_4452_reg[2]' (FDE) to 'select_ln2793_9_reg_4445_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln2795_21_reg_4824_reg[9] )
+INFO: [Synth 8-3886] merging instance 'select_ln2795_14_reg_4419_reg[8]' (FDRE) to 'select_ln2795_12_reg_4402_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\select_ln2795_12_reg_4402_reg[8] )
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'weight3_load_18_reg_1975_reg[27]' (FDE) to 'weight3_load_18_reg_1975_reg[28]'
+INFO: [Synth 8-3886] merging instance 'weight3_load_18_reg_1975_reg[28]' (FDE) to 'weight3_load_18_reg_1975_reg[29]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U132/ce_r_reg )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U99/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U133/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U100/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U101/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U102/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U103/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U104/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U105/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U106/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U107/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U108/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U109/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U110/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U111/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bias3_U/q0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias3_U/q0_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U112/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_i_reg_1580_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_i_reg_1580_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_i_reg_1580_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_i_reg_1580_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_i_reg_1580_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U126/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U125/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U124/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U123/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U122/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U121/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U119/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U118/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U117/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U116/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U115/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U114/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bias3_load_reg_2265_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias3_load_reg_2265_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias3_load_reg_2265_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias3_load_reg_2265_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bias3_load_reg_2265_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U113/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__15.
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '14' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '14' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '14' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/d183/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:31]
+DSP Report: Generating DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p, operation Mode is: C'+(A2*(B:0x188)')'.
+DSP Report: register mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p.
+DSP Report: register mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p.
+DSP Report: register mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p.
+DSP Report: register mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p.
+DSP Report: operator mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p.
+DSP Report: operator mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_6ns_9ns_9ns_14_4_1_U72/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_conv2d_1_fu_429/\p_shl3_reg_501_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_maxpool2d_1_fu_445/\p_mid129_reg_1316_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_maxpool2d_fu_467/\p_mid129_reg_1275_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_fu_473/\bias2_U/q0_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_fu_473/\bias2_U/q0_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2872_15_fu_483/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2872_14_fu_461/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_maxpool2d_fu_467/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2872_1_fu_439/\ap_CS_fsm_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fcmp_32ns_32ns_1_2_no_dsp_1_U184/opcode_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_conv2d_1_fu_429/\merge_i_reg_577_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_conv2d_1_fu_429/\merge_i_reg_577_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2872_15_fu_483/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_cnn_top_Pipeline_VITIS_LOOP_2872_14_fu_461/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_maxpool2d_fu_467/ap_done_reg_reg)
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module cnn_top_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module cnn_top_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__22.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__22.
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__27.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__27.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__28.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__28.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__29.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__29.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__30.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__30.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__31.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__31.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__32.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__32.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:33 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 12610 ; free virtual = 17502
+Synthesis current peak Physical Memory [PSS] (MB): peak = 8450.911; parent = 1882.049; children = 6687.546
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 14538.703; parent = 3044.090; children = 11498.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 12329 ; free virtual = 17285
+Synthesis current peak Physical Memory [PSS] (MB): peak = 8617.600; parent = 1983.438; children = 6687.546
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 14538.703; parent = 3044.090; children = 11498.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 12107 ; free virtual = 17146
+Synthesis current peak Physical Memory [PSS] (MB): peak = 8685.662; parent = 2051.520; children = 6687.546
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 14538.703; parent = 3044.090; children = 11498.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q11_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q11_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q9_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q9_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451i_4/grp_conv2d_fu_451/weight1_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram9_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/vla73_i_U/ram10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/x_assign_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/x_assign_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_6_0/control_s_axi_U/int_x/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:02:08 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11174 ; free virtual = 16270
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9528.608; parent = 2051.652; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15259.957; parent = 3048.180; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q11_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q11_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q9_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q9_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_conv2d_fu_451/weight1_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram5_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram9_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_assign_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_assign_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_x/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:02:22 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11086 ; free virtual = 16252
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9561.972; parent = 2072.055; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:49 ; elapsed = 00:02:22 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11086 ; free virtual = 16252
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9561.972; parent = 2072.055; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:02:28 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11109 ; free virtual = 16248
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9567.011; parent = 2077.094; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:02:28 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11116 ; free virtual = 16255
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9567.073; parent = 2077.156; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:30 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11223 ; free virtual = 16296
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9567.073; parent = 2077.156; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:56 ; elapsed = 00:02:30 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11181 ; free virtual = 16260
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9567.073; parent = 2077.156; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_3197                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3151          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_3130                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3084          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_3063                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3017          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2996                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2950          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2929                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2883          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2862                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2816          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2795                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2749          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2728                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2682          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2661                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2615          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2594                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2548          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2527                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2481          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2460                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2414          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2393                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2347          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2262          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2263          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2260          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2233          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2234          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2231          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2204          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2205          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2202          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2175          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2176          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2173          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2146          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2147          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2144          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2117          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2118          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2115          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2088          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2089          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2086          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2059          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2060          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2057          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2030          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2031          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2028          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2001          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2002          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1999          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1972          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1973          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1970          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1943          | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1944          | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1941          | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0 | C'+(A'*B)'      | 6      | 9      | 9      | -      | 14     | 1    | 0    | 0    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_1924                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1878          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1857                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1811          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1790                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1744          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1723                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1677          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1656                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1610          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1589                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1543          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1522                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1476          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1455                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1409          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1388                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1342          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1321                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1275          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1254                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1208          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1187                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1141          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1120                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1074          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1053                          | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_1007          | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_986                           | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_940           | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_919                           | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_873           | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_852                           | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_806           | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_785                           | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_739           | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_718                           | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_672           | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                               | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0               | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_610           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_611           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_608           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_581           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_582           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_579           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_552           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_553           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_550           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_523           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_524           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_521           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_494           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_495           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_492           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_465           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_466           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_463           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_436           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_437           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_434           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_407           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_408           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_405           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_378           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_379           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_376           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_349           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_350           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_347           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_320           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_321           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_318           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_291           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_292           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_289           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_262           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_263           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_260           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_233           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_234           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_231           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_204           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_205           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_202           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_175           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_176           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_173           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_146           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_147           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_144           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_117           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_118           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_115           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_88            | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_89            | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_86            | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1               | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2               | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3               | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   320|
+|2     |DSP48E1  |   163|
+|8     |LUT1     |   254|
+|9     |LUT2     |  1720|
+|10    |LUT3     |  6463|
+|11    |LUT4     |  2590|
+|12    |LUT5     |  3699|
+|13    |LUT6     |  4752|
+|14    |MUXCY    |  2594|
+|15    |MUXF7    |     3|
+|16    |RAM16X1D |    32|
+|17    |RAMB18E1 |    56|
+|22    |RAMB36E1 |    52|
+|45    |SRL16E   |   734|
+|46    |SRLC32E  |  1557|
+|47    |XORCY    |   817|
+|48    |FDE      |    99|
+|49    |FDRE     | 23898|
+|50    |FDSE     |   116|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:56 ; elapsed = 00:02:30 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 11151 ; free virtual = 16242
+Synthesis current peak Physical Memory [PSS] (MB): peak = 9567.073; parent = 2077.156; children = 7523.584
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 15272.121; parent = 3060.340; children = 12211.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 385 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:19 . Memory (MB): peak = 3072.184 ; gain = 682.395 ; free physical = 18458 ; free virtual = 23547
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:32 . Memory (MB): peak = 3072.184 ; gain = 990.613 ; free physical = 18473 ; free virtual = 23547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.67 . Memory (MB): peak = 3072.184 ; gain = 0.000 ; free physical = 18266 ; free virtual = 23379
+INFO: [Netlist 29-17] Analyzing 4136 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3100.355 ; gain = 0.000 ; free physical = 18181 ; free virtual = 23292
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 835 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 704 instances
+  FDE => FDRE: 99 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+Synth Design complete, checksum: bbd79f2f
+INFO: [Common 17-83] Releasing license: Synthesis
+553 Infos, 188 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:12 ; elapsed = 00:02:44 . Memory (MB): peak = 3100.355 ; gain = 1350.379 ; free physical = 18527 ; free virtual = 23638
+INFO: [Common 17-1381] The checkpoint '/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/design_1_cnn_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cnn_top_0_0, cache-ID = d0e0331b0c2299fd
+INFO: [Coretcl 2-1174] Renamed 3449 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/reon/work/xilinx/cnnlite_zq/cnnlite_zq.runs/design_1_cnn_top_0_0_synth_1/design_1_cnn_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_cnn_top_0_0_utilization_synth.rpt -pb design_1_cnn_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 27 10:52:41 2023...

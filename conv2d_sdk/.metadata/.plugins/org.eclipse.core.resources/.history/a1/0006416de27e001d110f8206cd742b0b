@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xconv2d.h"
+
+#define SIZE 16
+
+XConv2d Instance;
+
+int main()
+{
+    u32 a[SIZE], b[SIZE], temp=0;
+    int i;
+
+    if(XConv2d_Initialize((&Instance, XPAR_MULADD_0_DEVICE_ID) != XST_SUCCESS))
+    {
+        xil_printf("Init Error!\n");
+        return XST_FAILURE;
+    }
+
+    XMuladd_Write_a_Words(&Instance, 0, a, SIZE);
+    XMuladd_Write_b_Words(&Instance, 0, b, SIZE);
+
+    XConv2d_Start(&Instance);
+    while(XMuladd_IsDone(&Instance) == 0);
+
+    if(temp == XMuladd_Get_return(&Instance))
+        xil_printf("OK.\n");
+    else
+        xil_printf("ERROR.\n");
+
+    return 0;
+}

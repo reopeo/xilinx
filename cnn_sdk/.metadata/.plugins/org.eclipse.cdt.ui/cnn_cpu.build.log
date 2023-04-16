@@ -1,0 +1,71 @@
+21:50:11 **** Incremental Build of configuration Debug for project cnn_cpu ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/cnn_test.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cnn_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/reon/work/xilinx/cnn_sdk/design_1_wrapper_1/export/design_1_wrapper_1/sw/design_1_wrapper_1/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/cnn_test.d" -MT"src/cnn_test.o" -o "src/cnn_test.o" "../src/cnn_test.c"
+../src/cnn_test.c: In function 'main':
+../src/cnn_test.c:52:9: warning: passing argument 1 of 'cnn' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     cnn(x, weight0, bias0, weight1, bias1, weight2, bias2, weight3, bias3, y);
+      |         ^
+      |         |
+      |         float (*)[28][28]
+In file included from ../src/cnn_test.c:4:
+../src/cnn.h:11:23: note: expected 'const float *' but argument is of type 'float (*)[28][28]'
+   11 | void cnn(const float* x,
+      |          ~~~~~~~~~~~~~^
+../src/cnn_test.c:52:12: warning: passing argument 2 of 'cnn' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     cnn(x, weight0, bias0, weight1, bias1, weight2, bias2, weight3, bias3, y);
+      |            ^~~~~~~
+      |            |
+      |            const float (*)[1][3][3]
+In file included from ../src/cnn_test.c:4:
+../src/cnn.h:12:30: note: expected 'const float *' but argument is of type 'const float (*)[1][3][3]'
+   12 |                 const float* weight0, const float* bias0,
+      |                 ~~~~~~~~~~~~~^~~~~~~
+../src/cnn_test.c:52:28: warning: passing argument 4 of 'cnn' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     cnn(x, weight0, bias0, weight1, bias1, weight2, bias2, weight3, bias3, y);
+      |                            ^~~~~~~
+      |                            |
+      |                            const float (*)[4][3][3]
+In file included from ../src/cnn_test.c:4:
+../src/cnn.h:13:30: note: expected 'const float *' but argument is of type 'const float (*)[4][3][3]'
+   13 |                 const float* weight1, const float* bias1,
+      |                 ~~~~~~~~~~~~~^~~~~~~
+../src/cnn_test.c:52:44: warning: passing argument 6 of 'cnn' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     cnn(x, weight0, bias0, weight1, bias1, weight2, bias2, weight3, bias3, y);
+      |                                            ^~~~~~~
+      |                                            |
+      |                                            const float (*)[392]
+In file included from ../src/cnn_test.c:4:
+../src/cnn.h:14:30: note: expected 'const float *' but argument is of type 'const float (*)[392]'
+   14 |                 const float* weight2, const float* bias2,
+      |                 ~~~~~~~~~~~~~^~~~~~~
+../src/cnn_test.c:52:60: warning: passing argument 8 of 'cnn' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     cnn(x, weight0, bias0, weight1, bias1, weight2, bias2, weight3, bias3, y);
+      |                                                            ^~~~~~~
+      |                                                            |
+      |                                                            const float (*)[32]
+In file included from ../src/cnn_test.c:4:
+../src/cnn.h:15:30: note: expected 'const float *' but argument is of type 'const float (*)[32]'
+   15 |                 const float* weight3, const float* bias3,
+      |                 ~~~~~~~~~~~~~^~~~~~~
+Finished building: ../src/cnn_test.c
+ 
+Building target: cnn_cpu.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/reon/work/xilinx/cnn_sdk/design_1_wrapper_1/export/design_1_wrapper_1/sw/design_1_wrapper_1/standalone_ps7_cortexa9_0/bsplib/lib -o "cnn_cpu.elf" ./src/cnn.o ./src/cnn_test.o ./src/parameters.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cnn_cpu.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size cnn_cpu.elf  |tee "cnn_cpu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112199	   2548	  22632	 137379	  218a3	cnn_cpu.elf
+Finished building: cnn_cpu.elf.size
+ 
+
+21:50:12 Build Finished (took 665ms)
+

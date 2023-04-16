@@ -1,0 +1,23 @@
+22:00:49 DEBUG : Logs will be stored at '/home/reon/work/xilinx/conv2d_sdk/IDE.log'.
+22:00:50 INFO  : Launching XSCT server: xsct -n  -interactive /home/reon/work/xilinx/conv2d_sdk/temp_xsdb_launch_script.tcl
+22:00:50 INFO  : Registering command handlers for Vitis TCF services
+22:00:51 INFO  : Platform repository initialization has completed.
+22:00:52 INFO  : XSCT server has started successfully.
+22:00:52 INFO  : Successfully done setting XSCT server connection channel  
+22:00:52 INFO  : plnx-install-location is set to ''
+22:00:52 INFO  : Successfully done setting workspace for the tool. 
+22:00:52 INFO  : Successfully done query RDI_DATADIR 
+22:02:16 INFO  : Result from executing command 'getProjects': design_1_wrapper
+22:02:16 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/tools/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+22:02:17 WARN  : An unexpected exception occurred in the module 'platform project logging'
+22:02:18 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+22:02:25 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+23:08:56 DEBUG : Logs will be stored at '/home/reon/work/xilinx/conv2d_sdk/IDE.log'.
+23:08:56 INFO  : Launching XSCT server: xsct -n  -interactive /home/reon/work/xilinx/conv2d_sdk/temp_xsdb_launch_script.tcl
+23:08:57 INFO  : Platform repository initialization has completed.
+23:08:58 INFO  : XSCT server has started successfully.
+23:08:58 INFO  : plnx-install-location is set to ''
+23:08:58 INFO  : Successfully done setting XSCT server connection channel  
+23:08:58 INFO  : Successfully done query RDI_DATADIR 
+23:08:58 INFO  : Successfully done setting workspace for the tool. 
+23:08:58 INFO  : Registering command handlers for Vitis TCF services

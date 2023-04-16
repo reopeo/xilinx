@@ -1,0 +1,7 @@
+remark: cnn_ip/src/cnn.c:25:2: Inlining function 'cnn' into 'cnn_top'
+remark: cnn_ip/src/cnn.c:24:0: Inlining function 'relu' into 'cnn_top'
+remark: cnn_ip/src/cnn.c:24:0: Inlining function 'linear' into 'cnn_top'
+warning: cnn_ip/src/cnn.c:78:27: The program may have out of bound array access
+warning: cnn_ip/src/cnn.c:78:27: The program may have out of bound array access
+warning: cnn_ip/src/cnn.c:78:27: The program may have out of bound array access
+warning: cnn_ip/src/cnn.c:78:27: The program may have out of bound array access

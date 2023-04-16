@@ -1,0 +1,12 @@
+<pragmas>
+<pragma file="conv2d_ip/src/conv2d.c" line="10" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="width" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="11" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="height" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="12" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="x" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="13" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="weight" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="14" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="out_channels" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="15" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="bias" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="16" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="in_channels" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="7" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="8" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="ksize" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="conv2d_ip/src/conv2d.c" line="9" pragmaType="interface" parentfunction="conv2d" mode="s_axilite" port="y" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

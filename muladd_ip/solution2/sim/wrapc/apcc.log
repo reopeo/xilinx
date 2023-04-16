@@ -1,0 +1,9 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 20:13:47 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/muladd_ip/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/127091671362027407275
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.53 seconds. Total CPU system time: 0.11 seconds. Total elapsed time: 1.52 seconds; peak allocated memory: 98.969 MB.

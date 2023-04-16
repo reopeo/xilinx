@@ -1,0 +1,59 @@
+Nothing to build in platform 'design_1_wrapper'
+
+11:12:59 **** Build of configuration Debug for project cnn_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/cnn_test.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cnn_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/cnn_test.d" -MT"src/cnn_test.o" -o "src/cnn_test.o" "../src/cnn_test.c"
+../src/cnn_test.c: In function 'main':
+../src/cnn_test.c:52:42: warning: passing argument 3 of 'XCnn_top_Write_x_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     XCnn_top_Write_x_Words(&Instance, 0, x, 28*28);
+      |                                          ^
+      |                                          |
+      |                                          float (*)[28][28]
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:105:74: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'float (*)[28][28]'
+  105 | u32 XCnn_top_Write_x_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                               ~~~~~~~~~~~^~~~
+../src/cnn_test.c:53:42: warning: passing argument 3 of 'XCnn_top_Write_y_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   53 |     XCnn_top_Write_y_Words(&Instance, 0, y, 10);
+      |                                          ^
+      |                                          |
+      |                                          float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:96:74: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'float *'
+   96 | u32 XCnn_top_Write_y_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                               ~~~~~~~~~~~^~~~
+../src/cnn_test.c:60:41: warning: passing argument 3 of 'XCnn_top_Read_y_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   60 |     XCnn_top_Read_y_Words(&Instance, 0, y, 10);
+      |                                         ^
+      |                                         |
+      |                                         float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:97:73: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'float *'
+   97 | u32 XCnn_top_Read_y_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                              ~~~~~~~~~~~^~~~
+Finished building: ../src/cnn_test.c
+ 
+Building target: cnn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "cnn_test.elf" ./src/cnn_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cnn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size cnn_test.elf  |tee "cnn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63147	   2564	  22664	  88375	  15937	cnn_test.elf
+Finished building: cnn_test.elf.size
+ 
+11:13:01 **** Build of configuration Debug for project cnn_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /home/reon/work/xilinx/cnnlite_sdk/cnn_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/reon/work/xilinx/cnnlite_sdk/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif /home/reon/work/xilinx/cnnlite_sdk/cnn_test_system/Debug/system.bif --bitstream /home/reon/work/xilinx/cnnlite_sdk/cnn_test/_ide/bitstream/design_1_wrapper.bit --elf /home/reon/work/xilinx/cnnlite_sdk/cnn_test/Debug/cnn_test.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/reon/work/xilinx/cnnlite_sdk/cnn_test/_ide/bitstream/design_1_wrapper.bit
+Running /tools/Xilinx/Vitis/2022.2/bin/bootgen  -image /home/reon/work/xilinx/cnnlite_sdk/cnn_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

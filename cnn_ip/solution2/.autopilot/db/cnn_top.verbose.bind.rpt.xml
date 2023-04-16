@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_top'" level="0">
+<item name = "Date">Thu Dec 22 16:31:33 2022
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">cnn_ip</item>
+<item name = "Solution">solution2 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 9.376 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">166647, 166647, 1.666 ms, 1.666 ms, 166648, 166648, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_conv2d_1_fu_447">conv2d_1, 28283, 28283, 0.283 ms, 0.283 ms, 28283, 28283, no</column>
+<column name="grp_cnn_top_Pipeline_VITIS_LOOP_110_1_fu_459">cnn_top_Pipeline_VITIS_LOOP_110_1, 3141, 3141, 31.410 us, 31.410 us, 3141, 3141, no</column>
+<column name="grp_maxpool2d_1_fu_465">maxpool2d_1, 797, 797, 7.970 us, 7.970 us, 797, 797, no</column>
+<column name="grp_conv2d_2_fu_471">conv2d_2, 56639, 56639, 0.566 ms, 0.566 ms, 56639, 56639, no</column>
+<column name="grp_cnn_top_Pipeline_VITIS_LOOP_110_14_fu_481">cnn_top_Pipeline_VITIS_LOOP_110_14, 1573, 1573, 15.730 us, 15.730 us, 1573, 1573, no</column>
+<column name="grp_maxpool2d_fu_487">maxpool2d, 404, 404, 4.040 us, 4.040 us, 404, 404, no</column>
+<column name="grp_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_fu_493">cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2, 75279, 75279, 0.753 ms, 0.753 ms, 75279, 75279, no</column>
+<column name="grp_cnn_top_Pipeline_VITIS_LOOP_110_15_fu_503">cnn_top_Pipeline_VITIS_LOOP_110_15, 37, 37, 0.370 us, 0.370 us, 37, 37, no</column>
+<column name="grp_cnn_top_Pipeline_VITIS_LOOP_73_1_fu_509">cnn_top_Pipeline_VITIS_LOOP_73_1, 461, 461, 4.610 us, 4.610 us, 461, 461, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

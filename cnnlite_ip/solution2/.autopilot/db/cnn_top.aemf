@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1677462210838">
+  <ports id="1" name="x" type="PortType" originalName="x" coreName="RAM_1P" coreId="62" bitwidth="32" iftype="IfTypeRegister" arraysize="784">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="y" type="PortType" coreName="RAM_1P" coreId="107" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="10">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="114" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="144" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="148" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="157" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="158" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="163" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="168" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="173" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="177" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="183" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="187" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="188" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.34"/>
+  <edges id="192" source_obj="//@blocks.0/@node_objs.34" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="193" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.36"/>
+  <edges id="197" source_obj="//@blocks.0/@node_objs.36" sink_obj="//@blocks.0/@node_objs.37"/>
+  <edges id="198" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.38"/>
+  <edges id="202" source_obj="//@blocks.0/@node_objs.38" sink_obj="//@blocks.0/@node_objs.39"/>
+  <edges id="203" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.40"/>
+  <edges id="207" source_obj="//@blocks.0/@node_objs.40" sink_obj="//@blocks.0/@node_objs.41"/>
+  <edges id="208" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.42"/>
+  <edges id="212" source_obj="//@blocks.0/@node_objs.42" sink_obj="//@blocks.0/@node_objs.43"/>
+  <edges id="213" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.44"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.44" sink_obj="//@blocks.0/@node_objs.45"/>
+  <edges id="218" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.46"/>
+  <edges id="222" source_obj="//@blocks.0/@node_objs.46" sink_obj="//@blocks.0/@node_objs.47"/>
+  <edges id="223" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.48"/>
+  <edges id="227" source_obj="//@blocks.0/@node_objs.48" sink_obj="//@blocks.0/@node_objs.49"/>
+  <edges id="228" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.50"/>
+  <edges id="232" source_obj="//@blocks.0/@node_objs.50" sink_obj="//@blocks.0/@node_objs.51"/>
+  <edges id="233" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.52"/>
+  <edges id="237" source_obj="//@blocks.0/@node_objs.52" sink_obj="//@blocks.0/@node_objs.53"/>
+  <edges id="238" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.54"/>
+  <edges id="242" source_obj="//@blocks.0/@node_objs.54" sink_obj="//@blocks.0/@node_objs.55"/>
+  <edges id="243" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.56"/>
+  <edges id="247" source_obj="//@blocks.0/@node_objs.56" sink_obj="//@blocks.0/@node_objs.57"/>
+  <edges id="248" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.58"/>
+  <edges id="252" source_obj="//@blocks.0/@node_objs.58" sink_obj="//@blocks.0/@node_objs.59"/>
+  <edges id="253" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.60"/>
+  <edges id="257" source_obj="//@blocks.0/@node_objs.60" sink_obj="//@blocks.0/@node_objs.61"/>
+  <edges id="258" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.62"/>
+  <edges id="262" source_obj="//@blocks.0/@node_objs.62" sink_obj="//@blocks.0/@node_objs.63"/>
+  <edges id="263" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.64"/>
+  <edges id="267" source_obj="//@blocks.0/@node_objs.64" sink_obj="//@blocks.0/@node_objs.65"/>
+  <edges id="268" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.66"/>
+  <edges id="272" source_obj="//@blocks.0/@node_objs.66" sink_obj="//@blocks.0/@node_objs.67"/>
+  <edges id="273" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.68"/>
+  <edges id="277" source_obj="//@blocks.0/@node_objs.68" sink_obj="//@blocks.0/@node_objs.69"/>
+  <edges id="278" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.70"/>
+  <edges id="282" source_obj="//@blocks.0/@node_objs.70" sink_obj="//@blocks.0/@node_objs.71"/>
+  <edges id="283" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.72"/>
+  <edges id="287" source_obj="//@blocks.0/@node_objs.72" sink_obj="//@blocks.0/@node_objs.73"/>
+  <edges id="288" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.74"/>
+  <edges id="292" source_obj="//@blocks.0/@node_objs.74" sink_obj="//@blocks.0/@node_objs.75"/>
+  <edges id="293" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.76"/>
+  <edges id="297" source_obj="//@blocks.0/@node_objs.76" sink_obj="//@blocks.0/@node_objs.77"/>
+  <edges id="298" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.78"/>
+  <edges id="302" source_obj="//@blocks.0/@node_objs.78" sink_obj="//@blocks.0/@node_objs.79"/>
+  <edges id="305" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="306" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="307" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="308" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="309" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="310" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="311" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="312" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="313" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="314" source_obj="//@blocks.0/@node_objs.35" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="315" source_obj="//@blocks.0/@node_objs.37" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="316" source_obj="//@blocks.0/@node_objs.39" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="317" source_obj="//@blocks.0/@node_objs.41" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="318" source_obj="//@blocks.0/@node_objs.43" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="319" source_obj="//@blocks.0/@node_objs.45" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="320" source_obj="//@blocks.0/@node_objs.47" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="321" source_obj="//@blocks.0/@node_objs.49" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="322" source_obj="//@blocks.0/@node_objs.51" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="323" source_obj="//@blocks.0/@node_objs.53" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="324" source_obj="//@blocks.0/@node_objs.55" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="325" source_obj="//@blocks.0/@node_objs.57" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="326" source_obj="//@blocks.0/@node_objs.59" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="327" source_obj="//@blocks.0/@node_objs.61" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="328" source_obj="//@blocks.0/@node_objs.63" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="329" source_obj="//@blocks.0/@node_objs.65" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="330" source_obj="//@blocks.0/@node_objs.67" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="331" source_obj="//@blocks.0/@node_objs.69" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="332" source_obj="//@blocks.0/@node_objs.71" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="333" source_obj="//@blocks.0/@node_objs.73" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="334" source_obj="//@blocks.0/@node_objs.75" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="335" source_obj="//@blocks.0/@node_objs.77" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="336" source_obj="//@blocks.0/@node_objs.79" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="337" source_obj="//@blocks.0/@node_objs.80" sink_obj="//@ports.1"/>
+  <edges id="338" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="339" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="340" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="341" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="342" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="343" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="344" sink_obj="//@blocks.0/@node_objs.80"/>
+  <edges id="472" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="473" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="474" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="475" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="476" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="477" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="478" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="479" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="480" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="481" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="482" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.37"/>
+  <edges id="483" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.39"/>
+  <edges id="484" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.41"/>
+  <edges id="485" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.43"/>
+  <edges id="486" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.45"/>
+  <edges id="487" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.47"/>
+  <edges id="488" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.49"/>
+  <edges id="489" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.51"/>
+  <edges id="490" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.53"/>
+  <edges id="491" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.55"/>
+  <edges id="492" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.57"/>
+  <edges id="493" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.59"/>
+  <edges id="494" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.61"/>
+  <edges id="495" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.63"/>
+  <edges id="496" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.65"/>
+  <edges id="497" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.67"/>
+  <edges id="498" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.69"/>
+  <edges id="499" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.71"/>
+  <edges id="500" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.73"/>
+  <edges id="501" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.75"/>
+  <edges id="502" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.77"/>
+  <edges id="503" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.79"/>
+  <edges id="504" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="505" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="506" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="507" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="508" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="509" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="510" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="511" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="512" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="513" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="514" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="515" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="516" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="517" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <blocks id="102" name="cnn_top" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="vla1_i" lineNumber="2886" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="vla1_i_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2886" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="vla42_i" lineNumber="2887" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="vla42_i_U" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="83" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2887" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="vla73_i" lineNumber="2888" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="vla73_i_U" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="83" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2888" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="vla104_i" lineNumber="2889" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="vla104_i_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2889" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="vla135_i" lineNumber="2890" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U184" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="83" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2890" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="vla166_i" lineNumber="2891" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="vla166_i_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2891" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_assign" lineNumber="2892" originalName="x" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="x_assign_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2892" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="x_assign_2" lineNumber="2893" originalName="x" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="x_assign_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="82" contextFuncName="cnn" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2893" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln2896" lineNumber="2896" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_conv2d_1_fu_429" coreId="0" contextFuncName="cnn" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2896" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>x</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>conv2d_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln2886" lineNumber="2886" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_cnn_top_Pipeline_VITIS_LOOP_2872_1_fu_439" coreId="518464048" contextFuncName="cnn" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2886" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_top_Pipeline_VITIS_LOOP_2872_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="_ln2898" lineNumber="2898" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_maxpool2d_1_fu_445" coreId="0" contextFuncName="cnn" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2898" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>maxpool2d_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln2901" lineNumber="2901" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_conv2d_fu_451" coreId="3997132584" contextFuncName="cnn" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2901" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>conv2d</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln2889" lineNumber="2889" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_cnn_top_Pipeline_VITIS_LOOP_2872_14_fu_461" coreId="574454132" contextFuncName="cnn" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2889" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_top_Pipeline_VITIS_LOOP_2872_14</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln2903" lineNumber="2903" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_maxpool2d_fu_467" coreId="1952411246" contextFuncName="cnn" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2903" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>maxpool2d</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln2891" lineNumber="2891" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_fu_473" coreId="519531344" contextFuncName="cnn" opcode="call" nodeLabel="12.0" nodeLatency="1" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2891" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln2892" lineNumber="2892" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="grp_cnn_top_Pipeline_VITIS_LOOP_2872_15_fu_483" coreId="0" contextFuncName="cnn" opcode="call" nodeLabel="14.0" nodeLatency="1" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2892" fileDirectory="/home/reon/work/xilinx" functionName="cnn"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>cnn_top_Pipeline_VITIS_LOOP_2872_15</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="x_assign_2_addr" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="343" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="16.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="x_assign_2_load" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="16.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="x_assign_2_addr_1" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="16.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="x_assign_2_load_1" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="16.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="x_assign_2_addr_2" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519548400" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="17.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="x_assign_2_load_2" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="17.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="x_assign_2_addr_3" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="543236197" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="17.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="x_assign_2_load_3" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="17.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="x_assign_2_addr_4" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U183" coreId="176" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="18.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="x_assign_2_load_4" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U181" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="18.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="x_assign_2_addr_5" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="18.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="x_assign_2_load_5" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="18.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="x_assign_2_addr_6" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519633760" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="x_assign_2_load_6" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="19.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="x_assign_2_addr_7" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="224" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="x_assign_2_load_7" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="19.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="x_assign_2_addr_8" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U181" coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="x_assign_2_load_8" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="20.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="x_assign_2_addr_9" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="1007225406" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="x_assign_2_load_9" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="20.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="x_assign_2_addr_10" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="21.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="x_assign_2_load_10" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="21.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="x_assign_2_addr_11" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519553824" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="21.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="x_assign_2_load_11" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="21.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="x_assign_2_addr_12" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519560528" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="x_assign_2_load_12" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="22.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="x_assign_2_addr_13" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519562568" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="22.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="x_assign_2_load_13" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="22.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="x_assign_2_addr_14" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519637888" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="23.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="x_assign_2_load_14" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="23.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="x_assign_2_addr_15" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="23.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="x_assign_2_load_15" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="23.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="x_assign_2_addr_16" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="1819113532" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="24.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="x_assign_2_load_16" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="24.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="x_assign_2_addr_17" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519559680" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="24.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="x_assign_2_load_17" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="24.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="x_assign_2_addr_18" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519568440" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="25.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="x_assign_2_load_18" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="25.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="x_assign_2_addr_19" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="25.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="x_assign_2_load_19" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="25.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="x_assign_2_addr_20" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519572688" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="26.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="x_assign_2_load_20" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="26.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="x_assign_2_addr_21" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519602704" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="26.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="x_assign_2_load_21" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="26.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="x_assign_2_addr_22" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="27.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="x_assign_2_load_22" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="27.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="x_assign_2_addr_23" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="1819113532" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="27.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="x_assign_2_load_23" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="27.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="x_assign_2_addr_24" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519646400" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="28.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="x_assign_2_load_24" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="x_assign_2_addr_25" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="28.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="x_assign_2_load_25" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="x_assign_2_addr_26" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U181" coreId="519646400" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="29.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="x_assign_2_load_26" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="29.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="x_assign_2_addr_27" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519660528" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="29.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="x_assign_2_load_27" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="29.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="x_assign_2_addr_28" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="30.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="x_assign_2_load_28" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="30.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="x_assign_2_addr_29" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U182" coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="30.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="x_assign_2_load_29" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="30.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="x_assign_2_addr_30" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="31.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="x_assign_2_load_30" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="31.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="x_assign_2_addr_31" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="519616624" contextFuncName="linear" bitwidth="5" opcode="getelementptr" nodeLabel="31.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="x_assign_2_load_31" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="linear" bitwidth="32" opcode="load" nodeLabel="31.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="_ln2840" lineNumber="2840" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_5_full_dsp_1_U188" coreId="3995676316" contextFuncName="linear" opcode="call" nodeLabel="32.0" nodeLatency="1" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2840" fileDirectory="/home/reon/work/xilinx" functionName="linear"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>y</dataOutputObjs>
+      <constName>cnn_top_Pipeline_VITIS_LOOP_2835_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="_ln2788" lineNumber="2788" fileName="cnnlite_ip/src/cnn.c" fileDirectory=".." coreId="0" opcode="ret" nodeLabel="33.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cnnlite_ip/src/cnn.c" linenumber="2788" fileDirectory="/home/reon/work/xilinx"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="cnnlite_ip/src/cnn.c">
+      <validLinenumbers>2886</validLinenumbers>
+      <validLinenumbers>2887</validLinenumbers>
+      <validLinenumbers>2888</validLinenumbers>
+      <validLinenumbers>2889</validLinenumbers>
+      <validLinenumbers>2890</validLinenumbers>
+      <validLinenumbers>2891</validLinenumbers>
+      <validLinenumbers>2892</validLinenumbers>
+      <validLinenumbers>2893</validLinenumbers>
+      <validLinenumbers>2896</validLinenumbers>
+      <validLinenumbers>2898</validLinenumbers>
+      <validLinenumbers>2901</validLinenumbers>
+      <validLinenumbers>2903</validLinenumbers>
+      <validLinenumbers>2840</validLinenumbers>
+      <validLinenumbers>2788</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <regnodes realName="x_assign_2_addr_9_reg_618">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_8_reg_623">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_31_reg_838">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_4_reg_583">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_27_reg_798">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_14_reg_673">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_28_reg_813">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_5_reg_578">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_19_reg_728">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_6_reg_593">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_13_reg_658">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_15_reg_688">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_3_reg_568">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_18_reg_713">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_reg_543">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_20_reg_743">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_17_reg_698">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_16_reg_703">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_28_reg_823">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_11_reg_648">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_24_reg_783">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_22_reg_753">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_27_reg_808">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_21_reg_738">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_23_reg_768">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_3_reg_558">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_30_reg_843">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_10_reg_633">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_7_reg_608">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_26_reg_793">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_12_reg_663">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_4_reg_573">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_25_reg_778">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_12_reg_653">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_7_reg_598">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_15_reg_678">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_18_reg_723">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_30_reg_833">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_21_reg_748">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_19_reg_718">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_5_reg_588">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_9_reg_628">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_16_reg_693">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_17_reg_708">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_22_reg_763">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_31_reg_848">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_1_reg_548">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_29_reg_818">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_8_reg_613">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_2_reg_563">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_29_reg_828">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_10_reg_643">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_20_reg_733">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_23_reg_758">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_13_reg_668">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_26_reg_803">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_24_reg_773">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_reg_533">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_14_reg_683">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_11_reg_638">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_2_reg_553">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_6_reg_603">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_addr_1_reg_538">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="x_assign_2_load_25_reg_788">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <expressionNodes realName="x_assign_2_addr_9_gep_fu_245">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_21_gep_fu_341">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_23_gep_fu_357">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vla73_i_alloca_fu_140">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_13_gep_fu_277">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_31_gep_fu_421">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vla1_i_alloca_fu_132">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_11_gep_fu_261">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_2_gep_fu_189">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_1_gep_fu_181">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_8_gep_fu_237">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_27_gep_fu_389">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_3_gep_fu_197">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_6_gep_fu_221">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_24_gep_fu_365">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_14_gep_fu_285">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vla135_i_alloca_fu_148">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vla104_i_alloca_fu_144">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_alloca_fu_156">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_4_gep_fu_205">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_26_gep_fu_381">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_17_gep_fu_309">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vla42_i_alloca_fu_136">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_25_gep_fu_373">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_29_gep_fu_405">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vla166_i_alloca_fu_152">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_19_gep_fu_325">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_22_gep_fu_349">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_5_gep_fu_213">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_30_gep_fu_413">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_15_gep_fu_293">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_10_gep_fu_253">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_18_gep_fu_317">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_alloca_fu_160">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_20_gep_fu_333">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_gep_fu_164">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_12_gep_fu_269">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_28_gep_fu_397">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_7_gep_fu_229">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_assign_2_addr_16_gep_fu_301">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_cnn_top_Pipeline_VITIS_LOOP_2872_15_fu_483">
+    <nodeIds>35</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_top_Pipeline_VITIS_LOOP_2835_1_VITIS_LOOP_2838_2_fu_473">
+    <nodeIds>34</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_top_Pipeline_VITIS_LOOP_2872_14_fu_461">
+    <nodeIds>32</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_conv2d_1_fu_429">
+    <nodeIds>28</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_conv2d_fu_451">
+    <nodeIds>31</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_maxpool2d_1_fu_445">
+    <nodeIds>30</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_maxpool2d_fu_467">
+    <nodeIds>33</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_top_Pipeline_VITIS_LOOP_2872_1_fu_439">
+    <nodeIds>29</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_cnn_top_Pipeline_VITIS_LOOP_2835_1_fu_489">
+    <nodeIds>100</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="bias1" portID="100">
+    <nodeIds>31</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="bias2" portID="100">
+    <nodeIds>34</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="bias3" portID="100">
+    <nodeIds>100</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="weight0_0" portID="100">
+    <nodeIds>28</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="weight1" portID="100">
+    <nodeIds>31</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="weight2" portID="100">
+    <nodeIds>34</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="weight3" portID="100">
+    <nodeIds>100</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x_assign_2">
+    <nodeIds>39</nodeIds>
+    <nodeIds>43</nodeIds>
+    <nodeIds>47</nodeIds>
+    <nodeIds>51</nodeIds>
+    <nodeIds>55</nodeIds>
+    <nodeIds>59</nodeIds>
+    <nodeIds>63</nodeIds>
+    <nodeIds>67</nodeIds>
+    <nodeIds>71</nodeIds>
+    <nodeIds>75</nodeIds>
+    <nodeIds>79</nodeIds>
+    <nodeIds>83</nodeIds>
+    <nodeIds>87</nodeIds>
+    <nodeIds>91</nodeIds>
+    <nodeIds>95</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x_assign_2" portID="1">
+    <nodeIds>37</nodeIds>
+    <nodeIds>41</nodeIds>
+    <nodeIds>45</nodeIds>
+    <nodeIds>49</nodeIds>
+    <nodeIds>53</nodeIds>
+    <nodeIds>57</nodeIds>
+    <nodeIds>61</nodeIds>
+    <nodeIds>65</nodeIds>
+    <nodeIds>69</nodeIds>
+    <nodeIds>73</nodeIds>
+    <nodeIds>77</nodeIds>
+    <nodeIds>81</nodeIds>
+    <nodeIds>85</nodeIds>
+    <nodeIds>89</nodeIds>
+    <nodeIds>93</nodeIds>
+    <nodeIds>97</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x_assign_2" portID="100">
+    <nodeIds>35</nodeIds>
+  </memoryPorts>
+  <fsm>
+    <states id="1">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="28" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="29" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="29" stage="1" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="30" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="30" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="31" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="31" stage="1" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="32" stage="2" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="32" stage="1" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="33" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="33" stage="1" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="34" stage="2" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="34" stage="1" latency="2"/>
+    </states>
+    <states id="15">
+      <operations id="35" stage="2" latency="2"/>
+    </states>
+    <states id="16">
+      <operations id="35" stage="1" latency="2"/>
+    </states>
+    <states id="17">
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="2" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="2" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="39" stage="1" latency="2"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="2" latency="2"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="2" latency="2"/>
+    </states>
+    <states id="19">
+      <operations id="41" stage="1" latency="2"/>
+      <operations id="43" stage="1" latency="2"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="2" latency="2"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="2" latency="2"/>
+    </states>
+    <states id="20">
+      <operations id="45" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="2"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="2" latency="2"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="2" latency="2"/>
+    </states>
+    <states id="21">
+      <operations id="49" stage="1" latency="2"/>
+      <operations id="51" stage="1" latency="2"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="2" latency="2"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="2" latency="2"/>
+    </states>
+    <states id="22">
+      <operations id="53" stage="1" latency="2"/>
+      <operations id="55" stage="1" latency="2"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="2" latency="2"/>
+    </states>
+    <states id="23">
+      <operations id="57" stage="1" latency="2"/>
+      <operations id="59" stage="1" latency="2"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="2" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="2" latency="2"/>
+    </states>
+    <states id="24">
+      <operations id="61" stage="1" latency="2"/>
+      <operations id="63" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="2" latency="2"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="2" latency="2"/>
+    </states>
+    <states id="25">
+      <operations id="65" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="2"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="2" latency="2"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="2" latency="2"/>
+    </states>
+    <states id="26">
+      <operations id="69" stage="1" latency="2"/>
+      <operations id="71" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="2" latency="2"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="2" latency="2"/>
+    </states>
+    <states id="27">
+      <operations id="73" stage="1" latency="2"/>
+      <operations id="75" stage="1" latency="2"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="2" latency="2"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="2" latency="2"/>
+    </states>
+    <states id="28">
+      <operations id="77" stage="1" latency="2"/>
+      <operations id="79" stage="1" latency="2"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="2" latency="2"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="2" latency="2"/>
+    </states>
+    <states id="29">
+      <operations id="81" stage="1" latency="2"/>
+      <operations id="83" stage="1" latency="2"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="2" latency="2"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="2" latency="2"/>
+    </states>
+    <states id="30">
+      <operations id="85" stage="1" latency="2"/>
+      <operations id="87" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="2" latency="2"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="2" latency="2"/>
+    </states>
+    <states id="31">
+      <operations id="89" stage="1" latency="2"/>
+      <operations id="91" stage="1" latency="2"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="2" latency="2"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="2" latency="2"/>
+    </states>
+    <states id="32">
+      <operations id="93" stage="1" latency="2"/>
+      <operations id="95" stage="1" latency="2"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="2" latency="2"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="2" latency="2"/>
+    </states>
+    <states id="33">
+      <operations id="97" stage="1" latency="2"/>
+      <operations id="99" stage="1" latency="2"/>
+      <operations id="100" stage="2" latency="2"/>
+    </states>
+    <states id="34">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="cnn_top" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="114862" mMaxLatency="114862">
+      <basicBlocks>102</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

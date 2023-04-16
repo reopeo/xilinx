@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 22 16:35:20 2022
+# Process ID: 15992
+# Current directory: /home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1
+# Command line: vivado -log design_1_cnn_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cnn_top_0_0.tcl
+# Log file: /home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/design_1_cnn_top_0_0.vds
+# Journal file: /home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/vivado.jou
+# Running On: FRONTIER, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 6, Host memory: 33579 MB
+#-----------------------------------------------------------
+source design_1_cnn_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/reon/work/xilinx/cnn_ip/solution2/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cnn_top_0_0
+Command: synth_design -top design_1_cnn_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16193
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2451.551 ; gain = 366.832 ; free physical = 13380 ; free virtual = 18820
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1710.527; parent = 1565.345; children = 145.183
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3454.090; parent = 2462.461; children = 991.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_cnn_top_0_0' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/synth/design_1_cnn_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla1_i_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla1_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla1_i_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla1_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla104_i_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla104_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla104_i_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla104_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_vla166_i_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla166_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_vla166_i_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_vla166_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_x_assign_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_x_assign_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_x_assign_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_x_assign_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_x_assign_2_RAM_AUTO_1R1W' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_x_assign_2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_x_assign_2_RAM_AUTO_1R1W' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_x_assign_2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_flow_control_loop_pipe_sequential_init' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_flow_control_loop_pipe_sequential_init' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_maxpool2d_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_maxpool2d_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_maxpool2d_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_maxpool2d_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_conv2d_2' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_conv2d_2' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_14' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_14.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_14' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_14.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_maxpool2d' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_maxpool2d.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_maxpool2d' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_maxpool2d.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized0' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized0' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized2' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized2' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized3' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized3' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized4' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized4' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized5' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized5' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized6' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized6' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized7' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized7' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_control_s_axi_ram__parameterized8' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi_ram__parameterized8' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1109]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:583]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_control_s_axi' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/ip/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/ip/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/ip/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/ip/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/ip/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/ip/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_top' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cnn_top_0_0' (0#1) [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/synth/design_1_cnn_top_0_0.v:53]
+WARNING: [Synth 8-3848] Net q0 in module/entity cnn_top_control_s_axi_ram__parameterized4 does not have driver. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:1122]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:670]
+WARNING: [Synth 8-3848] Net int_y_write in module/entity cnn_top_control_s_axi does not have driver. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_control_s_axi.v:247]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[12] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[11] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[10] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[9] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[8] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[7] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[6] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[5] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[4] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[3] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[2] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[1] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tuser[0] in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tlast in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tready in module floating_point_v7_1_15_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2677.551 ; gain = 592.832 ; free physical = 13837 ; free virtual = 19143
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 145.183
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3669.184; parent = 2677.555; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2695.363 ; gain = 610.645 ; free physical = 13821 ; free virtual = 19137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 145.183
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3686.996; parent = 2695.367; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2695.363 ; gain = 610.645 ; free physical = 13826 ; free virtual = 19146
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 145.183
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3686.996; parent = 2695.367; children = 991.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2701.301 ; gain = 0.000 ; free physical = 13765 ; free virtual = 19085
+INFO: [Netlist 29-17] Analyzing 361 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/constraints/cnn_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ip/design_1_cnn_top_0_0/constraints/cnn_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2824.113 ; gain = 0.000 ; free physical = 13589 ; free virtual = 18905
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDE => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.2 . Memory (MB): peak = 2824.113 ; gain = 0.000 ; free physical = 13577 ; free virtual = 18892
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 13785 ; free virtual = 19075
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 149.276
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 13790 ; free virtual = 19080
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 149.339
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 13785 ; free virtual = 19074
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 149.339
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_reg_1961_pp0_iter6_reg_reg' and it is trimmed from '3' to '2' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:926]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_reg_1961_pp0_iter5_reg_reg' and it is trimmed from '3' to '2' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:925]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_reg_1961_pp0_iter4_reg_reg' and it is trimmed from '3' to '2' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:924]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_reg_1961_pp0_iter3_reg_reg' and it is trimmed from '3' to '2' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:923]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_reg_1961_pp0_iter2_reg_reg' and it is trimmed from '3' to '2' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:922]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_30_reg_1961_reg' and it is trimmed from '3' to '2' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_1.v:911]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_2_reg_5549_pp0_iter5_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:2220]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_2_reg_5549_pp0_iter4_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:2219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_2_reg_5549_pp0_iter3_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:2218]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_2_reg_5549_pp0_iter2_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:2217]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_2_reg_5549_pp0_iter1_reg_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:2216]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln31_2_reg_5549_reg' and it is trimmed from '4' to '3' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_conv2d_2.v:2460]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln73_reg_394_pp0_iter3_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.v:366]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln73_reg_394_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.v:365]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln73_2_reg_339_pp0_iter1_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.v:364]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_pp0_iter3_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15.v:219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_pp0_iter2_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15.v:218]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_pp0_iter1_reg_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15.v:210]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_5_cast_reg_166_reg' and it is trimmed from '6' to '5' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15.v:227]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cnn_top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cnn_top_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cnn_top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cnn_top_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 16944 ; free virtual = 22221
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1881.549; parent = 1736.488; children = 170.469
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1:/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U84/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U84/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U84/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U84/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6ns_9ns_9ns_14_4_1_U35/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '14' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6ns_9ns_9ns_14_4_1_U35/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '14' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_6ns_9ns_9ns_14_4_1_U35/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '14' bits. [/home/reon/work/xilinx/cnn_zq/cnn_zq.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog/cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.v:31]
+WARNING: [Synth 8-6841] Block RAM (int_weight2/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module cnn_top_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module cnn_top_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18941 ; free virtual = 24207
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2004.846; parent = 1795.432; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18798 ; free virtual = 24064
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2120.029; parent = 1910.615; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18803 ; free virtual = 24063
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2140.493; parent = 1931.088; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3783.730; parent = 2792.102; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/vla73_i_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_assign_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_assign_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_bias2/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight0/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_x/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_x/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight3/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_weight2/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18785 ; free virtual = 24045
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2153.599; parent = 1944.215; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18799 ; free virtual = 24059
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2156.849; parent = 1947.465; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18799 ; free virtual = 24059
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2156.849; parent = 1947.465; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18791 ; free virtual = 24051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2158.169; parent = 1948.785; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18791 ; free virtual = 24051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2158.169; parent = 1948.785; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18791 ; free virtual = 24051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2158.169; parent = 1948.785; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18791 ; free virtual = 24051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2158.169; parent = 1948.785; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_159                           | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_113           | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                               | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0               | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1               | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2               | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3               | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1_DSP48_0 | (C'+(A'*B)')'   | 6      | 9      | 9      | -      | 14     | 1    | 0    | 0    | -    | -     | 1    | 1    | 
++----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   239|
+|2     |DSP48E1  |     8|
+|8     |LUT1     |   101|
+|9     |LUT2     |   563|
+|10    |LUT3     |  2379|
+|11    |LUT4     |  1264|
+|12    |LUT5     |  1302|
+|13    |LUT6     |  4239|
+|14    |MUXCY    |   300|
+|15    |MUXF7    |   106|
+|16    |RAM16X1D |   128|
+|17    |RAMB18E1 |     2|
+|18    |RAMB36E1 |    47|
+|27    |SRL16E   |  1019|
+|28    |XORCY    |    42|
+|29    |FDE      |     6|
+|30    |FDRE     | 12193|
+|31    |FDSE     |   123|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18791 ; free virtual = 24051
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2158.169; parent = 1948.785; children = 209.414
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3810.957; parent = 2819.328; children = 991.629
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 2824.113 ; gain = 610.645 ; free physical = 18850 ; free virtual = 24110
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2824.113 ; gain = 739.395 ; free physical = 18850 ; free virtual = 24110
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2824.113 ; gain = 0.000 ; free physical = 18956 ; free virtual = 24216
+INFO: [Netlist 29-17] Analyzing 878 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2843.336 ; gain = 0.000 ; free physical = 18892 ; free virtual = 24153
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 218 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 84 instances
+  FDE => FDRE: 6 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 128 instances
+
+Synth Design complete, checksum: a64a866c
+INFO: [Common 17-83] Releasing license: Synthesis
+157 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 2843.336 ; gain = 1094.180 ; free physical = 19153 ; free virtual = 24414
+INFO: [Common 17-1381] The checkpoint '/home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/design_1_cnn_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cnn_top_0_0, cache-ID = 37a85819a1aaf6b3
+INFO: [Coretcl 2-1174] Renamed 288 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/reon/work/xilinx/cnn_zq/cnn_zq.runs/design_1_cnn_top_0_0_synth_1/design_1_cnn_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_cnn_top_0_0_utilization_synth.rpt -pb design_1_cnn_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 22 16:37:01 2022...

@@ -1,0 +1,44 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_conv2d.cpp
+   Compiling (apcc) conv2d.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 21:49:54 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/conv2d_ip/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/550431671367794474812
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.55 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 1.56 seconds; peak allocated memory: 98.973 MB.
+   Compiling (apcc) conv2d_tb.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Sun Dec 18 21:49:57 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/conv2d_ip/solution2/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from /home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:1:
+/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:18:8: warning: incompatible pointer types passing 'const float [3][10][10]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+conv2d(x, weight, bias, 10, 10, 3, 3, 3, y);
+       ^
+/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:15:35: note: passing argument to parameter here
+void apatb_conv2d_sw(const float *, const float *, const float *, int, int, int, int, int, float *);
+                                  ^
+/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:18:11: warning: incompatible pointer types passing 'const float [3][3][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+conv2d(x, weight, bias, 10, 10, 3, 3, 3, y);
+          ^~~~~~
+/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:15:50: note: passing argument to parameter here
+void apatb_conv2d_sw(const float *, const float *, const float *, int, int, int, int, int, float *);
+                                                 ^
+/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:18:42: warning: incompatible pointer types passing 'float [3][10][10]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+conv2d(x, weight, bias, 10, 10, 3, 3, 3, y);
+                                         ^
+/home/reon/work/xilinx/conv2d_ip/src/conv2d_tb.c:15:99: note: passing argument to parameter here
+void apatb_conv2d_sw(const float *, const float *, const float *, int, int, int, int, int, float *);
+                                                                                                  ^
+3 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/551001671367797199986
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.53 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 1.55 seconds; peak allocated memory: 98.969 MB.
+   Compiling apatb_conv2d_ir.ll
+   Generating cosim.tv.exe

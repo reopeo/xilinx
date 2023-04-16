@@ -1,0 +1,1131 @@
+INFO-FLOW: Workspace /home/reon/work/xilinx/cnn_ip/solution1 opened at Thu Dec 22 16:27:10 JST 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2022.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.49 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.59 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Command   open_solution done; 1.65 sec.
+Execute   set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute     create_platform xc7z020clg400-1 -board  
+Execute     source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.02 seconds; current allocated memory: 756.324 MB.
+INFO: [HLS 200-10] Analyzing design file 'cnn_ip/src/cnn.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling cnn_ip/src/cnn.c as C
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang cnn_ip/src/cnn.c -foptimization-record-file=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.c.clang.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.c.clang.err.log 
+Command       ap_eval done; 0.12 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute       set_directive_top cnn_top -name=cnn_top 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/clang.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.17 sec.
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' (cnn_ip/src/cnn.c:25:6)
+INFO: [HLS 207-4414] passing argument to parameter 'x' here (cnn_ip/src/cnn.c:11:23)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[1][3][3]' to parameter of type 'const float *' (cnn_ip/src/cnn.c:25:9)
+INFO: [HLS 207-4414] passing argument to parameter 'weight0' here (cnn_ip/src/cnn.c:12:16)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[4][3][3]' to parameter of type 'const float *' (cnn_ip/src/cnn.c:25:25)
+INFO: [HLS 207-4414] passing argument to parameter 'weight1' here (cnn_ip/src/cnn.c:13:16)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[392]' to parameter of type 'const float *' (cnn_ip/src/cnn.c:25:41)
+INFO: [HLS 207-4414] passing argument to parameter 'weight2' here (cnn_ip/src/cnn.c:14:16)
+WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[32]' to parameter of type 'const float *' (cnn_ip/src/cnn.c:25:57)
+INFO: [HLS 207-4414] passing argument to parameter 'weight3' here (cnn_ip/src/cnn.c:15:16)
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c std=gnu99 -target fpga  -directive=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/.systemc_flag -fix-errors /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c std=gnu99 -target fpga  -directive=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/all.directive.json -fix-errors /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c std=gnu99 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.clang-tidy.loop-label.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.clang-tidy.loop-label.err.log 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.xilinx-dataflow-lawyer.diag.yml /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.xilinx-dataflow-lawyer.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.xilinx-dataflow-lawyer.err.log 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.clang.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.pp.0.c.clang.err.log 
+Command       ap_eval done; 0.12 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.33 seconds. CPU system time: 0.3 seconds. Elapsed time: 0.64 seconds; current allocated memory: 756.430 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.g.bc"  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn.g.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2022.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2022.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2022.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2022.2/lnx64/lib/libhlsmc++_39.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 1.71 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.71 sec.
+Execute       run_link_or_opt -opt -out /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=cnn_top -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=cnn_top -reflow-float-conversion -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 0.64 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.64 sec.
+Execute       run_link_or_opt -out /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2022.2/lnx64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2022.2/lnx64/lib/libfloatconversion_39.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=cnn_top 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=cnn_top -mllvm -hls-db-dir -mllvm /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-assume-no-address-wrap=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 0.4 sec.
+INFO: [HLS 214-131] Inlining function 'cnn' into 'cnn_top' (cnn_ip/src/cnn.c:25:2)
+INFO: [HLS 214-178] Inlining function 'relu' into 'cnn_top' (cnn_ip/src/cnn.c:24:0)
+INFO: [HLS 214-178] Inlining function 'linear' into 'cnn_top' (cnn_ip/src/cnn.c:24:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (cnn_ip/src/cnn.c:78:27)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.57 seconds. CPU system time: 0.38 seconds. Elapsed time: 2.96 seconds; current allocated memory: 757.277 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 757.277 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top cnn_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.0.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 1.43 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.42 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.43 seconds; current allocated memory: 763.727 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.1.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 1.51 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.51 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.53 seconds; current allocated memory: 765.555 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.g.1.bc to /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.1.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_90_3' (cnn_ip/src/cnn.c:90) in function 'maxpool2d.1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_90_3' (cnn_ip/src/cnn.c:90) in function 'maxpool2d' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_35_3' (cnn_ip/src/cnn.c:35) in function 'conv2d.2' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_35_3' (cnn_ip/src/cnn.c:35) in function 'conv2d.1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_110_1' (cnn_ip/src/cnn.c:110) in function 'cnn_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_110_1' (cnn_ip/src/cnn.c:110) in function 'cnn_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_76_2' (cnn_ip/src/cnn.c:75) in function 'cnn_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_110_1' (cnn_ip/src/cnn.c:110) in function 'cnn_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_73_1' (cnn_ip/src/cnn.c:73) in function 'cnn_top' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_73_1' (cnn_ip/src/cnn.c:73) in function 'cnn_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_35_3' (cnn_ip/src/cnn.c:35) in function 'conv2d.2' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_90_3' (cnn_ip/src/cnn.c:90) in function 'maxpool2d' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_90_3' (cnn_ip/src/cnn.c:90) in function 'maxpool2d.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_35_3' (cnn_ip/src/cnn.c:35) in function 'conv2d.1' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_76_2' (cnn_ip/src/cnn.c:75) in function 'cnn_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_39_4' (cnn_ip/src/cnn.c:37) in function 'conv2d.2' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_41_5' (cnn_ip/src/cnn.c:37) in function 'conv2d.2' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_43_6' (cnn_ip/src/cnn.c:37) in function 'conv2d.2' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_94_4' (cnn_ip/src/cnn.c:92) in function 'maxpool2d' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_96_5' (cnn_ip/src/cnn.c:92) in function 'maxpool2d' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_94_4' (cnn_ip/src/cnn.c:92) in function 'maxpool2d.1' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_96_5' (cnn_ip/src/cnn.c:92) in function 'maxpool2d.1' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_39_4' (cnn_ip/src/cnn.c:37) in function 'conv2d.1' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_41_5' (cnn_ip/src/cnn.c:37) in function 'conv2d.1' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_43_6' (cnn_ip/src/cnn.c:37) in function 'conv2d.1' completely with a factor of 3.
+Command         transform done; 1.66 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn_ip/src/cnn.c:35:43) to (cnn_ip/src/cnn.c:35:30) in function 'conv2d.2'... converting 65 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn_ip/src/cnn.c:35:43) to (cnn_ip/src/cnn.c:35:30) in function 'conv2d.1'... converting 17 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.73 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.74 seconds; current allocated memory: 787.703 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.2.bc -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_88_2' (cnn_ip/src/cnn.c:88:39) in function 'maxpool2d.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_86_1' (cnn_ip/src/cnn.c:86:31) in function 'maxpool2d.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_88_2' (cnn_ip/src/cnn.c:88:39) in function 'maxpool2d'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_86_1' (cnn_ip/src/cnn.c:86:31) in function 'maxpool2d'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_33_2' (cnn_ip/src/cnn.c:33:39) in function 'conv2d.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_31_1' (cnn_ip/src/cnn.c:31:35) in function 'conv2d.2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_33_2' (cnn_ip/src/cnn.c:33:39) in function 'conv2d.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_31_1' (cnn_ip/src/cnn.c:31:35) in function 'conv2d.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_73_1' (cnn_ip/src/cnn.c:73:35) in function 'cnn_top'.
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (cnn_ip/src/cnn.c:102:92)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (cnn_ip/src/cnn.c:65:51)
+INFO: [HLS 200-472] Inferring partial write operation for 'vla42.i' (cnn_ip/src/cnn.c:112:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'x.assign' (cnn_ip/src/cnn.c:80:14)
+Command         transform done; 1.19 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.15 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.19 seconds; current allocated memory: 875.188 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 5.89 sec.
+Command     elaborate done; 9.49 sec.
+Execute     ap_eval exec zip -j /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'cnn_top' ...
+Execute       ap_set_top_model cnn_top 
+WARNING: [SYN 201-103] Legalizing function name 'conv2d.1' to 'conv2d_1'.
+WARNING: [SYN 201-103] Legalizing function name 'maxpool2d.1' to 'maxpool2d_1'.
+WARNING: [SYN 201-103] Legalizing function name 'conv2d.2' to 'conv2d_2'.
+Execute       get_model_list cnn_top -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model cnn_top 
+Execute       preproc_iomode -model cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       preproc_iomode -model cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       preproc_iomode -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       preproc_iomode -model maxpool2d 
+Execute       preproc_iomode -model cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       preproc_iomode -model conv2d.2 
+Execute       preproc_iomode -model maxpool2d.1 
+Execute       preproc_iomode -model cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       preproc_iomode -model conv2d.1 
+Execute       get_model_list cnn_top -filter all-wo-channel 
+INFO-FLOW: Model list for configure: conv2d.1 cnn_top_Pipeline_VITIS_LOOP_110_1 maxpool2d.1 conv2d.2 cnn_top_Pipeline_VITIS_LOOP_110_14 maxpool2d cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 cnn_top_Pipeline_VITIS_LOOP_110_15 cnn_top_Pipeline_VITIS_LOOP_73_1 cnn_top
+INFO-FLOW: Configuring Module : conv2d.1 ...
+Execute       set_default_model conv2d.1 
+Execute       apply_spec_resource_limit conv2d.1 
+INFO-FLOW: Configuring Module : cnn_top_Pipeline_VITIS_LOOP_110_1 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       apply_spec_resource_limit cnn_top_Pipeline_VITIS_LOOP_110_1 
+INFO-FLOW: Configuring Module : maxpool2d.1 ...
+Execute       set_default_model maxpool2d.1 
+Execute       apply_spec_resource_limit maxpool2d.1 
+INFO-FLOW: Configuring Module : conv2d.2 ...
+Execute       set_default_model conv2d.2 
+Execute       apply_spec_resource_limit conv2d.2 
+INFO-FLOW: Configuring Module : cnn_top_Pipeline_VITIS_LOOP_110_14 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       apply_spec_resource_limit cnn_top_Pipeline_VITIS_LOOP_110_14 
+INFO-FLOW: Configuring Module : maxpool2d ...
+Execute       set_default_model maxpool2d 
+Execute       apply_spec_resource_limit maxpool2d 
+INFO-FLOW: Configuring Module : cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       apply_spec_resource_limit cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+INFO-FLOW: Configuring Module : cnn_top_Pipeline_VITIS_LOOP_110_15 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       apply_spec_resource_limit cnn_top_Pipeline_VITIS_LOOP_110_15 
+INFO-FLOW: Configuring Module : cnn_top_Pipeline_VITIS_LOOP_73_1 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       apply_spec_resource_limit cnn_top_Pipeline_VITIS_LOOP_73_1 
+INFO-FLOW: Configuring Module : cnn_top ...
+Execute       set_default_model cnn_top 
+Execute       apply_spec_resource_limit cnn_top 
+INFO-FLOW: Model list for preprocess: conv2d.1 cnn_top_Pipeline_VITIS_LOOP_110_1 maxpool2d.1 conv2d.2 cnn_top_Pipeline_VITIS_LOOP_110_14 maxpool2d cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 cnn_top_Pipeline_VITIS_LOOP_110_15 cnn_top_Pipeline_VITIS_LOOP_73_1 cnn_top
+INFO-FLOW: Preprocessing Module: conv2d.1 ...
+Execute       set_default_model conv2d.1 
+Execute       cdfg_preprocess -model conv2d.1 
+Execute       rtl_gen_preprocess conv2d.1 
+INFO-FLOW: Preprocessing Module: cnn_top_Pipeline_VITIS_LOOP_110_1 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       cdfg_preprocess -model cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_110_1 
+INFO-FLOW: Preprocessing Module: maxpool2d.1 ...
+Execute       set_default_model maxpool2d.1 
+Execute       cdfg_preprocess -model maxpool2d.1 
+Execute       rtl_gen_preprocess maxpool2d.1 
+INFO-FLOW: Preprocessing Module: conv2d.2 ...
+Execute       set_default_model conv2d.2 
+Execute       cdfg_preprocess -model conv2d.2 
+Execute       rtl_gen_preprocess conv2d.2 
+INFO-FLOW: Preprocessing Module: cnn_top_Pipeline_VITIS_LOOP_110_14 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       cdfg_preprocess -model cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_110_14 
+INFO-FLOW: Preprocessing Module: maxpool2d ...
+Execute       set_default_model maxpool2d 
+Execute       cdfg_preprocess -model maxpool2d 
+Execute       rtl_gen_preprocess maxpool2d 
+INFO-FLOW: Preprocessing Module: cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       cdfg_preprocess -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+INFO-FLOW: Preprocessing Module: cnn_top_Pipeline_VITIS_LOOP_110_15 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       cdfg_preprocess -model cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_110_15 
+INFO-FLOW: Preprocessing Module: cnn_top_Pipeline_VITIS_LOOP_73_1 ...
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       cdfg_preprocess -model cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_73_1 
+INFO-FLOW: Preprocessing Module: cnn_top ...
+Execute       set_default_model cnn_top 
+Execute       cdfg_preprocess -model cnn_top 
+Execute       rtl_gen_preprocess cnn_top 
+INFO-FLOW: Model list for synthesis: conv2d.1 cnn_top_Pipeline_VITIS_LOOP_110_1 maxpool2d.1 conv2d.2 cnn_top_Pipeline_VITIS_LOOP_110_14 maxpool2d cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 cnn_top_Pipeline_VITIS_LOOP_110_15 cnn_top_Pipeline_VITIS_LOOP_73_1 cnn_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model conv2d.1 
+Execute       schedule -model conv2d.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_1' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight0_load_7', cnn_ip/src/cnn.c:31) on array 'weight0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'weight0'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_1' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight0_load_5', cnn_ip/src/cnn.c:31) on array 'weight0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'weight0'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_1' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight0_load_4', cnn_ip/src/cnn.c:31) on array 'weight0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'weight0'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_1' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight0_load_2', cnn_ip/src/cnn.c:31) on array 'weight0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'weight0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 68, loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.39 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.44 seconds; current allocated memory: 881.309 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.26 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2d.1.
+Execute       set_default_model conv2d.1 
+Execute       bind -model conv2d.1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.15 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 881.309 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.33 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.bind.adb -f 
+INFO-FLOW: Finish binding conv2d.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top_Pipeline_VITIS_LOOP_110_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       schedule -model cnn_top_Pipeline_VITIS_LOOP_110_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'vla42_i'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_110_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_110_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.36 seconds. CPU system time: 0 seconds. Elapsed time: 0.37 seconds; current allocated memory: 881.309 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.sched.adb -f 
+INFO-FLOW: Finish scheduling cnn_top_Pipeline_VITIS_LOOP_110_1.
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       bind -model cnn_top_Pipeline_VITIS_LOOP_110_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 881.309 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.bind.adb -f 
+INFO-FLOW: Finish binding cnn_top_Pipeline_VITIS_LOOP_110_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxpool2d_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxpool2d.1 
+Execute       schedule -model maxpool2d.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'y'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'x'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 13, loop 'VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 882.488 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.sched.adb -f 
+INFO-FLOW: Finish scheduling maxpool2d.1.
+Execute       set_default_model maxpool2d.1 
+Execute       bind -model maxpool2d.1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 882.488 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.18 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.bind.adb -f 
+INFO-FLOW: Finish binding maxpool2d.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model conv2d.2 
+Execute       schedule -model conv2d.2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'x'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_34', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_32', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_31', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_29', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_16', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_9', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 15). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d_2' (loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'): Unable to schedule 'load' operation ('weight1_load_6', cnn_ip/src/cnn.c:31) on array 'weight1' due to limited memory ports (II = 17). Please consider using a memory core with more ports or partitioning the array 'weight1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 18, Depth = 226, loop 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.6 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.77 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.8 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.76 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.sched.adb -f 
+INFO-FLOW: Finish scheduling conv2d.2.
+Execute       set_default_model conv2d.2 
+Execute       bind -model conv2d.2 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.49 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.28 seconds. CPU system time: 0 seconds. Elapsed time: 1.28 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.94 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.bind.adb -f 
+INFO-FLOW: Finish binding conv2d.2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top_Pipeline_VITIS_LOOP_110_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       schedule -model cnn_top_Pipeline_VITIS_LOOP_110_14 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'vla135_i'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_110_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_110_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.sched.adb -f 
+INFO-FLOW: Finish scheduling cnn_top_Pipeline_VITIS_LOOP_110_14.
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       bind -model cnn_top_Pipeline_VITIS_LOOP_110_14 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.bind.adb -f 
+INFO-FLOW: Finish binding cnn_top_Pipeline_VITIS_LOOP_110_14.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxpool2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxpool2d 
+Execute       schedule -model maxpool2d 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'x'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 12, loop 'VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.11 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.sched.adb -f 
+INFO-FLOW: Finish scheduling maxpool2d.
+Execute       set_default_model maxpool2d 
+Execute       bind -model maxpool2d 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.19 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.bind.adb -f 
+INFO-FLOW: Finish binding maxpool2d.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       schedule -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln73) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'.
+WARNING: [HLS 200-880] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' (loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'fadd' operation ('sum', cnn_ip/src/cnn.c:78) and 'select' operation ('select_ln73_1', cnn_ip/src/cnn.c:73).
+WARNING: [HLS 200-880] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' (loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'fadd' operation ('sum', cnn_ip/src/cnn.c:78) and 'select' operation ('select_ln73_1', cnn_ip/src/cnn.c:73).
+WARNING: [HLS 200-880] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' (loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'fadd' operation ('sum', cnn_ip/src/cnn.c:78) and 'select' operation ('select_ln73_1', cnn_ip/src/cnn.c:73).
+WARNING: [HLS 200-880] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' (loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'fadd' operation ('sum', cnn_ip/src/cnn.c:78) and 'select' operation ('select_ln73_1', cnn_ip/src/cnn.c:73).
+WARNING: [HLS 200-880] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' (loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between 'fadd' operation ('sum', cnn_ip/src/cnn.c:78) and 'select' operation ('select_ln73_1', cnn_ip/src/cnn.c:73).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 6, Depth = 20, loop 'VITIS_LOOP_73_1_VITIS_LOOP_76_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.sched.adb -f 
+INFO-FLOW: Finish scheduling cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       bind -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.bind.adb -f 
+INFO-FLOW: Finish binding cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top_Pipeline_VITIS_LOOP_110_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       schedule -model cnn_top_Pipeline_VITIS_LOOP_110_15 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_110_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_110_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.sched.adb -f 
+INFO-FLOW: Finish scheduling cnn_top_Pipeline_VITIS_LOOP_110_15.
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       bind -model cnn_top_Pipeline_VITIS_LOOP_110_15 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.bind.adb -f 
+INFO-FLOW: Finish binding cnn_top_Pipeline_VITIS_LOOP_110_15.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top_Pipeline_VITIS_LOOP_73_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       schedule -model cnn_top_Pipeline_VITIS_LOOP_73_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_73_1'.
+WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_1', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'weight3'.
+WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_3', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'weight3'.
+WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_5', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'weight3'.
+WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_7', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'weight3'.
+WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_21', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'weight3'.
+WARNING: [HLS 200-885] The II Violation in module 'cnn_top_Pipeline_VITIS_LOOP_73_1' (loop 'VITIS_LOOP_73_1'): Unable to schedule 'load' operation ('weight3_load_29', cnn_ip/src/cnn.c:78) on array 'weight3' due to limited memory ports (II = 15). Please consider using a memory core with more ports or partitioning the array 'weight3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 16, Depth = 172, loop 'VITIS_LOOP_73_1'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.66 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.69 seconds. CPU system time: 0 seconds. Elapsed time: 0.69 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.56 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.sched.adb -f 
+INFO-FLOW: Finish scheduling cnn_top_Pipeline_VITIS_LOOP_73_1.
+Execute       set_default_model cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       bind -model cnn_top_Pipeline_VITIS_LOOP_73_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.21 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.77 seconds. CPU system time: 0 seconds. Elapsed time: 0.78 seconds; current allocated memory: 895.113 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.3 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.bind.adb -f 
+INFO-FLOW: Finish binding cnn_top_Pipeline_VITIS_LOOP_73_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model cnn_top 
+Execute       schedule -model cnn_top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.39 seconds. CPU system time: 0 seconds. Elapsed time: 0.39 seconds; current allocated memory: 895.293 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.sched.adb -f 
+INFO-FLOW: Finish scheduling cnn_top.
+Execute       set_default_model cnn_top 
+Execute       bind -model cnn_top 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.41 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.48 seconds. CPU system time: 0 seconds. Elapsed time: 0.48 seconds; current allocated memory: 895.293 MB.
+Execute       syn_report -verbosereport -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 1.09 sec.
+Execute       db_write -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.bind.adb -f 
+INFO-FLOW: Finish binding cnn_top.
+Execute       get_model_list cnn_top -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess conv2d.1 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       rtl_gen_preprocess maxpool2d.1 
+Execute       rtl_gen_preprocess conv2d.2 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       rtl_gen_preprocess maxpool2d 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       rtl_gen_preprocess cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       rtl_gen_preprocess cnn_top 
+INFO-FLOW: Model list for RTL generation: conv2d.1 cnn_top_Pipeline_VITIS_LOOP_110_1 maxpool2d.1 conv2d.2 cnn_top_Pipeline_VITIS_LOOP_110_14 maxpool2d cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 cnn_top_Pipeline_VITIS_LOOP_110_15 cnn_top_Pipeline_VITIS_LOOP_73_1 cnn_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model conv2d.1 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2d_1' pipeline 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.17 seconds; current allocated memory: 897.934 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl conv2d.1 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_conv2d_1 
+Execute       gen_rtl conv2d.1 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_conv2d_1 
+Execute       syn_report -csynth -model conv2d.1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/conv2d_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.16 sec.
+Execute       syn_report -rtlxml -model conv2d.1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/conv2d_1_csynth.xml 
+Execute       syn_report -verbosereport -model conv2d.1 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.4 sec.
+Execute       db_write -model conv2d.1 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.adb 
+Execute       db_write -model conv2d.1 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info conv2d.1 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top_Pipeline_VITIS_LOOP_110_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model cnn_top_Pipeline_VITIS_LOOP_110_1 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_top_Pipeline_VITIS_LOOP_110_1' pipeline 'VITIS_LOOP_110_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top_Pipeline_VITIS_LOOP_110_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.82 seconds. CPU system time: 0 seconds. Elapsed time: 0.81 seconds; current allocated memory: 903.469 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_110_1 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_110_1 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_1 
+Execute       syn_report -csynth -model cnn_top_Pipeline_VITIS_LOOP_110_1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_110_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model cnn_top_Pipeline_VITIS_LOOP_110_1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_110_1_csynth.xml 
+Execute       syn_report -verbosereport -model cnn_top_Pipeline_VITIS_LOOP_110_1 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_110_1 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.adb 
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_110_1 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info cnn_top_Pipeline_VITIS_LOOP_110_1 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxpool2d_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxpool2d.1 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxpool2d_1' pipeline 'VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxpool2d_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 905.828 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxpool2d.1 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_maxpool2d_1 
+Execute       gen_rtl maxpool2d.1 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_maxpool2d_1 
+Execute       syn_report -csynth -model maxpool2d.1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/maxpool2d_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.11 sec.
+Execute       syn_report -rtlxml -model maxpool2d.1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/maxpool2d_1_csynth.xml 
+Execute       syn_report -verbosereport -model maxpool2d.1 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.23 sec.
+Execute       db_write -model maxpool2d.1 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.adb 
+Execute       db_write -model maxpool2d.1 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxpool2d.1 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model conv2d.2 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2d_2' pipeline 'VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_2'.
+Command       create_rtl_model done; 0.18 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.67 seconds. CPU system time: 0 seconds. Elapsed time: 0.68 seconds; current allocated memory: 917.051 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl conv2d.2 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_conv2d_2 
+Execute       gen_rtl conv2d.2 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_conv2d_2 
+Execute       syn_report -csynth -model conv2d.2 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/conv2d_2_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.41 sec.
+Execute       syn_report -rtlxml -model conv2d.2 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/conv2d_2_csynth.xml 
+Command       syn_report done; 0.21 sec.
+Execute       syn_report -verbosereport -model conv2d.2 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 1.16 sec.
+Execute       db_write -model conv2d.2 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.adb 
+Command       db_write done; 0.24 sec.
+Execute       db_write -model conv2d.2 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info conv2d.2 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top_Pipeline_VITIS_LOOP_110_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model cnn_top_Pipeline_VITIS_LOOP_110_14 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_top_Pipeline_VITIS_LOOP_110_14' pipeline 'VITIS_LOOP_110_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top_Pipeline_VITIS_LOOP_110_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.21 seconds; current allocated memory: 933.238 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_110_14 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_110_14 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_14 
+Execute       syn_report -csynth -model cnn_top_Pipeline_VITIS_LOOP_110_14 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_110_14_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model cnn_top_Pipeline_VITIS_LOOP_110_14 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_110_14_csynth.xml 
+Execute       syn_report -verbosereport -model cnn_top_Pipeline_VITIS_LOOP_110_14 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_110_14 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.adb 
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_110_14 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info cnn_top_Pipeline_VITIS_LOOP_110_14 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxpool2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxpool2d -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxpool2d' pipeline 'VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxpool2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 933.238 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxpool2d -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_maxpool2d 
+Execute       gen_rtl maxpool2d -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_maxpool2d 
+Execute       syn_report -csynth -model maxpool2d -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/maxpool2d_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.12 sec.
+Execute       syn_report -rtlxml -model maxpool2d -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/maxpool2d_csynth.xml 
+Execute       syn_report -verbosereport -model maxpool2d -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.25 sec.
+Execute       db_write -model maxpool2d -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.adb 
+Execute       db_write -model maxpool2d -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxpool2d -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2' pipeline 'VITIS_LOOP_73_1_VITIS_LOOP_76_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_9ns_9ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.54 seconds; current allocated memory: 936.676 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+Execute       syn_report -csynth -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_csynth.xml 
+Execute       syn_report -verbosereport -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.adb 
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top_Pipeline_VITIS_LOOP_110_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model cnn_top_Pipeline_VITIS_LOOP_110_15 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_top_Pipeline_VITIS_LOOP_110_15' pipeline 'VITIS_LOOP_110_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top_Pipeline_VITIS_LOOP_110_15'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 939.383 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_110_15 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_110_15 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_110_15 
+Execute       syn_report -csynth -model cnn_top_Pipeline_VITIS_LOOP_110_15 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_110_15_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model cnn_top_Pipeline_VITIS_LOOP_110_15 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_110_15_csynth.xml 
+Execute       syn_report -verbosereport -model cnn_top_Pipeline_VITIS_LOOP_110_15 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_110_15 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.adb 
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_110_15 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info cnn_top_Pipeline_VITIS_LOOP_110_15 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top_Pipeline_VITIS_LOOP_73_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model cnn_top_Pipeline_VITIS_LOOP_73_1 -top_prefix cnn_top_ -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_top_Pipeline_VITIS_LOOP_73_1' pipeline 'VITIS_LOOP_73_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top_Pipeline_VITIS_LOOP_73_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 942.109 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_73_1 -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       gen_rtl cnn_top_Pipeline_VITIS_LOOP_73_1 -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top_cnn_top_Pipeline_VITIS_LOOP_73_1 
+Execute       syn_report -csynth -model cnn_top_Pipeline_VITIS_LOOP_73_1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_73_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model cnn_top_Pipeline_VITIS_LOOP_73_1 -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_Pipeline_VITIS_LOOP_73_1_csynth.xml 
+Execute       syn_report -verbosereport -model cnn_top_Pipeline_VITIS_LOOP_73_1 -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.34 sec.
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_73_1 -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.adb 
+Execute       db_write -model cnn_top_Pipeline_VITIS_LOOP_73_1 -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info cnn_top_Pipeline_VITIS_LOOP_73_1 -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model cnn_top -top_prefix  -sub_prefix cnn_top_ -mg_file /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/x' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/weight0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/bias0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/weight1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/bias1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/weight2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/bias2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/weight3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/bias3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top'.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_vla1_i_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_vla104_i_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_vla166_i_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_x_assign_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_x_assign_2_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.66 seconds. CPU system time: 0 seconds. Elapsed time: 0.66 seconds; current allocated memory: 949.516 MB.
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl cnn_top -istop -style xilinx -f -lang vhdl -o /home/reon/work/xilinx/cnn_ip/solution1/syn/vhdl/cnn_top 
+Execute       gen_rtl cnn_top -istop -style xilinx -f -lang vlog -o /home/reon/work/xilinx/cnn_ip/solution1/syn/verilog/cnn_top 
+Execute       syn_report -csynth -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/cnn_top_csynth.xml 
+Execute       syn_report -verbosereport -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 1.12 sec.
+Execute       db_write -model cnn_top -f -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.adb 
+Execute       db_write -model cnn_top -bindview -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info cnn_top -p /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top 
+Execute       export_constraint_db -f -tool general -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.constraint.tcl 
+Execute       syn_report -designview -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.design.xml 
+Command       syn_report done; 0.95 sec.
+Execute       syn_report -csynthDesign -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -wcfg -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model cnn_top -o /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.protoinst 
+Execute       sc_get_clocks cnn_top 
+Execute       sc_get_portdomain cnn_top 
+INFO-FLOW: Model list for RTL component generation: conv2d.1 cnn_top_Pipeline_VITIS_LOOP_110_1 maxpool2d.1 conv2d.2 cnn_top_Pipeline_VITIS_LOOP_110_14 maxpool2d cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 cnn_top_Pipeline_VITIS_LOOP_110_15 cnn_top_Pipeline_VITIS_LOOP_73_1 cnn_top
+INFO-FLOW: Handling components in module [conv2d_1] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [cnn_top_Pipeline_VITIS_LOOP_110_1] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxpool2d_1] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [conv2d_2] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [cnn_top_Pipeline_VITIS_LOOP_110_14] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxpool2d] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.compgen.tcl 
+INFO-FLOW: Found component cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1.
+INFO-FLOW: Append model cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [cnn_top_Pipeline_VITIS_LOOP_110_15] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [cnn_top_Pipeline_VITIS_LOOP_73_1] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.compgen.tcl 
+INFO-FLOW: Found component cnn_top_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [cnn_top] ... 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.compgen.tcl 
+INFO-FLOW: Found component cnn_top_fadd_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component cnn_top_fadd_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component cnn_top_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Found component cnn_top_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Found component cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1.
+INFO-FLOW: Append model cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO-FLOW: Found component cnn_top_vla1_i_RAM_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_vla1_i_RAM_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_vla104_i_RAM_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_vla104_i_RAM_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_vla166_i_RAM_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_vla166_i_RAM_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_x_assign_RAM_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_x_assign_RAM_AUTO_1R1W
+INFO-FLOW: Found component cnn_top_x_assign_2_RAM_AUTO_1R1W.
+INFO-FLOW: Append model cnn_top_x_assign_2_RAM_AUTO_1R1W
+INFO-FLOW: Append model conv2d_1
+INFO-FLOW: Append model cnn_top_Pipeline_VITIS_LOOP_110_1
+INFO-FLOW: Append model maxpool2d_1
+INFO-FLOW: Append model conv2d_2
+INFO-FLOW: Append model cnn_top_Pipeline_VITIS_LOOP_110_14
+INFO-FLOW: Append model maxpool2d
+INFO-FLOW: Append model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2
+INFO-FLOW: Append model cnn_top_Pipeline_VITIS_LOOP_110_15
+INFO-FLOW: Append model cnn_top_Pipeline_VITIS_LOOP_73_1
+INFO-FLOW: Append model cnn_top
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1 cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_flow_control_loop_pipe_sequential_init cnn_top_fadd_32ns_32ns_32_5_full_dsp_1 cnn_top_fadd_32ns_32ns_32_5_full_dsp_1 cnn_top_fmul_32ns_32ns_32_4_max_dsp_1 cnn_top_fmul_32ns_32ns_32_4_max_dsp_1 cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1 cnn_top_vla1_i_RAM_AUTO_1R1W cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W cnn_top_vla104_i_RAM_AUTO_1R1W cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W cnn_top_vla166_i_RAM_AUTO_1R1W cnn_top_x_assign_RAM_AUTO_1R1W cnn_top_x_assign_2_RAM_AUTO_1R1W conv2d_1 cnn_top_Pipeline_VITIS_LOOP_110_1 maxpool2d_1 conv2d_2 cnn_top_Pipeline_VITIS_LOOP_110_14 maxpool2d cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 cnn_top_Pipeline_VITIS_LOOP_110_15 cnn_top_Pipeline_VITIS_LOOP_73_1 cnn_top
+INFO-FLOW: Generating /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO-FLOW: To file: write model cnn_top_vla1_i_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_vla104_i_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_vla166_i_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_x_assign_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model cnn_top_x_assign_2_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model conv2d_1
+INFO-FLOW: To file: write model cnn_top_Pipeline_VITIS_LOOP_110_1
+INFO-FLOW: To file: write model maxpool2d_1
+INFO-FLOW: To file: write model conv2d_2
+INFO-FLOW: To file: write model cnn_top_Pipeline_VITIS_LOOP_110_14
+INFO-FLOW: To file: write model maxpool2d
+INFO-FLOW: To file: write model cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2
+INFO-FLOW: To file: write model cnn_top_Pipeline_VITIS_LOOP_110_15
+INFO-FLOW: To file: write model cnn_top_Pipeline_VITIS_LOOP_73_1
+INFO-FLOW: To file: write model cnn_top
+INFO-FLOW: Generating /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/vhdl' dstVlogDir='/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/vlog' tclDir='/home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db' modelList='cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1
+cnn_top_vla1_i_RAM_AUTO_1R1W
+cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W
+cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W
+cnn_top_vla104_i_RAM_AUTO_1R1W
+cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W
+cnn_top_vla166_i_RAM_AUTO_1R1W
+cnn_top_x_assign_RAM_AUTO_1R1W
+cnn_top_x_assign_2_RAM_AUTO_1R1W
+conv2d_1
+cnn_top_Pipeline_VITIS_LOOP_110_1
+maxpool2d_1
+conv2d_2
+cnn_top_Pipeline_VITIS_LOOP_110_14
+maxpool2d
+cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2
+cnn_top_Pipeline_VITIS_LOOP_110_15
+cnn_top_Pipeline_VITIS_LOOP_73_1
+cnn_top
+' expOnly='0'
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.compgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.3 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.32 seconds; current allocated memory: 954.168 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='cnn_top_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/reon/work/xilinx/cnn_ip/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_mac_muladd_6ns_9ns_9ns_14_4_1
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_flow_control_loop_pipe_sequential_init
+cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+cnn_top_fadd_32ns_32ns_32_5_full_dsp_1
+cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+cnn_top_fmul_32ns_32ns_32_4_max_dsp_1
+cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1
+cnn_top_vla1_i_RAM_AUTO_1R1W
+cnn_top_vla42_i_RAM_1WNR_AUTO_1R1W
+cnn_top_vla73_i_RAM_1WNR_AUTO_1R1W
+cnn_top_vla104_i_RAM_AUTO_1R1W
+cnn_top_vla135_i_RAM_1WNR_AUTO_1R1W
+cnn_top_vla166_i_RAM_AUTO_1R1W
+cnn_top_x_assign_RAM_AUTO_1R1W
+cnn_top_x_assign_2_RAM_AUTO_1R1W
+conv2d_1
+cnn_top_Pipeline_VITIS_LOOP_110_1
+maxpool2d_1
+conv2d_2
+cnn_top_Pipeline_VITIS_LOOP_110_14
+maxpool2d
+cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2
+cnn_top_Pipeline_VITIS_LOOP_110_15
+cnn_top_Pipeline_VITIS_LOOP_73_1
+cnn_top
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.rtl_wrap.cfg.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.compgen.dataonly.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_1.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_1.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d_1.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/conv2d_2.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_14.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/maxpool2d.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_110_15.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top_Pipeline_VITIS_LOOP_73_1.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.tbgen.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/cnn_top.constraint.tcl 
+Execute       sc_get_clocks cnn_top 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/impl/misc/cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/impl/misc/cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl 
+Execute       source /home/reon/work/xilinx/cnn_ip/solution1/impl/misc/cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} report_dict {TOPINST cnn_top MODULE2INSTS {cnn_top cnn_top conv2d_1 grp_conv2d_1_fu_415 cnn_top_Pipeline_VITIS_LOOP_110_1 grp_cnn_top_Pipeline_VITIS_LOOP_110_1_fu_427 maxpool2d_1 grp_maxpool2d_1_fu_433 conv2d_2 grp_conv2d_2_fu_439 cnn_top_Pipeline_VITIS_LOOP_110_14 grp_cnn_top_Pipeline_VITIS_LOOP_110_14_fu_449 maxpool2d grp_maxpool2d_fu_455 cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 grp_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_fu_461 cnn_top_Pipeline_VITIS_LOOP_110_15 grp_cnn_top_Pipeline_VITIS_LOOP_110_15_fu_471 cnn_top_Pipeline_VITIS_LOOP_73_1 grp_cnn_top_Pipeline_VITIS_LOOP_73_1_fu_477} INST2MODULE {cnn_top cnn_top grp_conv2d_1_fu_415 conv2d_1 grp_cnn_top_Pipeline_VITIS_LOOP_110_1_fu_427 cnn_top_Pipeline_VITIS_LOOP_110_1 grp_maxpool2d_1_fu_433 maxpool2d_1 grp_conv2d_2_fu_439 conv2d_2 grp_cnn_top_Pipeline_VITIS_LOOP_110_14_fu_449 cnn_top_Pipeline_VITIS_LOOP_110_14 grp_maxpool2d_fu_455 maxpool2d grp_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_fu_461 cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 grp_cnn_top_Pipeline_VITIS_LOOP_110_15_fu_471 cnn_top_Pipeline_VITIS_LOOP_110_15 grp_cnn_top_Pipeline_VITIS_LOOP_73_1_fu_477 cnn_top_Pipeline_VITIS_LOOP_73_1} INSTDATA {cnn_top {DEPTH 1 CHILDREN {grp_conv2d_1_fu_415 grp_cnn_top_Pipeline_VITIS_LOOP_110_1_fu_427 grp_maxpool2d_1_fu_433 grp_conv2d_2_fu_439 grp_cnn_top_Pipeline_VITIS_LOOP_110_14_fu_449 grp_maxpool2d_fu_455 grp_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_fu_461 grp_cnn_top_Pipeline_VITIS_LOOP_110_15_fu_471 grp_cnn_top_Pipeline_VITIS_LOOP_73_1_fu_477}} grp_conv2d_1_fu_415 {DEPTH 2 CHILDREN {}} grp_cnn_top_Pipeline_VITIS_LOOP_110_1_fu_427 {DEPTH 2 CHILDREN {}} grp_maxpool2d_1_fu_433 {DEPTH 2 CHILDREN {}} grp_conv2d_2_fu_439 {DEPTH 2 CHILDREN {}} grp_cnn_top_Pipeline_VITIS_LOOP_110_14_fu_449 {DEPTH 2 CHILDREN {}} grp_maxpool2d_fu_455 {DEPTH 2 CHILDREN {}} grp_cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2_fu_461 {DEPTH 2 CHILDREN {}} grp_cnn_top_Pipeline_VITIS_LOOP_110_15_fu_471 {DEPTH 2 CHILDREN {}} grp_cnn_top_Pipeline_VITIS_LOOP_73_1_fu_477 {DEPTH 2 CHILDREN {}}} MODULEDATA {conv2d_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_142_fu_658_p2 SOURCE {} VARIABLE empty_142 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_143_fu_422_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE empty_143 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_145_fu_444_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE empty_145 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_146_fu_664_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE empty_146 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_148_fu_685_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE empty_148 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_149_fu_691_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE empty_149 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_151_fu_712_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE empty_151 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_152_fu_724_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_152 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_154_fu_754_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_154 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_155_fu_760_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_155 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_157_fu_790_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_157 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_158_fu_470_p2 SOURCE {} VARIABLE empty_158 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_159_fu_1154_p2 SOURCE {} VARIABLE empty_159 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_160_fu_1185_p2 SOURCE {} VARIABLE empty_160 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_27_fu_1191_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_27 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_fu_488_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid148_fu_818_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid148 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid152_fu_528_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid152 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid154_fu_550_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid154 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid156_fu_831_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid156 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid158_fu_852_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid158 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_21_fu_1196_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_21 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid160_fu_865_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid160 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid162_fu_886_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid162 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_22_fu_1413_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_22 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_23_fu_1339_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_23 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_24_fu_1206_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_24 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_25_fu_1126_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_25 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_26_fu_899_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_26 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid184_fu_937_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid184 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_dup7_fu_590_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_dup7 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1_fu_968_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid1 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid19_fu_998_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid19 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid111_fu_1011_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid111 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid115_fu_1041_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid115 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid117_fu_630_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid117 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid119_fu_1228_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid119 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid121_fu_1266_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid121 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln46_fu_1078_p2 SOURCE cnn_ip/src/cnn.c:46 VARIABLE add_ln46 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_fu_1136_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_1_fu_1145_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_1 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln46_2_fu_1279_p2 SOURCE cnn_ip/src/cnn.c:46 VARIABLE add_ln46_2 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_2_fu_1288_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_2 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_3_fu_1096_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_3 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_4_fu_1106_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_4 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_5_fu_1298_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_5 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_6_fu_1308_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_6 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_7_fu_1313_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_7 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln54_8_fu_1318_p2 SOURCE cnn_ip/src/cnn.c:54 VARIABLE add_ln54_8 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln65_fu_1116_p2 SOURCE cnn_ip/src/cnn.c:65 VARIABLE add_ln65 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln33_fu_1386_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE add_ln33 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} cnn_top_Pipeline_VITIS_LOOP_110_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_8_fu_91_p2 SOURCE cnn_ip/src/cnn.c:110 VARIABLE i_8 LOOP VITIS_LOOP_110_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxpool2d_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_16_fu_294_p2 SOURCE {} VARIABLE empty_16 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_18_fu_322_p2 SOURCE {} VARIABLE empty_18 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_19_fu_346_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_19 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_21_fu_376_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_21 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_22_fu_382_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_22 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_24_fu_668_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_24 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_27_fu_703_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_27 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln86_1_fu_221_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE add_ln86_1 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln86_fu_395_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE add_ln86 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid129_fu_443_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid129 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid131_fu_478_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid131 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid151_fu_515_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid151 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid165_fu_732_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid165 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid179_fu_774_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid179 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln88_fu_543_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE add_ln88 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid18_fu_575_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid18 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid110_fu_605_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid110 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid112_fu_611_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid112 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid114_fu_811_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid114 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid118_fu_853_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid118 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln98_fu_869_p2 SOURCE cnn_ip/src/cnn.c:98 VARIABLE add_ln98 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln98_1_fu_891_p2 SOURCE cnn_ip/src/cnn.c:98 VARIABLE add_ln98_1 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln102_fu_926_p2 SOURCE cnn_ip/src/cnn.c:102 VARIABLE add_ln102 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln90_fu_629_p2 SOURCE cnn_ip/src/cnn.c:90 VARIABLE add_ln90 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln88_1_fu_236_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE add_ln88_1 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} conv2d_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_59_fu_1223_p2 SOURCE {} VARIABLE empty_59 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_60_fu_976_p2 SOURCE {} VARIABLE empty_60 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_62_fu_998_p2 SOURCE {} VARIABLE empty_62 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_65_fu_1599_p2 SOURCE {} VARIABLE empty_65 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_68_fu_1626_p2 SOURCE {} VARIABLE empty_68 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_70_fu_1916_p2 SOURCE {} VARIABLE empty_70 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_72_fu_1938_p2 SOURCE {} VARIABLE empty_72 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_73_fu_2170_p2 SOURCE {} VARIABLE empty_73 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_75_fu_2191_p2 SOURCE {} VARIABLE empty_75 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_76_fu_2197_p2 SOURCE {} VARIABLE empty_76 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_78_fu_2218_p2 SOURCE {} VARIABLE empty_78 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_80_fu_2611_p2 SOURCE {} VARIABLE empty_80 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_82_fu_2633_p2 SOURCE {} VARIABLE empty_82 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_85_fu_2964_p2 SOURCE {} VARIABLE empty_85 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_86_fu_2970_p2 SOURCE {} VARIABLE empty_86 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_88_fu_2991_p2 SOURCE {} VARIABLE empty_88 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_90_fu_3257_p2 SOURCE {} VARIABLE empty_90 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_92_fu_3279_p2 SOURCE {} VARIABLE empty_92 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_93_fu_3508_p2 SOURCE {} VARIABLE empty_93 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_95_fu_3529_p2 SOURCE {} VARIABLE empty_95 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_96_fu_3535_p2 SOURCE {} VARIABLE empty_96 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_98_fu_3556_p2 SOURCE {} VARIABLE empty_98 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_99_fu_1234_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_99 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_101_fu_1264_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_101 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_102_fu_1270_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_102 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_103_fu_1296_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_103 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_104_fu_1028_p2 SOURCE {} VARIABLE empty_104 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_105_fu_1733_p2 SOURCE {} VARIABLE empty_105 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_106_fu_1768_p2 SOURCE {} VARIABLE empty_106 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_107_fu_1944_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_107 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_108_fu_1969_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_108 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_109_fu_2224_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_109 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_110_fu_2249_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_110 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_111_fu_2255_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_111 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_112_fu_2280_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_112 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_113_fu_2642_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_113 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_114_fu_2668_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_114 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_115_fu_2817_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_115 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_116_fu_2842_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_116 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_117_fu_3112_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_117 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_118_fu_3137_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_118 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_119_fu_3285_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_119 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_120_fu_3310_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_120 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_121_fu_3562_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_121 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_122_fu_3587_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_122 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_123_fu_3593_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_123 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_124_fu_3618_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE empty_124 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_20_fu_3624_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_20 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_fu_1046_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1153_fu_1319_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1153 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1157_fu_1094_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1157 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1159_fu_1116_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1159 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1163_fu_1653_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1163 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_1_fu_1774_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_1 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1167_fu_1687_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1167 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1171_fu_1996_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1171 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1173_fu_2018_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1173 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1175_fu_2291_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1175 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1177_fu_2312_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1177 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_2_fu_2496_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_2 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1179_fu_2325_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1179 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1181_fu_2346_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1181 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1185_fu_2695_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1185 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1187_fu_2717_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1187 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1191_fu_3018_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1191 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_3_fu_3143_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_3 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1193_fu_3031_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1193 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1195_fu_3052_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1195 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1199_fu_3337_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1199 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1201_fu_3359_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1201 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1203_fu_3634_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1203 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1205_fu_3655_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1205 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_4_fu_3840_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_4 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1207_fu_3668_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1207 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1209_fu_3689_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1209 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_5_fu_3967_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_5 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_6_fu_3977_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_6 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_7_fu_3907_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_7 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_8_fu_3702_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_8 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_9_fu_3712_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_9 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_10_fu_3470_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_10 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_11_fu_3153_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_11 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_12_fu_3070_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_12 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_13_fu_2730_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_13 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_14_fu_2740_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_14 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_15_fu_2562_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_15 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_16_fu_2359_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_16 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_17_fu_2369_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_17 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_18_fu_2132_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_18 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln31_19_fu_1784_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE add_ln31_19 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid1229_fu_1369_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid1229 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_dup7_fu_1156_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_dup7 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid1_fu_1407_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid1 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid127_fu_1437_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid127 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid129_fu_1450_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid129 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid133_fu_1483_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid133 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid135_fu_1200_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid135 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid137_fu_1806_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid137 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid139_fu_1848_p2 SOURCE cnn_ip/src/cnn.c:31 VARIABLE p_mid139 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid141_fu_2062_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid141 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid143_fu_2087_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid143 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid145_fu_2398_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid145 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid147_fu_2423_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid147 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid149_fu_2436_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid149 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid151_fu_2461_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid151 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid153_fu_2770_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid153 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid155_fu_2796_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid155 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid157_fu_2879_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid157 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid159_fu_2904_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid159 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid161_fu_3180_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid161 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid163_fu_3205_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid163 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid165_fu_3403_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid165 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid167_fu_3428_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid167 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid169_fu_3741_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid169 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid171_fu_3766_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid171 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid173_fu_3779_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid173 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid175_fu_3804_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE p_mid175 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln46_fu_1520_p2 SOURCE cnn_ip/src/cnn.c:46 VARIABLE add_ln46 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_fu_1715_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_1_fu_1724_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_1 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln46_1_fu_1861_p2 SOURCE cnn_ip/src/cnn.c:46 VARIABLE add_ln46_1 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_2_fu_1870_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_2 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_3_fu_1552_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_3 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_4_fu_1562_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_4 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_5_fu_1880_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_5 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_6_fu_2110_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_6 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_7_fu_2119_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_7 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_8_fu_2152_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_8 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_9_fu_2161_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_9 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_10_fu_2478_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_10 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_11_fu_2487_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_11 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_12_fu_2524_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_12 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_13_fu_2533_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_13 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_14_fu_2542_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_14 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_15_fu_2546_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_15 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_16_fu_2550_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_16 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_17_fu_2554_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_17 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_18_fu_2923_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_18 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_19_fu_2933_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_19 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_20_fu_3093_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_20 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_21_fu_3103_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_21 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_22_fu_3218_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_22 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_23_fu_3227_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_23 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_24_fu_3448_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_24 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_25_fu_3457_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_25 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_26_fu_3490_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_26 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_27_fu_3499_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_27 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_28_fu_3817_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_28 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_29_fu_3826_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_29 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_30_fu_3864_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_30 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_31_fu_3873_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_31 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_32_fu_3882_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_32 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_33_fu_3886_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_33 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_34_fu_3890_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_34 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln57_35_fu_3894_p2 SOURCE cnn_ip/src/cnn.c:57 VARIABLE add_ln57_35 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln65_fu_1572_p2 SOURCE cnn_ip/src/cnn.c:65 VARIABLE add_ln65 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln33_fu_3940_p2 SOURCE cnn_ip/src/cnn.c:33 VARIABLE add_ln33 LOOP VITIS_LOOP_31_1_VITIS_LOOP_33_2_VITIS_LOOP_35_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} cnn_top_Pipeline_VITIS_LOOP_110_14 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_6_fu_91_p2 SOURCE cnn_ip/src/cnn.c:110 VARIABLE i_6 LOOP VITIS_LOOP_110_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxpool2d {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_38_fu_247_p2 SOURCE {} VARIABLE empty_38 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_39_fu_265_p2 SOURCE {} VARIABLE empty_39 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_40_fu_289_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_40 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_42_fu_311_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_42 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_43_fu_317_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_43 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_45_fu_616_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_45 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME empty_48_fu_651_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE empty_48 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln86_2_fu_333_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE add_ln86_2 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln86_fu_345_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE add_ln86 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid129_fu_395_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid129 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid131_fu_421_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid131 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid145_fu_451_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid145 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid159_fu_680_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid159 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid173_fu_722_p2 SOURCE cnn_ip/src/cnn.c:86 VARIABLE p_mid173 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln88_fu_487_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE add_ln88 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid18_fu_525_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid18 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid110_fu_745_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid110 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME p_mid112_fu_535_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid112 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid114_fu_776_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid114 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME p_mid118_fu_818_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE p_mid118 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln98_fu_834_p2 SOURCE cnn_ip/src/cnn.c:98 VARIABLE add_ln98 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln98_2_fu_856_p2 SOURCE cnn_ip/src/cnn.c:98 VARIABLE add_ln98_2 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln102_fu_891_p2 SOURCE cnn_ip/src/cnn.c:102 VARIABLE add_ln102 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln90_fu_553_p2 SOURCE cnn_ip/src/cnn.c:90 VARIABLE add_ln90 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln88_2_fu_559_p2 SOURCE cnn_ip/src/cnn.c:88 VARIABLE add_ln88_2 LOOP VITIS_LOOP_86_1_VITIS_LOOP_88_2_VITIS_LOOP_90_3 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} cnn_top_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_76_2 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln73_fu_167_p2 SOURCE cnn_ip/src/cnn.c:73 VARIABLE add_ln73 LOOP VITIS_LOOP_73_1_VITIS_LOOP_76_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_1_fu_179_p2 SOURCE cnn_ip/src/cnn.c:73 VARIABLE i_1 LOOP VITIS_LOOP_73_1_VITIS_LOOP_76_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_6ns_9ns_9ns_14_4_1_U38 SOURCE cnn_ip/src/cnn.c:73 VARIABLE mul_ln73 LOOP VITIS_LOOP_73_1_VITIS_LOOP_76_2 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL dsp48 LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_6ns_9ns_9ns_14_4_1_U38 SOURCE cnn_ip/src/cnn.c:78 VARIABLE add_ln78 LOOP VITIS_LOOP_73_1_VITIS_LOOP_76_2 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME j_1_fu_227_p2 SOURCE cnn_ip/src/cnn.c:76 VARIABLE j_1 LOOP VITIS_LOOP_73_1_VITIS_LOOP_76_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 1 BRAM 0 URAM 0}} cnn_top_Pipeline_VITIS_LOOP_110_15 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_5_fu_91_p2 SOURCE cnn_ip/src/cnn.c:110 VARIABLE i_5 LOOP VITIS_LOOP_110_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} cnn_top_Pipeline_VITIS_LOOP_73_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_3_fu_752_p2 SOURCE cnn_ip/src/cnn.c:73 VARIABLE i_3 LOOP VITIS_LOOP_73_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} cnn_top {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME vla1_i_U SOURCE cnn_ip/src/cnn.c:129 VARIABLE vla1_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 8 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_np PRAGMA {} RTLNAME vla42_i_U SOURCE cnn_ip/src/cnn.c:130 VARIABLE vla42_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 8 URAM 0 DISPNAME {bind_storage rom_np}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_np PRAGMA {} RTLNAME vla73_i_U SOURCE cnn_ip/src/cnn.c:131 VARIABLE vla73_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage rom_np}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME vla104_i_U SOURCE cnn_ip/src/cnn.c:132 VARIABLE vla104_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_np PRAGMA {} RTLNAME vla135_i_U SOURCE cnn_ip/src/cnn.c:133 VARIABLE vla135_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 4 URAM 0 DISPNAME {bind_storage rom_np}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME vla166_i_U SOURCE cnn_ip/src/cnn.c:134 VARIABLE vla166_i LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME x_assign_U SOURCE cnn_ip/src/cnn.c:135 VARIABLE x_assign LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME x_assign_2_U SOURCE cnn_ip/src/cnn.c:136 VARIABLE x_assign_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_s2p}}} AREA {DSP 13 BRAM 54 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.63 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.66 seconds; current allocated memory: 968.012 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn_top.
+Execute       syn_report -model cnn_top -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 116.73 MHz
+Command     autosyn done; 18.3 sec.
+Command   csynth_design done; 27.81 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 26.83 seconds. CPU system time: 0.9 seconds. Elapsed time: 27.81 seconds; current allocated memory: 212.281 MB.
+Command ap_source done; 39.59 sec.
+Execute cleanup_all 

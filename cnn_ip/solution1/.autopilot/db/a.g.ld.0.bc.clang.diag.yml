@@ -1,0 +1,74 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 25, Column: 2 }
+Function:        cnn_top
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          cnn
+    DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 122, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cnn_top
+    DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 24, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 24, Column: 0 }
+Function:        cnn_top
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          relu
+    DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 109, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cnn_top
+    DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 24, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 24, Column: 0 }
+Function:        cnn_top
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          linear
+    DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 72, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cnn_top
+    DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 24, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 78, Column: 27 }
+Function:        cnn_top
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 78, Column: 27 }
+Function:        cnn_top
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 78, Column: 27 }
+Function:        cnn_top
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: cnn_ip/src/cnn.c, Line: 78, Column: 27 }
+Function:        cnn_top
+Args:            
+  - String:          The program may have out of bound array access
+...

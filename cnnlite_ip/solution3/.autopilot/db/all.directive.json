@@ -1,0 +1,134 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "cnn_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "return"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "cnn_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "x"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "cnn_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "y"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "cnn_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "cnn_top"
+              }]
+          }
+        },
+        {
+          "functionName": "conv2d",
+          "label": "conv2d_label0",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "linear",
+          "label": "linear_label1",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "maxpool2d",
+          "label": "maxpool2d_label2",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "relu",
+          "label": "relu_label3",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "cnn_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/cnnlite_ip\/solution3\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "cnn_top"
+              }]
+          }
+        }
+      ]
+    }]}

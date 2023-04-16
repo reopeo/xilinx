@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/reon/work/xilinx/cnn_ip/solution1/./sim/autowrap/testbench/cnn.c_pre.c.tb.c

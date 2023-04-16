@@ -1,0 +1,3 @@
+<pragmas>
+<pragma file="cnnlite_ip/src/cnn.c" line="2880" pragmaType="inline" parentfunction="cnn" off="0" region="0" recursive="0"/>
+</pragmas>

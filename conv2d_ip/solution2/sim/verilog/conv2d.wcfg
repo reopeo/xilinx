@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="conv2d.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_dataflow_monitor_sv " />
+            <top_module name="apatb_conv2d_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_conv2d_top/AESL_inst_conv2d//AESL_inst_conv2d_activity">
+         <obj_property name="label">AESL_inst_conv2d_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_conv2d_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_conv2d_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_conv2d_top/AESL_inst_conv2d//AESL_inst_conv2d_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_conv2d_top/AESL_inst_conv2d//AESL_inst_conv2d_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_conv2d_top/AESL_inst_conv2d//AESL_inst_conv2d_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity">
+            <obj_property name="label">grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/AESL_inst_conv2d_activity">
+      <obj_property name="ElementShortName">AESL_inst_conv2d_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_conv2d_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_conv2d_group">
+      <obj_property name="label">AESL_inst_conv2d</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity">
+         <obj_property name="ElementShortName">grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_conv2d_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_group">
+         <obj_property name="label">grp_conv2d_Pipeline_in_channels_kh_kw_fu_169</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_conv2d_Pipeline_in_channels_kh_kw_fu_169_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/grp_conv2d_Pipeline_in_channels_kh_kw_fu_169/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group32">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group33">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group34">
+            <obj_property name="label">x__weight__bias__width__height__in_channels__out_channels__ksize__y__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/interrupt">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_BRESP">
+               <obj_property name="ElementShortName">s_axi_control_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_BREADY">
+               <obj_property name="ElementShortName">s_axi_control_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_BVALID">
+               <obj_property name="ElementShortName">s_axi_control_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_RRESP">
+               <obj_property name="ElementShortName">s_axi_control_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_RDATA">
+               <obj_property name="ElementShortName">s_axi_control_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_RREADY">
+               <obj_property name="ElementShortName">s_axi_control_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_RVALID">
+               <obj_property name="ElementShortName">s_axi_control_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_ARREADY">
+               <obj_property name="ElementShortName">s_axi_control_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_ARVALID">
+               <obj_property name="ElementShortName">s_axi_control_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_ARADDR">
+               <obj_property name="ElementShortName">s_axi_control_ARADDR[6:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARADDR[6:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_WSTRB">
+               <obj_property name="ElementShortName">s_axi_control_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_WDATA">
+               <obj_property name="ElementShortName">s_axi_control_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_WREADY">
+               <obj_property name="ElementShortName">s_axi_control_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_WVALID">
+               <obj_property name="ElementShortName">s_axi_control_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_AWREADY">
+               <obj_property name="ElementShortName">s_axi_control_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_AWVALID">
+               <obj_property name="ElementShortName">s_axi_control_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/s_axi_control_AWADDR">
+               <obj_property name="ElementShortName">s_axi_control_AWADDR[6:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWADDR[6:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group53">
+         <obj_property name="label">Block-level IO Handshake(internal)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_idle">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group58">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_rst_n">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group60">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_conv2d_top/AESL_inst_conv2d/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group62">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group63">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group64">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group65">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_bias">
+               <obj_property name="ElementShortName">LENGTH_bias[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_bias[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_height">
+               <obj_property name="ElementShortName">LENGTH_height[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_height[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_in_channels">
+               <obj_property name="ElementShortName">LENGTH_in_channels[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_channels[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_ksize">
+               <obj_property name="ElementShortName">LENGTH_ksize[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_ksize[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_out_channels">
+               <obj_property name="ElementShortName">LENGTH_out_channels[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_channels[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_weight">
+               <obj_property name="ElementShortName">LENGTH_weight[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_weight[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_width">
+               <obj_property name="ElementShortName">LENGTH_width[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_width[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_x">
+               <obj_property name="ElementShortName">LENGTH_x[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_x[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/LENGTH_y">
+               <obj_property name="ElementShortName">LENGTH_y[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_y[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group78">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group79">
+            <obj_property name="label">x__weight__bias__width__height__in_channels__out_channels__ksize__y__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_INTERRUPT">
+               <obj_property name="ElementShortName">control_INTERRUPT</obj_property>
+               <obj_property name="ObjectShortName">control_INTERRUPT</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_BRESP">
+               <obj_property name="ElementShortName">control_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">control_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_BREADY">
+               <obj_property name="ElementShortName">control_BREADY</obj_property>
+               <obj_property name="ObjectShortName">control_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_BVALID">
+               <obj_property name="ElementShortName">control_BVALID</obj_property>
+               <obj_property name="ObjectShortName">control_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_RRESP">
+               <obj_property name="ElementShortName">control_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">control_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_RDATA">
+               <obj_property name="ElementShortName">control_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">control_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_RREADY">
+               <obj_property name="ElementShortName">control_RREADY</obj_property>
+               <obj_property name="ObjectShortName">control_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_RVALID">
+               <obj_property name="ElementShortName">control_RVALID</obj_property>
+               <obj_property name="ObjectShortName">control_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_ARREADY">
+               <obj_property name="ElementShortName">control_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">control_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_ARVALID">
+               <obj_property name="ElementShortName">control_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">control_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_ARADDR">
+               <obj_property name="ElementShortName">control_ARADDR[6:0]</obj_property>
+               <obj_property name="ObjectShortName">control_ARADDR[6:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_WSTRB">
+               <obj_property name="ElementShortName">control_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">control_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_WDATA">
+               <obj_property name="ElementShortName">control_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">control_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_WREADY">
+               <obj_property name="ElementShortName">control_WREADY</obj_property>
+               <obj_property name="ObjectShortName">control_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_WVALID">
+               <obj_property name="ElementShortName">control_WVALID</obj_property>
+               <obj_property name="ObjectShortName">control_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_AWREADY">
+               <obj_property name="ElementShortName">control_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">control_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_conv2d_top/control_AWVALID">
+               <obj_property name="ElementShortName">control_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">control_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_conv2d_top/control_AWADDR">
+               <obj_property name="ElementShortName">control_AWADDR[6:0]</obj_property>
+               <obj_property name="ObjectShortName">control_AWADDR[6:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

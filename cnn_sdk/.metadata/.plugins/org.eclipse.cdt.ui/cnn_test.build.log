@@ -1,0 +1,125 @@
+21:51:37 **** Incremental Build of configuration Debug for project cnn_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/cnn_test.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cnn_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/cnn_test.d" -MT"src/cnn_test.o" -o "src/cnn_test.o" "../src/cnn_test.c"
+../src/cnn_test.c: In function 'main':
+../src/cnn_test.c:61:42: warning: passing argument 3 of 'XCnn_top_Write_x_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   61 |     XCnn_top_Write_x_Words(&Instance, 0, x, 28*28);
+      |                                          ^
+      |                                          |
+      |                                          float (*)[28][28]
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:159:74: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'float (*)[28][28]'
+  159 | u32 XCnn_top_Write_x_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                               ~~~~~~~~~~~^~~~
+../src/cnn_test.c:62:48: warning: passing argument 3 of 'XCnn_top_Write_weight0_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |     XCnn_top_Write_weight0_Words(&Instance, 0, weight0, 4*1*3*3);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                const float (*)[1][3][3]
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:132:80: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float (*)[1][3][3]'
+  132 | u32 XCnn_top_Write_weight0_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                     ~~~~~~~~~~~^~~~
+../src/cnn_test.c:63:46: warning: passing argument 3 of 'XCnn_top_Write_bias0_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   63 |     XCnn_top_Write_bias0_Words(&Instance, 0, bias0, 4);
+      |                                              ^~~~~
+      |                                              |
+      |                                              const float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:96:78: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float *'
+   96 | u32 XCnn_top_Write_bias0_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                   ~~~~~~~~~~~^~~~
+../src/cnn_test.c:64:48: warning: passing argument 3 of 'XCnn_top_Write_weight1_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |     XCnn_top_Write_weight1_Words(&Instance, 0, weight1, 8*4*3*3);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                const float (*)[4][3][3]
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:150:80: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float (*)[4][3][3]'
+  150 | u32 XCnn_top_Write_weight1_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                     ~~~~~~~~~~~^~~~
+../src/cnn_test.c:65:46: warning: passing argument 3 of 'XCnn_top_Write_bias1_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   65 |     XCnn_top_Write_bias1_Words(&Instance, 0, bias1, 8);
+      |                                              ^~~~~
+      |                                              |
+      |                                              const float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:105:78: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float *'
+  105 | u32 XCnn_top_Write_bias1_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                   ~~~~~~~~~~~^~~~
+../src/cnn_test.c:66:48: warning: passing argument 3 of 'XCnn_top_Write_weight2_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   66 |     XCnn_top_Write_weight2_Words(&Instance, 0, weight2, 32*8*7*7);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                const float (*)[392]
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:177:80: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float (*)[392]'
+  177 | u32 XCnn_top_Write_weight2_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                     ~~~~~~~~~~~^~~~
+../src/cnn_test.c:67:46: warning: passing argument 3 of 'XCnn_top_Write_bias2_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   67 |     XCnn_top_Write_bias2_Words(&Instance, 0, bias2, 32);
+      |                                              ^~~~~
+      |                                              |
+      |                                              const float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:123:78: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float *'
+  123 | u32 XCnn_top_Write_bias2_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                   ~~~~~~~~~~~^~~~
+../src/cnn_test.c:68:48: warning: passing argument 3 of 'XCnn_top_Write_weight3_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     XCnn_top_Write_weight3_Words(&Instance, 0, weight3, 10*32);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                const float (*)[32]
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:168:80: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float (*)[32]'
+  168 | u32 XCnn_top_Write_weight3_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                     ~~~~~~~~~~~^~~~
+../src/cnn_test.c:69:46: warning: passing argument 3 of 'XCnn_top_Write_bias3_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 |     XCnn_top_Write_bias3_Words(&Instance, 0, bias3, 10);
+      |                                              ^~~~~
+      |                                              |
+      |                                              const float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:114:78: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'const float *'
+  114 | u32 XCnn_top_Write_bias3_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                                   ~~~~~~~~~~~^~~~
+../src/cnn_test.c:70:42: warning: passing argument 3 of 'XCnn_top_Write_y_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   70 |     XCnn_top_Write_y_Words(&Instance, 0, y, 10);
+      |                                          ^
+      |                                          |
+      |                                          float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:141:74: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'float *'
+  141 | u32 XCnn_top_Write_y_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                               ~~~~~~~~~~~^~~~
+../src/cnn_test.c:77:41: warning: passing argument 3 of 'XCnn_top_Read_y_Words' from incompatible pointer type [-Wincompatible-pointer-types]
+   77 |     XCnn_top_Read_y_Words(&Instance, 0, y, 10);
+      |                                         ^
+      |                                         |
+      |                                         float *
+In file included from ../src/cnn_test.c:5:
+/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xcnn_top.h:142:73: note: expected 'word_type *' {aka 'long unsigned int *'} but argument is of type 'float *'
+  142 | u32 XCnn_top_Read_y_Words(XCnn_top *InstancePtr, int offset, word_type *data, int length);
+      |                                                              ~~~~~~~~~~~^~~~
+Finished building: ../src/cnn_test.c
+ 
+Building target: cnn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/reon/work/xilinx/cnn_sdk/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "cnn_test.elf" ./src/cnn_test.o ./src/parameters.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: cnn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size cnn_test.elf  |tee "cnn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126067	   2564	  22664	 151295	  24eff	cnn_test.elf
+Finished building: cnn_test.elf.size
+ 
+
+21:51:37 Build Finished (took 670ms)
+

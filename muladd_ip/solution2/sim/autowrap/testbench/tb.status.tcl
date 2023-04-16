@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/reon/work/xilinx/muladd_ip/solution2/./sim/autowrap/testbench/muladd.c_pre.c.tb.c

@@ -1,0 +1,59 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../src/conv2d_tb.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Thu Dec 22 16:04:25 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/conv2d_ip/solution2/csim/build'
+../../../src/conv2d_tb.c:18:9: warning: incompatible pointer types passing 'const float [3][10][10]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+        conv2d(x, weight, bias, WIDTH, HEIGHT, IN_CHANNELS, OUT_CHANNELS, KSIZE, y);
+               ^
+../../../src/conv2d_tb.c:10:26: note: passing argument to parameter 'x' here
+void conv2d(const float *x, const float *weight, const float *bias, __int32_t width, __int32_t height,
+                         ^
+../../../src/conv2d_tb.c:18:12: warning: incompatible pointer types passing 'const float [3][3][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+        conv2d(x, weight, bias, WIDTH, HEIGHT, IN_CHANNELS, OUT_CHANNELS, KSIZE, y);
+                  ^~~~~~
+../../../src/conv2d_tb.c:10:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, __int32_t width, __int32_t height,
+                                         ^
+../../../src/conv2d_tb.c:18:75: warning: incompatible pointer types passing 'float [3][10][10]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+        conv2d(x, weight, bias, WIDTH, HEIGHT, IN_CHANNELS, OUT_CHANNELS, KSIZE, y);
+                                                                                 ^
+../../../src/conv2d_tb.c:11:75: note: passing argument to parameter 'y' here
+                        __int32_t in_channels, __int32_t out_channels, __int32_t ksize, float *y);
+                                                                                               ^
+3 warnings generated.
+../../../src/conv2d_tb.c:18:9: warning: incompatible pointer types passing 'const float [3][10][10]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+        conv2d(x, weight, bias, WIDTH, HEIGHT, IN_CHANNELS, OUT_CHANNELS, KSIZE, y);
+               ^
+../../../src/conv2d_tb.c:10:26: note: passing argument to parameter 'x' here
+void conv2d(const float *x, const float *weight, const float *bias, __int32_t width, __int32_t height,
+                         ^
+../../../src/conv2d_tb.c:18:12: warning: incompatible pointer types passing 'const float [3][3][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+        conv2d(x, weight, bias, WIDTH, HEIGHT, IN_CHANNELS, OUT_CHANNELS, KSIZE, y);
+                  ^~~~~~
+../../../src/conv2d_tb.c:10:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, __int32_t width, __int32_t height,
+                                         ^
+../../../src/conv2d_tb.c:18:75: warning: incompatible pointer types passing 'float [3][10][10]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+        conv2d(x, weight, bias, WIDTH, HEIGHT, IN_CHANNELS, OUT_CHANNELS, KSIZE, y);
+                                                                                 ^
+../../../src/conv2d_tb.c:11:75: note: passing argument to parameter 'y' here
+                        __int32_t in_channels, __int32_t out_channels, __int32_t ksize, float *y);
+                                                                                               ^
+3 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/122981671692665356162
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.52 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.5 seconds; peak allocated memory: 98.957 MB.
+   Compiling(apcc) ../../../src/conv2d.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'reon' on host 'FRONTIER' (Linux_x86_64 version 5.15.0-56-generic) on Thu Dec 22 16:04:27 JST 2022
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/reon/work/xilinx/conv2d_ip/solution2/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_reon/123581671692667887937
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.51 seconds. Total CPU system time: 0.12 seconds. Total elapsed time: 1.51 seconds; peak allocated memory: 98.957 MB.
+   Generating csim.exe
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

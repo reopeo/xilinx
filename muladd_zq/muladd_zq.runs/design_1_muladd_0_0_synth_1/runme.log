@@ -1,0 +1,521 @@
+
+*** Running vivado
+    with args -log design_1_muladd_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_muladd_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_muladd_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/reon/work/xilinx/muladd_ip/solution3/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_muladd_0_0
+Command: synth_design -top design_1_muladd_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15846
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2450.113 ; gain = 369.770 ; free physical = 14893 ; free virtual = 19444
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3484.594; parent = 2453.086; children = 1031.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_muladd_0_0' [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ip/design_1_muladd_0_0/synth/design_1_muladd_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'muladd' [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd.v:10]
+INFO: [Synth 8-6157] synthesizing module 'muladd_control_s_axi' [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'muladd_control_s_axi_ram' [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_control_s_axi.v:542]
+INFO: [Synth 8-6155] done synthesizing module 'muladd_control_s_axi_ram' (0#1) [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_control_s_axi.v:542]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_control_s_axi.v:277]
+INFO: [Synth 8-6155] done synthesizing module 'muladd_control_s_axi' (0#1) [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'muladd_mul_32s_32s_32_2_1' [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_mul_32s_32s_32_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'muladd_mul_32s_32s_32_2_1' (0#1) [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_mul_32s_32s_32_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'muladd_flow_control_loop_pipe' [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_flow_control_loop_pipe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'muladd_flow_control_loop_pipe' (0#1) [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_flow_control_loop_pipe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'muladd' (0#1) [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_muladd_0_0' (0#1) [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ip/design_1_muladd_0_0/synth/design_1_muladd_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd_control_s_axi.v:343]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln8_reg_163_reg was removed.  [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd.v:291]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln8_reg_163_pp0_iter1_reg_reg was removed.  [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd.v:292]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln8_reg_163_pp0_iter2_reg_reg was removed.  [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ipshared/a5e0/hdl/verilog/muladd.v:299]
+WARNING: [Synth 8-7129] Port ap_done_int in module muladd_flow_control_loop_pipe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module muladd_mul_32s_32s_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[3] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[2] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[1] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we0[0] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[31] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[30] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[29] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[28] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[27] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[26] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[25] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[24] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[23] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[22] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[21] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[20] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[19] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[18] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[17] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[16] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[15] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[14] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[13] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[12] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[11] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[10] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[9] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[8] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[7] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[6] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[5] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[4] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[3] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[2] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[1] in module muladd_control_s_axi_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d0[0] in module muladd_control_s_axi_ram is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2524.051 ; gain = 443.707 ; free physical = 15078 ; free virtual = 19632
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3555.562; parent = 2524.055; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2549.863 ; gain = 469.520 ; free physical = 15052 ; free virtual = 19607
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3581.375; parent = 2549.867; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2549.863 ; gain = 469.520 ; free physical = 15044 ; free virtual = 19599
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3581.375; parent = 2549.867; children = 1031.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2549.863 ; gain = 0.000 ; free physical = 15029 ; free virtual = 19584
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ip/design_1_muladd_0_0/constraints/muladd_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/reon/work/xilinx/muladd_zq/muladd_zq.gen/sources_1/bd/design_1/ip/design_1_muladd_0_0/constraints/muladd_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/reon/work/xilinx/muladd_zq/muladd_zq.runs/design_1_muladd_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/reon/work/xilinx/muladd_zq/muladd_zq.runs/design_1_muladd_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2704.613 ; gain = 0.000 ; free physical = 14949 ; free virtual = 19517
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2704.613 ; gain = 0.000 ; free physical = 14946 ; free virtual = 19515
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 15108 ; free virtual = 19684
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 15100 ; free virtual = 19676
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/reon/work/xilinx/muladd_zq/muladd_zq.runs/design_1_muladd_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 15090 ; free virtual = 19666
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'muladd_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'muladd_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'muladd_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'muladd_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 15012 ; free virtual = 19589
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 10    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 24    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	              512 Bit	(16 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U1/tmp_product, operation Mode is: A''*B''.
+DSP Report: register control_s_axi_U/int_b/q0_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register b_load_reg_182_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U1/dout_reg, operation Mode is: (PCIN>>17)+A''*B''.
+DSP Report: register control_s_axi_U/int_a/q0_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register a_load_reg_177_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register control_s_axi_U/int_b/q0_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register b_load_reg_182_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U1/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U1/tmp_product, operation Mode is: A''*B''.
+DSP Report: register mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U1/dout_reg, operation Mode is: (PCIN>>17)+A''*B''.
+DSP Report: register control_s_axi_U/int_a/q0_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register a_load_reg_177_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U1/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U1/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: register mul_32s_32s_32_2_1_U1/dout_reg is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U1/dout_reg.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[47]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[46]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[45]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[44]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[43]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[42]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[41]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[40]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[39]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[38]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[37]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[36]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[35]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[34]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[33]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[32]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[31]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[30]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[29]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[28]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[27]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[26]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[25]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[24]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[23]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[22]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[21]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[20]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[19]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[18]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[17]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[16]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[15]) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[47]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[46]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[45]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[44]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[43]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[42]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[41]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[40]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[39]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[38]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[37]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[36]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[35]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[34]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[33]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[32]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[31]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[30]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[29]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[28]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[27]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[26]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[25]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[24]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[23]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[22]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[21]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[20]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[19]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[18]__0) is unused and will be removed from module muladd.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U1/dout_reg[17]__0) is unused and will be removed from module muladd.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 15051 ; free virtual = 19646
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1701.823; parent = 1556.578; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                    | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------------+-----------+----------------------+----------------+
+|inst        | control_s_axi_U/int_b/mem_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | control_s_axi_U/int_a/mem_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
++------------+-------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|muladd      | A''*B''            | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|muladd      | (PCIN>>17)+A''*B'' | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|muladd      | A''*B''            | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|muladd      | (PCIN>>17)+A''*B'' | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14529 ; free virtual = 19130
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1819.847; parent = 1674.845; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14497 ; free virtual = 19098
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1820.846; parent = 1675.846; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                    | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------------+-----------+----------------------+----------------+
+|inst        | control_s_axi_U/int_b/mem_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|inst        | control_s_axi_U/int_a/mem_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
++------------+-------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14491 ; free virtual = 19092
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1822.836; parent = 1677.838; children = 145.245
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14726 ; free virtual = 19323
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.401; parent = 1682.043; children = 149.396
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14734 ; free virtual = 19331
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1831.409; parent = 1682.043; children = 149.396
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14731 ; free virtual = 19328
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1832.264; parent = 1682.043; children = 150.547
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14842 ; free virtual = 19439
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1842.241; parent = 1686.701; children = 155.540
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14832 ; free virtual = 19429
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1842.241; parent = 1686.701; children = 155.540
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14831 ; free virtual = 19428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1842.254; parent = 1686.721; children = 155.540
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|muladd      | ap_loop_exit_ready_pp0_iter3_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|muladd      | (A''*B'')'          | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|muladd      | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|muladd      | (PCIN>>17+A''*B'')' | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    20|
+|2     |DSP48E1  |     3|
+|4     |LUT1     |     1|
+|5     |LUT2     |    22|
+|6     |LUT3     |    78|
+|7     |LUT4     |    15|
+|8     |LUT5     |    22|
+|9     |LUT6     |    69|
+|10    |RAM16X1D |    64|
+|11    |SRL16E   |     1|
+|12    |FDRE     |   249|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14817 ; free virtual = 19413
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1842.270; parent = 1686.736; children = 155.540
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3704.109; parent = 2672.602; children = 1031.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 67 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2704.613 ; gain = 469.520 ; free physical = 14844 ; free virtual = 19441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2704.613 ; gain = 624.270 ; free physical = 14837 ; free virtual = 19434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2704.613 ; gain = 0.000 ; free physical = 14927 ; free virtual = 19524
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2704.613 ; gain = 0.000 ; free physical = 15222 ; free virtual = 19819
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 64 instances
+
+Synth Design complete, checksum: c0c7c609
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 2704.613 ; gain = 954.863 ; free physical = 15428 ; free virtual = 20026
+INFO: [Common 17-1381] The checkpoint '/home/reon/work/xilinx/muladd_zq/muladd_zq.runs/design_1_muladd_0_0_synth_1/design_1_muladd_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_muladd_0_0, cache-ID = a02975a5fa0aa1a8
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/reon/work/xilinx/muladd_zq/muladd_zq.runs/design_1_muladd_0_0_synth_1/design_1_muladd_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_muladd_0_0_utilization_synth.rpt -pb design_1_muladd_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 18 20:53:29 2022...

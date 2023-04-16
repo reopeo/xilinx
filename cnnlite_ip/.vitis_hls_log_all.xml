@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'conv2d_1_Pipeline_conv2d_label0' (loop 'conv2d_label0'): Unable to schedule 'store' operation ('y_addr_270_write_ln2827', cnnlite_ip/src/cnn.c:2827) of variable 'sum', cnnlite_ip/src/cnn.c:2825 on array 'y' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'y'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html&#xA;" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:18:31.299+0900" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'maxpool2d.clone' to 'maxpool2d_clone'." projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:15:07.213+0900" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv2d.1' to 'conv2d_1'." projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:15:06.049+0900" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv2d.1_Pipeline_conv2d_label0' to 'conv2d_1_Pipeline_conv2d_label0'." projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:15:06.046+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 214-167] The program may have out of bound array access (cnnlite_ip/src/cnn.c:2840:27)" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:14:13.753+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2910:16)" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:12:09.422+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2906:16)" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:12:08.782+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2901:16)" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:12:08.781+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4053] incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2896:15)" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:12:08.780+0900" type="Warning"/>
+        <logs message="WARNING: [HLS 207-4053] incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' (cnnlite_ip/src/cnn.c:2787:6)" projectName="cnnlite_ip" solutionName="solution3" date="2023-02-27T11:12:08.778+0900" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="cnnlite_ip" solutionName="solution2" date="2023-02-27T10:43:27.413+0900" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_top_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnnlite_ip" solutionName="solution2" date="2023-02-27T10:44:14.871+0900" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_top_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnnlite_ip" solutionName="solution2" date="2023-02-27T10:44:12.520+0900" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'cnn_top_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnnlite_ip" solutionName="solution2" date="2023-02-27T10:44:10.485+0900" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

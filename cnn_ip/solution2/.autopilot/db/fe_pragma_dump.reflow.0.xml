@@ -1,0 +1,14 @@
+<pragmas>
+<pragma file="cnn_ip/src/cnn.c" line="10" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="bias2" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="11" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="bias0" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="12" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="bias1" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="13" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="weight2" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="14" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="x" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="15" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="weight1" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="16" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="weight3" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="6" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="7" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="y" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="8" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="bias3" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="9" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="weight0" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_ip/src/cnn.c" line="123" pragmaType="inline" parentfunction="cnn" off="0" region="0" recursive="0"/>
+</pragmas>

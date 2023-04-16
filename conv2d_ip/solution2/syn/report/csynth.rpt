@@ -1,0 +1,164 @@
+
+
+================================================================
+== Synthesis Summary Report of 'conv2d'
+================================================================
++ General Information: 
+    * Date:           Sun Dec 18 21:49:23 2022
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        conv2d_ip
+    * Solution:       solution2 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |                Modules                | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |          |           |           |     |
+    |                & Loops                | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |+ conv2d                               |     -|  0.04|        -|       -|         -|        -|     -|        no|     -|  23 (10%)|  3835 (3%)|  3926 (7%)|    -|
+    | o out_channels_height_width           |     -|  7.30|        -|       -|         -|        -|     -|        no|     -|         -|          -|          -|    -|
+    |  + conv2d_Pipeline_in_channels_kh_kw  |     -|  0.04|        -|       -|         -|        -|     -|        no|     -|         -|  756 (~0%)|  1055 (1%)|    -|
+    |   o in_channels_kh_kw                 |    II|  7.30|        -|       -|         6|        6|     -|       yes|     -|         -|          -|          -|    -|
+    +---------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | x            | 0x10   | 32    | W      | Data signal of x                 |                                                                      |
+| s_axi_control | weight       | 0x18   | 32    | W      | Data signal of weight            |                                                                      |
+| s_axi_control | bias         | 0x20   | 32    | W      | Data signal of bias              |                                                                      |
+| s_axi_control | width        | 0x28   | 32    | W      | Data signal of width             |                                                                      |
+| s_axi_control | height       | 0x30   | 32    | W      | Data signal of height            |                                                                      |
+| s_axi_control | in_channels  | 0x38   | 32    | W      | Data signal of in_channels       |                                                                      |
+| s_axi_control | out_channels | 0x40   | 32    | W      | Data signal of out_channels      |                                                                      |
+| s_axi_control | ksize        | 0x48   | 32    | W      | Data signal of ksize             |                                                                      |
+| s_axi_control | y            | 0x50   | 32    | R      | Data signal of y                 |                                                                      |
+| s_axi_control | y_ctrl       | 0x54   | 32    | R      | Control signal of y              | 0=y_ap_vld                                                           |
++---------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+---------------+
+| Argument     | Direction | Datatype      |
++--------------+-----------+---------------+
+| x            | in        | float const * |
+| weight       | in        | float const * |
+| bias         | in        | float const * |
+| width        | in        | int           |
+| height       | in        | int           |
+| in_channels  | in        | int           |
+| out_channels | in        | int           |
+| ksize        | in        | int           |
+| y            | out       | float*        |
++--------------+-----------+---------------+
+
+* SW-to-HW Mapping
++--------------+---------------+----------+----------------------------------------+
+| Argument     | HW Interface  | HW Type  | HW Info                                |
++--------------+---------------+----------+----------------------------------------+
+| x            | s_axi_control | register | name=x offset=0x10 range=32            |
+| weight       | s_axi_control | register | name=weight offset=0x18 range=32       |
+| bias         | s_axi_control | register | name=bias offset=0x20 range=32         |
+| width        | s_axi_control | register | name=width offset=0x28 range=32        |
+| height       | s_axi_control | register | name=height offset=0x30 range=32       |
+| in_channels  | s_axi_control | register | name=in_channels offset=0x38 range=32  |
+| out_channels | s_axi_control | register | name=out_channels offset=0x40 range=32 |
+| ksize        | s_axi_control | register | name=ksize offset=0x48 range=32        |
+| y            | s_axi_control | register | name=y offset=0x50 range=32            |
+| y            | s_axi_control | register | name=y_ctrl offset=0x54 range=32       |
++--------------+---------------+----------+----------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+------------+------+---------+---------+
+| Name                                 | DSP | Pragma | Variable   | Op   | Impl    | Latency |
++--------------------------------------+-----+--------+------------+------+---------+---------+
+| + conv2d                             | 23  |        |            |      |         |         |
+|   p_neg_fu_287_p2                    | -   |        | p_neg      | sub  | fabric  | 0       |
+|   p_neg_t_fu_306_p2                  | -   |        | p_neg_t    | sub  | fabric  | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U16  | 3   |        | mul        | fmul | maxdsp  | 3       |
+|   mul_32ns_32ns_64_2_1_U17           | 3   |        | mul_ln20   | mul  | auto    | 1       |
+|   mul_32ns_64ns_96_5_1_U19           | 6   |        | mul_ln20_1 | mul  | auto    | 4       |
+|   mul_32ns_32ns_64_2_1_U18           | 3   |        | mul_ln20_2 | mul  | auto    | 1       |
+|   mul_32ns_64ns_96_5_1_U20           | 6   |        | mul_ln20_3 | mul  | auto    | 4       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U15 | -   |        | add_ln23   | add  | fabric  | 0       |
+|   add_ln25_fu_402_p2                 | -   |        | add_ln25   | add  | fabric  | 0       |
+|   sub_ln25_fu_451_p2                 | -   |        | sub_ln25   | sub  | fabric  | 0       |
+|   sub_ln38_fu_465_p2                 | -   |        | sub_ln38   | sub  | fabric  | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U15 | 2   |        | sum_1      | fadd | fulldsp | 4       |
+|   add_ln27_fu_488_p2                 | -   |        | add_ln27   | add  | fabric  | 0       |
+|   add_ln25_1_fu_424_p2               | -   |        | add_ln25_1 | add  | fabric  | 0       |
+|  + conv2d_Pipeline_in_channels_kh_kw | 0   |        |            |      |         |         |
+|    empty_fu_236_p2                   | -   |        | empty      | add  | fabric  | 0       |
+|    add_ln41_fu_252_p2                | -   |        | add_ln41   | add  | fabric  | 0       |
+|    add_ln31_fu_262_p2                | -   |        | add_ln31   | add  | fabric  | 0       |
+|    add_ln33_fu_330_p2                | -   |        | add_ln33   | add  | fabric  | 0       |
+|    p_mid13_fu_340_p2                 | -   |        | p_mid13    | add  | fabric  | 0       |
+|    add_ln41_2_fu_375_p2              | -   |        | add_ln41_2 | add  | fabric  | 0       |
+|    add_ln38_fu_314_p2                | -   |        | add_ln38   | add  | fabric  | 0       |
+|    add_ln41_1_fu_392_p2              | -   |        | add_ln41_1 | add  | fabric  | 0       |
+|    add_ln35_fu_433_p2                | -   |        | add_ln35   | add  | fabric  | 0       |
+|    add_ln33_1_fu_438_p2              | -   |        | add_ln33_1 | add  | fabric  | 0       |
++--------------------------------------+-----+--------+------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------+---------------------------------------------------------------+
+| Type      | Options                     | Location                                                      |
++-----------+-----------------------------+---------------------------------------------------------------+
+| interface | s_axilite port=bias         | conv2d_ip/solution2/directives.tcl:15 in conv2d, bias         |
+| interface | s_axilite port=height       | conv2d_ip/solution2/directives.tcl:11 in conv2d, height       |
+| interface | s_axilite port=in_channels  | conv2d_ip/solution2/directives.tcl:16 in conv2d, in_channels  |
+| interface | s_axilite port=ksize        | conv2d_ip/solution2/directives.tcl:8 in conv2d, ksize         |
+| interface | s_axilite port=out_channels | conv2d_ip/solution2/directives.tcl:14 in conv2d, out_channels |
+| interface | s_axilite port=return       | conv2d_ip/solution2/directives.tcl:7 in conv2d, return        |
+| interface | s_axilite port=weight       | conv2d_ip/solution2/directives.tcl:13 in conv2d, weight       |
+| interface | s_axilite port=width        | conv2d_ip/solution2/directives.tcl:10 in conv2d, width        |
+| interface | s_axilite port=x            | conv2d_ip/solution2/directives.tcl:12 in conv2d, x            |
+| interface | s_axilite port=y            | conv2d_ip/solution2/directives.tcl:9 in conv2d, y             |
++-----------+-----------------------------+---------------------------------------------------------------+
+
+

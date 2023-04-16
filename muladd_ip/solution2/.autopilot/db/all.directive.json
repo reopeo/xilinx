@@ -1,0 +1,29 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "muladd",
+          "label": "muladd_loop",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution2\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "muladd",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/reon\/work\/xilinx\/muladd_ip\/solution2\/csynth.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "muladd"
+              }]
+          }
+        }
+      ]
+    }]}

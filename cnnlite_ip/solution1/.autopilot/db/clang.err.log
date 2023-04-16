@@ -1,0 +1,31 @@
+cnnlite_ip/src/cnn.c:2787:6: warning: incompatible pointer types passing 'const float (*)[28][28]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+ cnn(x, y);
+     ^
+cnnlite_ip/src/cnn.c:2783:23: note: passing argument to parameter 'x' here
+void cnn(const float* x, float* y);
+                      ^
+cnnlite_ip/src/cnn.c:2896:15: warning: incompatible pointer types passing 'const float [4][1][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    conv2d(x, weight0, bias0, kWidths[0], kHeights[0], kChannels[0], kChannels[1], 3, x1);
+              ^~~~~~~
+cnnlite_ip/src/cnn.c:2790:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, int32_t width, int32_t height,
+                                         ^
+cnnlite_ip/src/cnn.c:2901:16: warning: incompatible pointer types passing 'const float [8][4][3][3]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    conv2d(x3, weight1, bias1, kWidths[1], kHeights[1], kChannels[1], kChannels[2], 3, x4);
+               ^~~~~~~
+cnnlite_ip/src/cnn.c:2790:42: note: passing argument to parameter 'weight' here
+void conv2d(const float *x, const float *weight, const float *bias, int32_t width, int32_t height,
+                                         ^
+cnnlite_ip/src/cnn.c:2906:16: warning: incompatible pointer types passing 'const float [32][392]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    linear(x6, weight2, bias2, kWidths[2] * kHeights[2] * kChannels[2], kChannels[3], x7);
+               ^~~~~~~
+cnnlite_ip/src/cnn.c:2833:42: note: passing argument to parameter 'weight' here
+void linear(const float *x, const float *weight, const float *bias, int64_t in_features, int64_t out_features, float *y)
+                                         ^
+cnnlite_ip/src/cnn.c:2910:16: warning: incompatible pointer types passing 'const float [10][32]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+    linear(x8, weight3, bias3, kChannels[3], kChannels[4], y);
+               ^~~~~~~
+cnnlite_ip/src/cnn.c:2833:42: note: passing argument to parameter 'weight' here
+void linear(const float *x, const float *weight, const float *bias, int64_t in_features, int64_t out_features, float *y)
+                                         ^
+5 warnings generated.

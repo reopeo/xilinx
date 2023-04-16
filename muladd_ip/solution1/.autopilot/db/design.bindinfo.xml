@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln8_fu_89_p2" SOURCE="muladd_ip/src/muladd.c:8" VARIABLE="icmp_ln8" MODULE="muladd" LOOP="muladd_loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln8_fu_95_p2" SOURCE="muladd_ip/src/muladd.c:8" VARIABLE="add_ln8" MODULE="muladd" LOOP="muladd_loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U1" SOURCE="muladd_ip/src/muladd.c:10" VARIABLE="mul_ln10" MODULE="muladd" LOOP="muladd_loop" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="temp_1_fu_119_p2" SOURCE="muladd_ip/src/muladd.c:10" VARIABLE="temp_1" MODULE="muladd" LOOP="muladd_loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>
